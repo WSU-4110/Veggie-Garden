@@ -4,4 +4,7 @@
     <string name="nuts">nuts</string>
     <string name="login">Login</string>
     <string name="create_an_account">Create an Account</string>
+    <string name="todo">TODO</string>
+    <string name="enter_password_here">Enter Password Here</string>
+    <string name="enter_email_here">Enter Email Here</string>
 </resources>
