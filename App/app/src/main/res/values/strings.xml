@@ -2,4 +2,6 @@
     <string name="app_name">App</string>
     <string name="balls">Balls</string>
     <string name="nuts">nuts</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create an Account</string>
 </resources>
