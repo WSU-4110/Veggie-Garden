@@ -16,12 +16,14 @@
         android:layout_marginTop="34dp"
         android:layout_marginEnd="168dp"
         android:layout_marginBottom="38dp"
+        android:onClick="moveToHome"
         android:text="@string/login"
         app:layout_constraintBottom_toTopOf="@+id/createAccountButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPword" />
+        app:layout_constraintTop_toBottomOf="@+id/editPword"
+        tools:ignore="UsingOnClickInXml" />
  <!--create account button, links to new page-->
     <Button
         android:id="@+id/createAccountButton"
@@ -32,12 +34,14 @@
         android:layout_marginEnd="108dp"
         android:layout_marginBottom="20dp"
         android:text="@string/create_an_account"
+        android:onClick="moveToCreationPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
-<!--Plant Logo-->
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        tools:ignore="UsingOnClickInXml" />
+    <!--Plant Logo-->
     <ImageView
         android:id="@+id/plantLogo"
         android:layout_width="253dp"
