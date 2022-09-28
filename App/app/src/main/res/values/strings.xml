@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">App</string>
+    <string name="balls">Balls</string>
+    <string name="nuts">nuts</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="todo">TODO</string>
+    <string name="enter_password_here">Enter Password Here</string>
+    <string name="enter_email_here">Enter Email Here</string>
+    <string name="enter_email">Enter Email Here</string>
+    <string name="enter_pword_here">Enter Password Here</string>
+    <string name="create_email_here">Enter Email Here</string>
+    <string name="create_your">Create Your</string>
+    <string name="account">Account!</string>
+    <string name="enter_name_here">Enter Name Here</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create">Create</string>
+    <string name="create_password_here">Enter Password Here</string>
+    <string name="home_page">Home Page</string>
 </resources>
