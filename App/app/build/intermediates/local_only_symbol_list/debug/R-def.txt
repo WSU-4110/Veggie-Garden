@@ -23,6 +23,7 @@ id plantLogo
 id textView
 id textView2
 id textView3
+id toolbar
 layout activity_create_account_page
 layout activity_main
 layout activity_title_page
@@ -42,6 +43,7 @@ string enter_email_here
 string enter_name_here
 string enter_password_here
 string enter_pword_here
+string home_page
 string login
 string nuts
 string todo
