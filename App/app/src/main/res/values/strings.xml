@@ -7,4 +7,6 @@
     <string name="todo">TODO</string>
     <string name="enter_password_here">Enter Password Here</string>
     <string name="enter_email_here">Enter Email Here</string>
+    <string name="enter_email">Enter Email Here</string>
+    <string name="enter_pword_here">Enter Password Here</string>
 </resources>

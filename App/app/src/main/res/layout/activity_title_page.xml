@@ -62,10 +62,11 @@
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="45dp"
         android:ems="10"
+        android:hint='@string/enter_email'
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:text="@string/enter_email_here"
+        android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/editPword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,11 +80,12 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="@string/enter_pword_here"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:text="@string/enter_password_here"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
