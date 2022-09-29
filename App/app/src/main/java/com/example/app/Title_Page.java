@@ -31,7 +31,8 @@ public class Title_Page extends AppCompatActivity {
                 if (email.getText().toString().contains("@") && email.getText().toString().contains(".com") && email.getText().toString().length() >= 1 && password.getText().toString().length() >= 1) {
                     LoginCredentials userLogin = new LoginCredentials(email.getText().toString(), password.getText().toString());
                     Toast.makeText(Title_Page.this, "Logged In", Toast.LENGTH_SHORT).show();
-
+                    Intent intent = new Intent(view.getContext(), MainActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(Title_Page.this, "Invalid Entry", Toast.LENGTH_SHORT).show();
@@ -42,32 +43,10 @@ public class Title_Page extends AppCompatActivity {
         createAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(view.getContext(), Create_Account_Page.class);
+                startActivity(intent);
             }
         });
     }
 
-
-
-
-// this gets a button press to move pages, add: android:onClick="moveToTitle" to xml file under the button's area, and add: tools:ignore="UsingOnClickInXml" to clear the error attached.
-    public void moveToHome(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    public void moveToCreationPage(View v) {
-        Intent intent = new Intent(this, Create_Account_Page.class);
-        startActivity(intent);
-    }
-
-   // public void login(String email, String password) {
-       // if (email.getText().toString().equals(Credentials.email) && password.getText().toString().equals(Credentials.password)) {
-         //   Intent intent = new Intent(this, MainActivity.class);
-         //   startActivity(intent);
-      //  }
-       // else {
-        //    System.out.println("Incorrect Login, Please Try Again.");
-       // }
-   // }
 }
