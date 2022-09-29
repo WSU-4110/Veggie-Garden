@@ -4,6 +4,7 @@ ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - S
 INJECTED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-33:12
 INJECTED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-33:12
 INJECTED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-33:12
+MERGED from [com.github.fabiosassu:StackExpandableView:1.0.2] C:\Users\Eli\.gradle\caches\transforms-3\946f3d5bbc1d2e7c4583ec352c11197c\transformed\StackExpandableView-1.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\Eli\.gradle\caches\transforms-3\b6f52d92dea29c0a7f49d4078033a89a\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Eli\.gradle\caches\transforms-3\7973dc37a0b9b77da65b027e645a80f7\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\Eli\.gradle\caches\transforms-3\9957f677aa4ca64938f214cf1fa220ad\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -111,12 +112,12 @@ ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - S
 		ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
 		ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-41
-activity#com.example.app.Title_Page
+activity#com.example.app.activity_test_page
 ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:9-30:20
 	android:exported
 		ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-39
+		ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
@@ -131,6 +132,8 @@ uses-sdk
 INJECTED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml
+MERGED from [com.github.fabiosassu:StackExpandableView:1.0.2] C:\Users\Eli\.gradle\caches\transforms-3\946f3d5bbc1d2e7c4583ec352c11197c\transformed\StackExpandableView-1.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.fabiosassu:StackExpandableView:1.0.2] C:\Users\Eli\.gradle\caches\transforms-3\946f3d5bbc1d2e7c4583ec352c11197c\transformed\StackExpandableView-1.0.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\Eli\.gradle\caches\transforms-3\b6f52d92dea29c0a7f49d4078033a89a\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\Eli\.gradle\caches\transforms-3\b6f52d92dea29c0a7f49d4078033a89a\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Eli\.gradle\caches\transforms-3\7973dc37a0b9b77da65b027e645a80f7\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41

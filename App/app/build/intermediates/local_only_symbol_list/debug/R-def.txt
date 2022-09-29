@@ -18,6 +18,7 @@ id editTextTextEmailAddress
 id editTextTextPassword
 id editTextTextPassword2
 id editTextTextPersonName
+id horizontalStack
 id loginButton
 id plantLogo
 id textView
@@ -27,6 +28,7 @@ id toolbar
 layout activity_create_account_page
 layout activity_main
 layout activity_title_page
+layout test_page
 mipmap ic_launcher
 mipmap ic_launcher_round
 string account
