@@ -28,7 +28,8 @@ public class Title_Page extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (email.getText().toString().contains("@") && email.getText().toString().contains(".com") && email.getText().toString().length() >= 1 && password.getText().toString().length() >= 1) {
+                if (email.getText().toString().contains("@") && email.getText().toString().contains(".com") && email.getText().toString().length() >= 1 &&
+                        password.getText().toString().length() >= 1) {
                     LoginCredentials userLogin = new LoginCredentials(email.getText().toString(), password.getText().toString());
                     Toast.makeText(Title_Page.this, "Logged In", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), MainActivity.class);

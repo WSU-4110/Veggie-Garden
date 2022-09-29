@@ -10,9 +10,9 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable plant
-id button
 id confirmPword
 id createAccountButton
+id createButton
 id createEmail
 id createPword
 id emailInput
