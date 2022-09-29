@@ -11,82 +11,108 @@
 9-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-11-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:4:5-71
-11-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:4:22-68
+11-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:5-71
+11-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:22-68
 12
 13    <application
-13-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:5-30:19
+13-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:5-46:19
 14        android:allowBackup="true"
-14-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:6:9-35
+14-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 15-->[androidx.core:core:1.8.0] C:\Users\nicka\.gradle\caches\transforms-3\28a1708219c3158e49b329d141e5cfff\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 16        android:dataExtractionRules="@xml/data_extraction_rules"
-16-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:9-65
+16-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:9-65
 17        android:debuggable="true"
 18        android:fullBackupContent="@xml/backup_rules"
-18-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:8:9-54
+18-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:10:9-54
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:9-43
+19-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:11:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:10:9-41
+20-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:12:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:11:9-54
+21-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:13:9-54
 22        android:supportsRtl="true"
-22-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:12:9-35
+22-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:14:9-35
 23        android:testOnly="true"
 24        android:theme="@style/Theme.App" >
-24-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:13:9-41
+24-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:15:9-41
 25        <activity
-25-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:15:9-17:40
-26            android:name="com.example.app.Create_Account_Page"
-26-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:16:13-48
-27            android:exported="false" />
-27-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:13-37
-28        <activity
-28-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:9-20:40
-29            android:name="com.example.app.MainActivity"
-29-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:13-41
-30            android:exported="false" />
-30-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-37
-31        <activity
-31-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:9-29:20
-32            android:name="com.example.app.Title_Page"
-32-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:13-39
-33            android:exported="true" >
-33-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-36
-34            <intent-filter>
-34-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:13-28:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:17-69
-35-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-77
-37-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:27-74
-38            </intent-filter>
-39        </activity>
-40
-41        <provider
-41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-42            android:name="androidx.startup.InitializationProvider"
-42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-43            android:authorities="com.example.app.androidx-startup"
-43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-44            android:exported="false" >
-44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-45            <meta-data
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-47                android:value="androidx.startup" />
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-48            <meta-data
-48-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-49-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-50                android:value="androidx.startup" />
-50-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-51        </provider>
-52    </application>
-53
-54</manifest>
+25-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:9-23:20
+26            android:name="com.example.app.Account_Viewer_Database_List"
+26-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:13-57
+27            android:exported="false" >
+27-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:13-37
+28            <meta-data
+28-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-22:36
+29                android:name="android.app.lib_name"
+29-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:17-52
+30                android:value="" />
+30-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:17-33
+31        </activity>
+32        <activity
+32-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:9-30:20
+33            android:name="com.example.app.Settings"
+33-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:13-37
+34            android:exported="false" >
+34-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-37
+35            <meta-data
+35-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-22:36
+36                android:name="android.app.lib_name"
+36-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:17-52
+37                android:value="" />
+37-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:17-33
+38        </activity>
+39        <activity
+39-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:31:9-33:40
+40            android:name="com.example.app.Create_Account_Page"
+40-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:32:13-48
+41            android:exported="false" />
+41-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:33:13-37
+42        <activity
+42-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:34:9-36:40
+43            android:name="com.example.app.MainActivity"
+43-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:35:13-41
+44            android:exported="false" />
+44-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:36:13-37
+45        <activity
+45-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:37:9-45:20
+46            android:name="com.example.app.Title_Page"
+46-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:38:13-39
+47            android:exported="true" >
+47-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:39:13-36
+48            <intent-filter>
+48-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:40:13-44:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:17-69
+49-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:43:17-77
+51-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:43:27-74
+52            </intent-filter>
+53        </activity>
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+57            android:authorities="com.example.app.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+65        </provider>
+66    </application>
+67
+68</manifest>

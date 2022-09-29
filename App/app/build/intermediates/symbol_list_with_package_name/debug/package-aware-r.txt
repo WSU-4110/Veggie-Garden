@@ -2457,6 +2457,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_arrow_back_24
+drawable ic_baseline_settings_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2601,6 +2603,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backArrow1
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2660,6 +2663,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id databaseButton
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2724,6 +2728,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id gearButton
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2961,7 +2966,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id textView3
 id text_input_end_icon
@@ -2979,6 +2983,8 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbar2
+id toolbar3
 id top
 id topPanel
 id touch_outside
@@ -3105,8 +3111,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_account_viewer_database_list
 layout activity_create_account_page
 layout activity_main
+layout activity_settings
 layout activity_title_page
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3229,6 +3237,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string account
+string account_list
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior

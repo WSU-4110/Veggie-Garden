@@ -23,6 +23,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.App" >
         <activity
+            android:name="com.example.app.Account_Viewer_Database_List"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.app.Settings"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.app.Create_Account_Page"
             android:exported="false" />
         <activity

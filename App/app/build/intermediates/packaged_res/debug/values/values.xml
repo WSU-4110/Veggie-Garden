@@ -8,6 +8,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="account">Account!</string>
+    <string name="account_list">Account List</string>
     <string name="app_name">App</string>
     <string name="balls">Balls</string>
     <string name="confirm_password">Confirm Password</string>

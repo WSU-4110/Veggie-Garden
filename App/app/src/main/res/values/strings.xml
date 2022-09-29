@@ -17,4 +17,5 @@
     <string name="create">Create</string>
     <string name="create_password_here">Enter Password Here</string>
     <string name="home_page">Home Page</string>
+    <string name="account_list">Account List</string>
 </resources>
