@@ -2642,6 +2642,7 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id confirmPword
 id confirm_button
 id constraint
 id container
@@ -2653,6 +2654,8 @@ id coordinator
 id cos
 id counterclockwise
 id createAccountButton
+id createEmail
+id createPword
 id currentState
 id custom
 id customPanel
@@ -2692,16 +2695,11 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editEmail
-id editPword
-id editTextTextEmailAddress
-id editTextTextPassword
-id editTextTextPassword2
-id editTextTextPersonName
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
+id emailInput
 id end
 id endToStart
 id enterAlways
@@ -2824,6 +2822,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameInput
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -2865,6 +2864,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id pwordInput
 id radio
 id ratio
 id rectangles

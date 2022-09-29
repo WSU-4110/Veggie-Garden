@@ -27,8 +27,16 @@ public class Title_Page extends AppCompatActivity {
         startActivity(intent);
     }
 
+    EditText email = (EditText) findViewById(R.id.emailInput);
+    EditText password = (EditText) findViewById(R.id.pwordInput);
+
     public void login(View v) {
-        AccountManager acc = AccountManager.get(this);
-        Account[] accounts = acc.getAccountsByType("com.google");
+        if (email.getText().toString().equals(possibleEmail) && password.getText().toString().equals(possiblePassword)) {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        else {
+            System.out.println("Incorrect Login, Please Try Again.");
+        }
     }
 }
