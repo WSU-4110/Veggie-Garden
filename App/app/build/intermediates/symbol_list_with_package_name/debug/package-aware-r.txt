@@ -113,6 +113,7 @@ attr alphabeticModifiers
 attr altSrc
 attr animateCircleAngleTo
 attr animateRelativeTo
+attr animationDuration
 attr animationMode
 attr appBarLayoutStyle
 attr applyMotionScene
@@ -822,6 +823,7 @@ attr onPositiveCross
 attr onShow
 attr onStateTransition
 attr onTouchUp
+attr orientation
 attr overlapAnchor
 attr overlay
 attr paddingBottomNoButtons
@@ -835,6 +837,7 @@ attr paddingTopSystemWindowInsets
 attr panelBackground
 attr panelMenuListTheme
 attr panelMenuListWidth
+attr parallaxOffset
 attr passwordToggleContentDescription
 attr passwordToggleDrawable
 attr passwordToggleEnabled
@@ -917,6 +920,7 @@ attr showMotionSpec
 attr showPaths
 attr showText
 attr showTitle
+attr shownElements
 attr shrinkMotionSpec
 attr simpleItemLayout
 attr simpleItems
@@ -2769,6 +2773,8 @@ id hideable
 id home
 id homeAsUp
 id honorRequest
+id horizontal
+id horizontalStack
 id horizontal_only
 id icon
 id icon_group
@@ -3032,6 +3038,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id vertical
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3231,6 +3238,7 @@ layout test_design_checkbox
 layout test_design_radiobutton
 layout test_exposed_dropdown_menu
 layout test_navigation_bar_item_layout
+layout test_page
 layout test_reflow_chipgroup
 layout test_toolbar
 layout test_toolbar_custom_background
@@ -4586,6 +4594,7 @@ styleable Slider android_enabled android_value android_stepSize android_valueFro
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
+styleable StackExpandableView animationDuration orientation parallaxOffset shownElements
 styleable State android_id constraints
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable StateListDrawableItem android_drawable

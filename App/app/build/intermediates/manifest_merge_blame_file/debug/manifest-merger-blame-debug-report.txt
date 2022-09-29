@@ -6,132 +6,83 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml
+8-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml
+9-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:6:5-67
-11-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:6:22-64
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:5-79
-12-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:22-76
-13    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-13-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:8:5-71
-13-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:8:22-68
-14
-15    <application
-15-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:10:5-55:19
-16        android:allowBackup="true"
-16-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:11:9-35
-17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.8.0] C:\Users\Owner\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-18        android:dataExtractionRules="@xml/data_extraction_rules"
-18-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:12:9-65
-19        android:debuggable="true"
-20        android:fullBackupContent="@xml/backup_rules"
-20-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:13:9-54
-21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:14:9-43
-22        android:label="@string/app_name"
-22-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:15:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:16:9-54
-24        android:supportsRtl="true"
-24-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:9-35
-25        android:testOnly="true"
-26        android:theme="@style/Theme.App" >
-26-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:9-41
-27        <activity
-27-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:9-26:20
-28            android:name="com.example.app.CalendarActivity"
-28-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:13-45
-29            android:exported="false" >
-29-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:13-37
-30            <meta-data
-30-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-25:36
-31                android:name="android.app.lib_name"
-31-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:17-52
-32                android:value="" />
-32-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:17-33
-33        </activity>
-34        <activity
-34-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:9-33:20
-35            android:name="com.example.app.Account_Viewer_Database_List"
-35-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:13-57
-36            android:exported="false" >
-36-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:29:13-37
-37            <meta-data
-37-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-25:36
-38                android:name="android.app.lib_name"
-38-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:17-52
-39                android:value="" />
-39-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:17-33
-40        </activity>
-41        <activity
-41-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:34:9-40:20
-42            android:name="com.example.app.Settings"
-42-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:35:13-37
-43            android:exported="false" >
-43-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:36:13-37
-44            <meta-data
-44-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-25:36
-45                android:name="android.app.lib_name"
-45-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:17-52
-46                android:value="" />
-46-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:17-33
-47        </activity>
-48        <activity
-48-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:9-43:40
-49            android:name="com.example.app.Create_Account_Page"
-49-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:42:13-48
-50            android:exported="false" />
-50-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:43:13-37
-51        <activity
-51-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:44:9-46:40
-52            android:name="com.example.app.MainActivity"
-52-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:45:13-41
-53            android:exported="false" />
-53-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:46:13-37
-54        <activity
-54-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:47:9-54:20
-55            android:name="com.example.app.Title_Page"
-55-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:48:13-39
-56            android:exported="true" >
-56-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:49:13-36
-57            <intent-filter>
-57-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:50:13-53:29
-58                <action android:name="android.intent.action.MAIN" />
-58-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:51:17-69
-58-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:51:25-66
-59
-60                <category android:name="android.intent.category.LAUNCHER" />
-60-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:52:17-77
-60-->C:\Users\Owner\Documents\GitHub\Veggie-Garden\App\app\src\main\AndroidManifest.xml:52:27-74
-61            </intent-filter>
-62        </activity>
-63
-64        <provider
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Owner\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-65            android:name="androidx.startup.InitializationProvider"
-65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Owner\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-66            android:authorities="com.example.app.androidx-startup"
-66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Owner\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-67            android:exported="false" >
-67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Owner\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-68            <meta-data
-68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Owner\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Owner\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-70                android:value="androidx.startup" />
-70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Owner\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-71            <meta-data
-71-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Owner\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Owner\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-73                android:value="androidx.startup" />
-73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Owner\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-74        </provider>
-75    </application>
-76
-77</manifest>
+11    <application
+11-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:6:5-31:19
+12        android:allowBackup="true"
+12-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.8.0] C:\Users\Eli\.gradle\caches\transforms-3\0638d9dacb5fd10604e28ec2b4d3c80b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:8:9-65
+15        android:debuggable="true"
+16        android:fullBackupContent="@xml/backup_rules"
+16-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:9-54
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:10:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:11:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:12:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:13:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.App" >
+22-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:14:9-41
+23        <activity
+23-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:16:9-18:40
+24            android:name="com.example.app.Create_Account_Page"
+24-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:13-48
+25            android:exported="false" />
+25-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:13-37
+26        <activity
+26-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:9-21:40
+27            android:name="com.example.app.MainActivity"
+27-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-41
+28            android:exported="false" />
+28-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:13-37
+29        <activity
+29-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:9-30:20
+30            android:name="com.example.app.activity_test_page"
+30-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-47
+31            android:exported="true" >
+31-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:13-36
+32            <intent-filter>
+32-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:13-29:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:17-69
+33-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-77
+35-->C:\Users\Eli\OneDrive - Wayne State University\2022 Fall\CSC 4110 - Software Engineering\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eli\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+40            android:name="androidx.startup.InitializationProvider"
+40-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eli\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+41            android:authorities="com.example.app.androidx-startup"
+41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eli\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+42            android:exported="false" >
+42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eli\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+43            <meta-data
+43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eli\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+44                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eli\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+45                android:value="androidx.startup" />
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eli\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+46            <meta-data
+46-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Eli\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+47                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Eli\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+48                android:value="androidx.startup" />
+48-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Eli\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+49        </provider>
+50    </application>
+51
+52</manifest>

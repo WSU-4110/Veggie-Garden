@@ -52,7 +52,7 @@
             android:name="com.example.app.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.app.Title_Page"
+            android:name="com.example.app.activity_test_page"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
