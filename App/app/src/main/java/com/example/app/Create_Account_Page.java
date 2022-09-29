@@ -12,21 +12,24 @@ import android.widget.Toast;
 
 public class Create_Account_Page extends AppCompatActivity {
 
+    //declare variables
     EditText nameInput, createEmail, createPassword, confirmPassword;
     Button createButton;
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId")        //recommended fix for error on line 30, use if needed, absolutely works
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account_page);
 
+        //set variables
         nameInput = findViewById(R.id.nameInput);
         createEmail = findViewById(R.id.createEmail);
         createPassword = findViewById(R.id.createPword);
         confirmPassword = findViewById(R.id.confirmPword);
         createButton = findViewById(R.id.createButton);
 
+        //create button, store values
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

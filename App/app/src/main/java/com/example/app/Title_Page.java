@@ -8,9 +8,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+                                                                               // FOLLOW THIS FORMAT FOR CREATING VALUES/BUTTONS/MOVING PAGES/STORING DATA
 public class Title_Page extends AppCompatActivity {
 
+    //declare variables
     EditText email;
     EditText password;
     Button loginButton, createAccountButton;
@@ -20,12 +21,14 @@ public class Title_Page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title_page);
 
+        //set variables
         email = findViewById(R.id.emailInput);
         password = findViewById(R.id.pwordInput);
         loginButton = findViewById(R.id.loginButton);
         createAccountButton = findViewById(R.id.createAccountButton);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        //login button, store variables, check for existing accounts
+        loginButton.setOnClickListener(new View.OnClickListener() {                                  //IGNORE ANDROID STUDIO'S RECOMMENDATION TO SWITCH TO LAMBDA
             @Override
             public void onClick(View view) {
                 if (email.getText().toString().contains("@") && email.getText().toString().contains(".com") && email.getText().toString().length() >= 1 &&
@@ -41,6 +44,7 @@ public class Title_Page extends AppCompatActivity {
             }
         });
 
+        //create account button, move pages
         createAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
