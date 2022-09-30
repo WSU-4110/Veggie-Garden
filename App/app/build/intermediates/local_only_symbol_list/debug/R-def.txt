@@ -25,6 +25,7 @@ id loginButton
 id nameInput
 id plantLogo
 id pwordInput
+id testButton
 id textView2
 id textView3
 id toolbar
@@ -41,6 +42,7 @@ string account
 string account_list
 string app_name
 string balls
+string button
 string confirm_password
 string create
 string create_an_account

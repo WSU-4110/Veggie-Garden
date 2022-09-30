@@ -12,8 +12,8 @@ import android.widget.ImageButton;
 public class Settings extends AppCompatActivity {
 
     //declare variables
-    ImageButton databaseButton;
-    Button backArrow1;
+    Button databaseButton;
+    ImageButton backArrow1;
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override

@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     //declare variables
     ImageButton gearButton;
+    Button testButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         //set variables
         gearButton = findViewById(R.id.gearButton);
+        testButton = findViewById(R.id.testButton);
 
         gearButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+       testButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(view.getContext(), Settings.class);
+               startActivity(intent);
+           }
+       });
+
     }
 
 }
