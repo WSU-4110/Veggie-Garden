@@ -25,7 +25,6 @@ id loginButton
 id nameInput
 id plantLogo
 id pwordInput
-id testButton
 id textView2
 id textView3
 id toolbar

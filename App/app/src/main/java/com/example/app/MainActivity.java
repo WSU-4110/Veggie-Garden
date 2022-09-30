@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     //declare variables
     ImageButton gearButton;
-    Button testButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
         //set variables
         gearButton = findViewById(R.id.gearButton);
-        testButton = findViewById(R.id.testButton);
 
         gearButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,14 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-       testButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent intent = new Intent(view.getContext(), Settings.class);
-               startActivity(intent);
-           }
-       });
 
     }
 

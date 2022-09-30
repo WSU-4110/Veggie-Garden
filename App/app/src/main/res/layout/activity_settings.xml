@@ -20,18 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/backArrow1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="7dp"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <Button
         android:id="@+id/databaseButton"
         android:layout_width="wrap_content"
@@ -47,4 +35,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/backArrow1"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
