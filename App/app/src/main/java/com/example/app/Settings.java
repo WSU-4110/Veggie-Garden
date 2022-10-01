@@ -7,13 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class Settings extends AppCompatActivity {
 
     //declare variables
     Button databaseButton;
-    ImageButton backArrow1;
+    Button backToMain;
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
@@ -23,7 +22,7 @@ public class Settings extends AppCompatActivity {
 
         //set variables
         databaseButton = findViewById(R.id.databaseButton);
-        backArrow1 = findViewById(R.id.backArrow1);
+        backToMain = findViewById(R.id.backToMain);
 
         databaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +32,7 @@ public class Settings extends AppCompatActivity {
             }
         });
 
-        backArrow1.setOnClickListener(new View.OnClickListener() {
+        backToMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), MainActivity.class);

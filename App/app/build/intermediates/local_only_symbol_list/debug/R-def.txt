@@ -12,7 +12,8 @@ drawable ic_baseline_settings_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable plant
-id backArrow1
+id backToMain
+id backToSettings
 id confirmPword
 id createAccountButton
 id createButton
@@ -22,6 +23,8 @@ id databaseButton
 id emailInput
 id gearButton
 id loginButton
+id lv_credentials
+id message
 id nameInput
 id plantLogo
 id pwordInput
@@ -40,6 +43,8 @@ mipmap ic_launcher_round
 string account
 string account_list
 string app_name
+string back
+string back2
 string balls
 string button
 string confirm_password
@@ -56,6 +61,7 @@ string enter_pword_here
 string home_page
 string login
 string nuts
+string this_is_a_tool_for_developers
 string todo
 style Theme.App
 xml backup_rules

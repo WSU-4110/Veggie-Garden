@@ -73,8 +73,8 @@ public class DataBase extends SQLiteOpenHelper {
             // loop thru the cursor and enter them into the list
             do {
                 String userName = cursor.getString(0);
-                String userEmail = cursor.getString(1);
-                String userPword = cursor.getString(2);
+                String userEmail = cursor.getString(2);
+                String userPword = cursor.getString(1);
                 String userConfirmPword = cursor.getString(3);
 
                 Credentials newUser = new Credentials(userName, userEmail, userPword, userConfirmPword);

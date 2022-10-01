@@ -10,6 +10,8 @@
     <string name="account">Account!</string>
     <string name="account_list">Account List</string>
     <string name="app_name">App</string>
+    <string name="back">BACK</string>
+    <string name="back2">BACK</string>
     <string name="balls">Balls</string>
     <string name="button">Button</string>
     <string name="confirm_password">Confirm Password</string>
@@ -26,6 +28,7 @@
     <string name="home_page">Home Page</string>
     <string name="login">Login</string>
     <string name="nuts">nuts</string>
+    <string name="this_is_a_tool_for_developers">This is a tool for developers.</string>
     <string name="todo">TODO</string>
     <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

@@ -6,7 +6,10 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -14,7 +17,8 @@ import java.util.List;
 public class Account_Viewer_Database_List extends AppCompatActivity {
 
     //declare variables
-    ImageButton backArrow2;
+    Button backToSettings;
+    ListView lv_credentials;
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
@@ -23,9 +27,10 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
         setContentView(R.layout.activity_account_viewer_database_list);
 
         //set variables
-        backArrow2 = findViewById(R.id.backArrow2);
+        backToSettings = findViewById(R.id.backToSettings);
+        lv_credentials = findViewById(R.id.lv_credentials);
 
-        backArrow2.setOnClickListener(new View.OnClickListener() {
+        backToSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), Settings.class);
@@ -35,8 +40,8 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
 
         DataBase dataBase = new DataBase(Account_Viewer_Database_List.this);
         List<Credentials> all = dataBase.getAll();
-        Toast.makeText(Account_Viewer_Database_List.this, all.toString(), Toast.LENGTH_SHORT).show();
-
+        ArrayAdapter arrayAdapter = new ArrayAdapter<Credentials>(Account_Viewer_Database_List.this, android.R.layout.simple_list_item_1, all);
+        lv_credentials.setAdapter(arrayAdapter);
 
     }
 }

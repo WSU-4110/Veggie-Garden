@@ -19,4 +19,7 @@
     <string name="home_page">Home Page</string>
     <string name="account_list">Account List</string>
     <string name="button">Button</string>
+    <string name="this_is_a_tool_for_developers">This is a tool for developers.</string>
+    <string name="back">BACK</string>
+    <string name="back2">BACK</string>
 </resources>

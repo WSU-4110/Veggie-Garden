@@ -36,12 +36,19 @@ public class Create_Account_Page extends AppCompatActivity {
 
                 Credentials credentials = null;
 
-                if (nameInput.getText().toString().length() >= 1 && createEmail.getText().toString().contains("@") && createEmail.getText().toString().contains(".com") &&
+                if (nameInput.getText().toString().length() >= 1 && (createEmail.getText().toString().contains("@") || createEmail.getText().toString().contains(".com") ||
+                        createEmail.getText().toString().contains(".net") || createEmail.getText().toString().contains(".gov") || createEmail.getText().toString().contains(".org")) &&
                         createEmail.getText().toString().length() >= 1 && createPassword.getText().toString().length() >= 1) {
                     if (createPassword.getText().toString().equals(confirmPassword.getText().toString()) ) {
                         credentials = new Credentials(nameInput.getText().toString(), createEmail.getText().toString(), createPassword.getText().toString(),
                                 confirmPassword.getText().toString());
                         Toast.makeText(Create_Account_Page.this, "Account Created", Toast.LENGTH_SHORT).show();
+
+                        //database call
+                        DataBase dataBase = new DataBase(Create_Account_Page.this);
+                        boolean success = dataBase.addOne(credentials);
+                        Toast.makeText(Create_Account_Page.this, "Database works? = " + success, Toast.LENGTH_SHORT).show();                // CHECK IF WORKING
+
                         Intent intent = new Intent(view.getContext(), MainActivity.class);
                         startActivity(intent);
                     }
@@ -52,11 +59,6 @@ public class Create_Account_Page extends AppCompatActivity {
                 else {
                     Toast.makeText(Create_Account_Page.this, "Invalid Entries", Toast.LENGTH_SHORT).show();
                 }
-
-                //database call
-                DataBase dataBase = new DataBase(Create_Account_Page.this);
-                boolean success = dataBase.addOne(credentials);
-                //Toast.makeText(Create_Account_Page.this, "Database works? = " + success, Toast.LENGTH_SHORT).show();                 CHECK IF WORKING
             }
         });
     }
