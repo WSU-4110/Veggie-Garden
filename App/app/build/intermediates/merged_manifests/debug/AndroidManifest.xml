@@ -26,15 +26,6 @@
         <activity
             android:name="com.example.app.MainActivity"
             android:exported="false" />
-        <activity
-            android:name="com.example.app.activity_test_page"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"
