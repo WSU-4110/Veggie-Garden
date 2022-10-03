@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 
 public class PlantId extends View {
 
+    // Hard-coded values for debug purposes
     private Color backgroundColor = Color.valueOf(GREEN);
     private Color textColor = Color.valueOf(WHITE);
     private String plantName;
@@ -22,12 +23,14 @@ public class PlantId extends View {
     private Paint textPaint;
     private Paint backgroundPaint;
 
-
+    // Constructor for PlantId
+    // Will call init to create all drawable objects
     public PlantId(Context context) {
         super(context);
         init();
     }
 
+    // Initializes drawable objects to increase performance
     private void init() {
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
@@ -38,28 +41,35 @@ public class PlantId extends View {
 
         backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-        // Same deal as above
+        // Same deal as above; will probably upgrade build to v26
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             backgroundPaint.setColor(backgroundColor.pack());
         }
         backgroundPaint.setStyle(Paint.Style.FILL);
     }
 
+    // Called when first created and whenever screen size changes
+    // Handles layout of PlantId view
     @Override
     public void onSizeChanged(int w, int h, int oldw, int oldh) {
         float xpad = (float) (getPaddingLeft() + getPaddingRight());
         float ypad = (float) (getPaddingBottom() + getPaddingTop());
 
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.setMargins(50, 50, 50, 50);
         this.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
 
     }
 
+    // Called when displaying the PlantId
+    // Handles drawing all elements from objects created in init()
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
         canvas.drawRect(this.getX(), this.getY(), this.getX() + this.getWidth(), this.getY()+200, backgroundPaint);
+
         
     }
 

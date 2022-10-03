@@ -23,6 +23,7 @@ public class activity_plants_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plants_page);
 
+
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear_layout);
         ConstraintLayout myLayout = (ConstraintLayout) findViewById(R.id.constraint_layout);
         ConstraintSet myConstraints = new ConstraintSet();
