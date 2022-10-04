@@ -20,14 +20,18 @@ public class MainActivity extends AppCompatActivity {
         //set variables
         gearButton = findViewById(R.id.gearButton);
         TextView textView = findViewById(R.id.textView);
+
+        // Retrieve account information
         DataBase db = new DataBase(this);
         String name = db.getName(getIntent().getStringExtra("EMAIL"));
 
         gearButton.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Settings.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             startActivity(intent);
         });
 
+        // Display user's name
         textView.setText(String.format("Hello %s", name));
 
     }

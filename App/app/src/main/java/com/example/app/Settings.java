@@ -12,6 +12,7 @@ public class Settings extends AppCompatActivity {
     //declare variables
     Button databaseButton;
     Button backToMain;
+    DataBase db = new DataBase(this);
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
@@ -23,13 +24,16 @@ public class Settings extends AppCompatActivity {
         databaseButton = findViewById(R.id.databaseButton);
         backToMain = findViewById(R.id.backToMain);
 
+
         databaseButton.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Account_Viewer_Database_List.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             startActivity(intent);
         });
 
         backToMain.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), MainActivity.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             startActivity(intent);
         });
     }
