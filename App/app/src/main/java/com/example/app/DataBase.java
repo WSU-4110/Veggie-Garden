@@ -24,7 +24,7 @@ public class DataBase extends SQLiteOpenHelper {
     //this is called the first time database is accessed
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE " + USER_TABLE + "( INTEGER PRIMARY KEY AUTOINCREMENT, "
+        String createTableStatement = "CREATE TABLE " + USER_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT)" ;  // long way
 
         db.execSQL(createTableStatement);
