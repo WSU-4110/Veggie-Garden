@@ -40,7 +40,7 @@
         </activity>
         <activity
             android:name=".Create_Account_Page"
-            android:exported="false" />s
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
