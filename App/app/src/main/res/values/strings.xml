@@ -22,4 +22,5 @@
     <string name="this_is_a_tool_for_developers">This is a tool for developers.</string>
     <string name="back">BACK</string>
     <string name="back2">BACK</string>
+    <string name="dark_mode">Dark Mode</string>
 </resources>

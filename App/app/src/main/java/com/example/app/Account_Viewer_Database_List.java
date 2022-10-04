@@ -30,8 +30,8 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
             startActivity(intent);
         });
 
-        DataBase dataBase = new DataBase(Account_Viewer_Database_List.this);
-        List<Credentials> all = dataBase.getAll();
+        DataBase db = new DataBase(Account_Viewer_Database_List.this);
+        List<Credentials> all = db.getAll();
         ArrayAdapter<Credentials> arrayAdapter = new ArrayAdapter<>(Account_Viewer_Database_List.this, android.R.layout.simple_list_item_1, all);
         lv_credentials.setAdapter(arrayAdapter);
 

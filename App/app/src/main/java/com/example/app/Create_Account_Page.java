@@ -41,10 +41,10 @@ public class Create_Account_Page extends AppCompatActivity {
                     email.contains(".org")) && password.length() >= 3) {
                 if (password.equals(confirm) ) {
                     boolean checkAccount = db.checkEmail(email);
-                    if (checkAccount == false) {
-                        Credentials credentials = new Credentials(name, email, password, confirm);
+                    if (!checkAccount) {
+                        Credentials credentials = new Credentials(name, email, password);
                         boolean insert = db.addOne(credentials);
-                        if (insert == true) {
+                        if (insert) {
                             Toast.makeText(Create_Account_Page.this, "Account Created", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(view.getContext(), MainActivity.class);
                             startActivity(intent);

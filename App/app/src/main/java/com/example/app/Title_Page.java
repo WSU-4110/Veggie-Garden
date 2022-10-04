@@ -7,12 +7,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-                                                                               // FOLLOW THIS FORMAT FOR CREATING VALUES/BUTTONS/MOVING PAGES/STORING DATA
+
+import java.util.Locale;
+
+// FOLLOW THIS FORMAT FOR CREATING VALUES/BUTTONS/MOVING PAGES/STORING DATA
 public class Title_Page extends AppCompatActivity {
 
     //declare variables
-    EditText loginEmail;
-    EditText loginPassword;
+    EditText loginEmail, loginPassword;
     Button loginButton, createAccountButton;
     DataBase db;
 
@@ -30,12 +32,13 @@ public class Title_Page extends AppCompatActivity {
 
         //login button, store variables, check for existing accounts
         loginButton.setOnClickListener(view -> {
-            String email = loginEmail.getText().toString();
+            String email = loginEmail.getText().toString().toLowerCase();
             String password = loginPassword.getText().toString();
 
-            if (email.contains("@") && email.contains(".com") && password.length() >= 3) {
+            if ((email.contains("@") || email.contains(".com") || email.contains(".net") || email.contains(".gov") ||
+                    email.contains(".org")) && password.length() >= 3) {
                 boolean checkEmailPass = db.checkEmailPassword(email, password);
-                if (checkEmailPass == true) {
+                if (checkEmailPass) {
                     Toast.makeText(Title_Page.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), MainActivity.class);
                     startActivity(intent);

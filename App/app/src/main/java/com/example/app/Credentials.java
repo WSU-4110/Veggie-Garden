@@ -8,15 +8,13 @@ public class Credentials extends AppCompatActivity {
     private String name;
     private String email;
     private String password;
-    private String confirmPassword;
 
     //constructors
 
-    public Credentials(String name, String email, String password, String confirmPassword) {
+    public Credentials(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
-        this.confirmPassword = confirmPassword;
     }
 
     public Credentials() {
@@ -30,7 +28,6 @@ public class Credentials extends AppCompatActivity {
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", confirmPassword='" + confirmPassword + '\'' +
                 '}';
     }
 
@@ -47,10 +44,6 @@ public class Credentials extends AppCompatActivity {
         return password;
     }
 
-    public String getConfirmPassword() {
-        return confirmPassword;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -63,7 +56,4 @@ public class Credentials extends AppCompatActivity {
         this.password = password;
     }
 
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
-    }
 }
