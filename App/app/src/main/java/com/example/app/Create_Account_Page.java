@@ -1,21 +1,20 @@
 package com.example.app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Create_Account_Page extends AppCompatActivity {
 
     //declare variables
     EditText nameInput, createEmail, createPassword, confirmPassword;
     Button createButton;
+    DataBase db;
 
     @SuppressLint("MissingInflatedId")        //recommended fix for error on line 30, use if needed, absolutely works
     @Override
@@ -29,37 +28,41 @@ public class Create_Account_Page extends AppCompatActivity {
         createPassword = findViewById(R.id.createPword);
         confirmPassword = findViewById(R.id.confirmPword);
         createButton = findViewById(R.id.createButton);
+        db = new DataBase(this);
 
         //create button, store values
-        createButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        createButton.setOnClickListener(view -> {
+            String email = createEmail.getText().toString();
+            String password = createPassword.getText().toString();
+            String name = nameInput.getText().toString();
+            String confirm = confirmPassword.getText().toString();
 
-                Credentials credentials = null;
-
-                if (nameInput.getText().toString().length() >= 1 && (createEmail.getText().toString().contains("@") || createEmail.getText().toString().contains(".com") ||
-                        createEmail.getText().toString().contains(".net") || createEmail.getText().toString().contains(".gov") || createEmail.getText().toString().contains(".org")) &&
-                        createEmail.getText().toString().length() >= 1 && createPassword.getText().toString().length() >= 1) {
-                    if (createPassword.getText().toString().equals(confirmPassword.getText().toString()) ) {
-                        credentials = new Credentials(nameInput.getText().toString(), createEmail.getText().toString(), createPassword.getText().toString(),
-                                confirmPassword.getText().toString());
-                        Toast.makeText(Create_Account_Page.this, "Account Created", Toast.LENGTH_SHORT).show();
-
-                        //database call
-                        DataBase dataBase = new DataBase(Create_Account_Page.this);
-                        boolean success = dataBase.addOne(credentials);
-                        Toast.makeText(Create_Account_Page.this, "Database works? = " + success, Toast.LENGTH_SHORT).show();                // CHECK IF WORKING
-
-                        Intent intent = new Intent(view.getContext(), MainActivity.class);
-                        startActivity(intent);
+            if (name.length() >= 1 && (email.contains("@") || email.contains(".com") || email.contains(".net") || email.contains(".gov") ||
+                    email.contains(".org")) && password.length() >= 3) {
+                if (password.equals(confirm) ) {
+                    boolean checkAccount = db.checkEmail(email);
+                    if (checkAccount == false) {
+                        Credentials credentials = new Credentials(name, email, password, confirm);
+                        boolean insert = db.addOne(credentials);
+                        if (insert == true) {
+                            Toast.makeText(Create_Account_Page.this, "Account Created", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(view.getContext(), MainActivity.class);
+                            startActivity(intent);
+                        }
+                        else {
+                            Toast.makeText(Create_Account_Page.this, "Account Creation Failed", Toast.LENGTH_SHORT).show();
+                        }
                     }
                     else {
-                        Toast.makeText(Create_Account_Page.this, "Passwords are not the same", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Create_Account_Page.this, "User Already Exists", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else {
-                    Toast.makeText(Create_Account_Page.this, "Invalid Entries", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Create_Account_Page.this, "Passwords are not the same", Toast.LENGTH_SHORT).show();
                 }
+            }
+            else {
+                Toast.makeText(Create_Account_Page.this, "Invalid Entries", Toast.LENGTH_SHORT).show();
             }
         });
     }

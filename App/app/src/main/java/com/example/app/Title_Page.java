@@ -2,7 +2,6 @@ package com.example.app;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -12,9 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Title_Page extends AppCompatActivity {
 
     //declare variables
-    EditText email;
-    EditText password;
+    EditText loginEmail;
+    EditText loginPassword;
     Button loginButton, createAccountButton;
+    DataBase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,36 +22,37 @@ public class Title_Page extends AppCompatActivity {
         setContentView(R.layout.activity_title_page);
 
         //set variables
-        email = findViewById(R.id.emailInput);
-        password = findViewById(R.id.pwordInput);
+        loginEmail = findViewById(R.id.emailInput);
+        loginPassword = findViewById(R.id.pwordInput);
         loginButton = findViewById(R.id.loginButton);
         createAccountButton = findViewById(R.id.createAccountButton);
+        db = new DataBase(this);
 
         //login button, store variables, check for existing accounts
-        loginButton.setOnClickListener(new View.OnClickListener() {                                  //IGNORE ANDROID STUDIO'S RECOMMENDATION TO SWITCH TO LAMBDA
-            @Override
-            public void onClick(View view) {
-                if (email.getText().toString().contains("@") && email.getText().toString().contains(".com") && email.getText().toString().length() >= 1 &&
-                        password.getText().toString().length() >= 1) {
+        loginButton.setOnClickListener(view -> {
+            String email = loginEmail.getText().toString();
+            String password = loginPassword.getText().toString();
 
-
-                    Toast.makeText(Title_Page.this, "Logged In", Toast.LENGTH_SHORT).show();
+            if (email.contains("@") && email.contains(".com") && password.length() >= 3) {
+                boolean checkEmailPass = db.checkEmailPassword(email, password);
+                if (checkEmailPass == true) {
+                    Toast.makeText(Title_Page.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), MainActivity.class);
                     startActivity(intent);
                 }
                 else {
-                    Toast.makeText(Title_Page.this, "Invalid Entry", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Title_Page.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                 }
+            }
+            else {
+                Toast.makeText(Title_Page.this, "Invalid Entry", Toast.LENGTH_SHORT).show();
             }
         });
 
         //create account button, move pages
-        createAccountButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), Create_Account_Page.class);
-                startActivity(intent);
-            }
+        createAccountButton.setOnClickListener(view -> {
+            Intent intent = new Intent(view.getContext(), Create_Account_Page.class);
+            startActivity(intent);
         });
     }
 

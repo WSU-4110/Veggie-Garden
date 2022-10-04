@@ -1,12 +1,7 @@
 package com.example.app;
 
-import android.content.Intent;
-import android.widget.Toast;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.app.MainActivity;
-import com.example.app.Title_Page;
 
 public class Credentials extends AppCompatActivity {
 
@@ -28,6 +23,7 @@ public class Credentials extends AppCompatActivity {
     }
 
     // toString
+    @NonNull
     @Override
     public String toString() {
         return "com.example.app.Credentials{" +

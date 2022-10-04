@@ -1,12 +1,11 @@
 package com.example.app;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +27,9 @@ public class DataBase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTableStatement = "CREATE TABLE " + USER_TABLE + "( INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT, " + USER_CONFIRM_PWORD + " TEXT)";
+                + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT, " + USER_CONFIRM_PWORD + " TEXT)";  // long way
 
-        db.execSQL(createTableStatement); // long way
+        db.execSQL(createTableStatement);
     }
 
     //this is called if the database version number changes
@@ -53,12 +52,7 @@ public class DataBase extends SQLiteOpenHelper {
         cv.put(USER_CONFIRM_PWORD, credential.getConfirmPassword());
 
         long insert = db.insert(USER_TABLE, null, cv);
-        if (insert == -1) {
-            return false;
-        }
-        else {
-            return true;
-        }
+        return insert != -1;
     }
 
     // delete account
@@ -66,34 +60,23 @@ public class DataBase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = " + credentials.getEmail();
 
-        Cursor cursor = db.rawQuery(queryString, null);
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, null);
 
-        if (cursor.moveToFirst()) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return cursor.moveToFirst();
     }
 
     // check email
     public boolean checkEmail(String email) {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("Select * from USER_INFO where email = ?", new String[] {email} );
-        if (cursor.getCount() > 0)
-            return true;
-        else
-            return false;
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("Select * from USER_INFO where email = ?", new String[] {email} );
+        return cursor.getCount() > 0;
     }
 
     // check both
     public boolean checkEmailPassword(String email, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("Select * from USER_INFO where email = ? and password = ?", new String[] {email, password} );
-        if (cursor.getCount() > 0)
-            return true;
-        else
-            return false;
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("Select * from USER_INFO where email = ? and password = ?", new String[] {email, password} );
+        return cursor.getCount() > 0;
     }
 
     //accessible through the home page > settings > accounts > databaseButton (shows all collected info)
@@ -119,7 +102,7 @@ public class DataBase extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
         else {
-            //fails, doesn't add to list
+           System.out.println("Something went wrong.");
         }
 
         cursor.close();
