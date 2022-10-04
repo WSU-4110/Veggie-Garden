@@ -76,6 +76,15 @@ public class DataBase extends SQLiteOpenHelper {
         return cursor.getCount() > 0;
     }
 
+    public String getName(String email) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT " + USER_NAME + " FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[] {email} );
+        String name = "test";
+        if (cursor.moveToFirst())
+            name = cursor.getString(0);
+        return name;
+    }
+
     //accessible through the home page > settings > accounts > databaseButton (shows all collected info)
     public List<Credentials> getAll() {
 

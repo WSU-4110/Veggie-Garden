@@ -3,6 +3,7 @@ package com.example.app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,11 +19,16 @@ public class MainActivity extends AppCompatActivity {
 
         //set variables
         gearButton = findViewById(R.id.gearButton);
+        TextView textView = findViewById(R.id.textView);
+        DataBase db = new DataBase(this);
+        String name = db.getName(getIntent().getStringExtra("EMAIL"));
 
         gearButton.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Settings.class);
             startActivity(intent);
         });
+
+        textView.setText(String.format("Hello %s", name));
 
     }
 
