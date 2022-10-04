@@ -14,31 +14,33 @@ import java.util.List;
 public class DataBase extends SQLiteOpenHelper {
 
 
-    public static final String USER_INFO = "USER_INFO";
+    public static final String USER_TABLE = "USER_INFO";
     public static final String USER_NAME = "USER_NAME";
     public static final String USER_EMAIL = "USER_EMAIL";
     public static final String USER_PWORD = "USER_PWORD";
     public static final String USER_CONFIRM_PWORD = "USER_CONFIRM_PWORD";
 
-    public DataBase(@Nullable Context context) {
+    public DataBase(Context context) {
         super(context, "plant.db", null, 1);
     }
 
     //this is called the first time database is accessed
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE " + USER_INFO + "( INTEGER PRIMARY KEY AUTOINCREMENT, "
+        String createTableStatement = "CREATE TABLE " + USER_TABLE + "( INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT, " + USER_CONFIRM_PWORD + " TEXT)";
 
-        db.execSQL(createTableStatement);
+        db.execSQL(createTableStatement); // long way
     }
 
     //this is called if the database version number changes
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("drop Table if exists Credentials");  // short way
+        onCreate(db);
     }
 
+    // add/insert values
     public boolean addOne(Credentials credential) {
 
         //mandatory entries, works like Intent
@@ -50,7 +52,7 @@ public class DataBase extends SQLiteOpenHelper {
         cv.put(USER_PWORD, credential.getPassword());
         cv.put(USER_CONFIRM_PWORD, credential.getConfirmPassword());
 
-        long insert = db.insert(USER_INFO, null, cv);
+        long insert = db.insert(USER_TABLE, null, cv);
         if (insert == -1) {
             return false;
         }
@@ -59,13 +61,48 @@ public class DataBase extends SQLiteOpenHelper {
         }
     }
 
+    // delete account
+    public boolean deleteOne(Credentials credentials) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = " + credentials.getEmail();
+
+        Cursor cursor = db.rawQuery(queryString, null);
+
+        if (cursor.moveToFirst()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    // check email
+    public boolean checkEmail(String email) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from USER_INFO where email = ?", new String[] {email} );
+        if (cursor.getCount() > 0)
+            return true;
+        else
+            return false;
+    }
+
+    // check both
+    public boolean checkEmailPassword(String email, String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from USER_INFO where email = ? and password = ?", new String[] {email, password} );
+        if (cursor.getCount() > 0)
+            return true;
+        else
+            return false;
+    }
+
     //accessible through the home page > settings > accounts > databaseButton (shows all collected info)
     public List<Credentials> getAll() {
 
         List<Credentials> returnList = new ArrayList<>();
 
         //pull data
-        String queryString = "SELECT * FROM " + USER_INFO;
+        String queryString = "SELECT * FROM " + USER_TABLE;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(queryString, null);
 
