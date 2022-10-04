@@ -19,6 +19,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".activity_plants_page"
+            android:exported="true"
+            />
     </application>
 
 </manifest>
