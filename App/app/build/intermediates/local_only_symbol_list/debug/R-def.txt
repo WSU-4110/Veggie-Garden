@@ -22,6 +22,7 @@ id createPword
 id databaseButton
 id emailInput
 id gearButton
+id layout
 id loginButton
 id lv_credentials
 id message
@@ -47,12 +48,16 @@ string back
 string back2
 string balls
 string button
+string clear_data
 string confirm_password
 string create
 string create_an_account
 string create_email_here
 string create_password_here
 string create_your
+string dark_mode
+string delete_account
+string delete_this_account
 string enter_email
 string enter_email_here
 string enter_name_here

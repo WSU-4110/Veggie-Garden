@@ -6,20 +6,25 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.List;
 
 public class Account_Viewer_Database_List extends AppCompatActivity {
 
     //declare variables
     Button backToSettings;
     ListView lv_credentials;
+    DataBase db;
+    ArrayAdapter arrayAdapter;
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_viewer_database_list);
+
+        db = new DataBase(this);
+        ShowListView(db);
 
         //set variables
         backToSettings = findViewById(R.id.backToSettings);
@@ -30,10 +35,10 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
             startActivity(intent);
         });
 
-        DataBase db = new DataBase(Account_Viewer_Database_List.this);
-        List<Credentials> all = db.getAll();
-        ArrayAdapter<Credentials> arrayAdapter = new ArrayAdapter<>(Account_Viewer_Database_List.this, android.R.layout.simple_list_item_1, all);
-        lv_credentials.setAdapter(arrayAdapter);
+    }
 
+   private void ShowListView(DataBase db) {
+        arrayAdapter = new ArrayAdapter<>(Account_Viewer_Database_List.this, android.R.layout.simple_list_item_1, db.getAll());
+        lv_credentials.setAdapter(arrayAdapter);
     }
 }

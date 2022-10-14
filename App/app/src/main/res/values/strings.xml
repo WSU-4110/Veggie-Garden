@@ -23,4 +23,7 @@
     <string name="back">BACK</string>
     <string name="back2">BACK</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="delete_this_account">Delete This Account</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="delete_account">Delete Account</string>
 </resources>

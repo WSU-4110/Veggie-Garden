@@ -3253,6 +3253,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
+string clear_data
 string clear_text_end_icon_content_description
 string confirm_password
 string create
@@ -3260,6 +3261,9 @@ string create_an_account
 string create_email_here
 string create_password_here
 string create_your
+string dark_mode
+string delete_account
+string delete_this_account
 string enter_email
 string enter_email_here
 string enter_name_here
