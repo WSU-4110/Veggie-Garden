@@ -24,11 +24,9 @@ public class Credentials extends AppCompatActivity {
     @NonNull
     @Override
     public String toString() {
-        return "com.example.app.Credentials{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return "Name: " + name
+                + "\nEmail: " + email
+                + "\nPassword: " + password;
     }
 
     // getters/setters

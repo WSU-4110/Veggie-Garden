@@ -24,7 +24,7 @@ public class DataBase extends SQLiteOpenHelper {
     //this is called the first time database is accessed
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE " + USER_TABLE + "( INTEGER PRIMARY KEY AUTOINCREMENT, "
+        String createTableStatement = "CREATE TABLE " + USER_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT)" ;  // long way
 
         db.execSQL(createTableStatement);
@@ -76,6 +76,15 @@ public class DataBase extends SQLiteOpenHelper {
         return cursor.getCount() > 0;
     }
 
+    public String getName(String email) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT " + USER_NAME + " FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[] {email} );
+        String name = "test";
+        if (cursor.moveToFirst())
+            name = cursor.getString(0);
+        return name;
+    }
+
     //accessible through the home page > settings > accounts > databaseButton (shows all collected info)
     public List<Credentials> getAll() {
 
@@ -89,8 +98,8 @@ public class DataBase extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             // loop thru the cursor and enter them into the list
             do {
-                String userName = cursor.getString(0);
-                String userPword = cursor.getString(1);
+                String userName = cursor.getString(1);
+                String userPword = cursor.getString(3);
                 String userEmail = cursor.getString(2);
 
                 Credentials newUser = new Credentials(userName, userEmail, userPword);

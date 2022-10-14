@@ -41,6 +41,7 @@ public class Title_Page extends AppCompatActivity {
                 if (checkEmailPass) {
                     Toast.makeText(Title_Page.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), MainActivity.class);
+                    intent.putExtra("EMAIL", email);
                     startActivity(intent);
                 }
                 else {

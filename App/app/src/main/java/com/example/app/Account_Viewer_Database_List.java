@@ -32,6 +32,7 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
 
         backToSettings.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Settings.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             startActivity(intent);
         });
 
