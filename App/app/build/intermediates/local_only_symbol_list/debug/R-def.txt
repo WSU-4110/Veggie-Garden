@@ -22,6 +22,7 @@ id createPword
 id databaseButton
 id emailInput
 id gearButton
+id group
 id layout
 id loginButton
 id lv_credentials
@@ -29,6 +30,7 @@ id message
 id nameInput
 id plantLogo
 id pwordInput
+id textView
 id textView2
 id textView3
 id toolbar

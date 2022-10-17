@@ -2735,6 +2735,7 @@ id ghost_view_holder
 id gone
 id graph
 id graph_wrap
+id group
 id group_divider
 id grouping
 id groups
@@ -2968,6 +2969,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView2
 id textView3
 id text_input_end_icon

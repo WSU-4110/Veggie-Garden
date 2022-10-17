@@ -1,12 +1,10 @@
-package com.example.app;
-
+/**package com.example.app;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Account_Viewer_Database_List extends AppCompatActivity {
@@ -35,11 +33,10 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             startActivity(intent);
         });
-
     }
 
    private void ShowListView(DataBase db) {
         arrayAdapter = new ArrayAdapter<>(Account_Viewer_Database_List.this, android.R.layout.simple_list_item_1, db.getAll());
         lv_credentials.setAdapter(arrayAdapter);
     }
-}
+}**/

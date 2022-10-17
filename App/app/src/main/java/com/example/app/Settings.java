@@ -10,9 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Settings extends AppCompatActivity {
 
     //declare variables
-    Button databaseButton;
+    //Button databaseButton;
     Button backToMain;
-    DataBase db = new DataBase(this);
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
@@ -21,7 +20,8 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
         //set variables
-        databaseButton = findViewById(R.id.databaseButton);
+        /**
+         databaseButton = findViewById(R.id.databaseButton);
         backToMain = findViewById(R.id.backToMain);
 
 
@@ -29,7 +29,7 @@ public class Settings extends AppCompatActivity {
             Intent intent = new Intent(view.getContext(), Account_Viewer_Database_List.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             startActivity(intent);
-        });
+        });**/
 
         backToMain.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), MainActivity.class);
