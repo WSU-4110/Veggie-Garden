@@ -3360,6 +3360,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string textview
 string this_is_a_tool_for_developers
 string todo
 style AlertDialog_AppCompat

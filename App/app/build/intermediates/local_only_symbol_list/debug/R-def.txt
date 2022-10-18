@@ -68,6 +68,7 @@ string enter_pword_here
 string home_page
 string login
 string nuts
+string textview
 string this_is_a_tool_for_developers
 string todo
 style Theme.App
