@@ -1,4 +1,4 @@
-/**package com.example.app;
+package com.example.app;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
     Button backToSettings;
     ListView lv_credentials;
     DataBase db;
+    @SuppressWarnings("rawtypes")
     ArrayAdapter arrayAdapter;
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
@@ -39,4 +40,4 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<>(Account_Viewer_Database_List.this, android.R.layout.simple_list_item_1, db.getAll());
         lv_credentials.setAdapter(arrayAdapter);
     }
-}**/
+}

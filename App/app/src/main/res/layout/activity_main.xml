@@ -37,7 +37,7 @@
         android:layout_marginTop="41dp"
         android:layout_marginEnd="310dp"
         android:layout_marginBottom="615dp"
-        android:text="TextView"
+        android:text="@string/textview"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
