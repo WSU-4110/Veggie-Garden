@@ -47,6 +47,7 @@ public class Create_Account_Page extends AppCompatActivity {
                         if (insert) {
                             Toast.makeText(Create_Account_Page.this, "Account Created", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(view.getContext(), MainActivity.class);
+
                             startActivity(intent);
                         }
                         else {
