@@ -5,14 +5,15 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_beige"
     tools:context=".Settings"
     tools:ignore="ContentDescription">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
-        android:layout_width="409dp"
+        android:layout_width="425dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="#788306"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
