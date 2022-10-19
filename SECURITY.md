@@ -7,8 +7,8 @@ An announcement under 'Discussions' will be made if things change, and this page
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.21   | :white_check_mark:  |
-| 1.10 <=> 1.20  | :x:         |
+| 1.22   | :white_check_mark:  |
+| 1.10 <=> 1.21  | :x:         |
 | 1.0   | :white_check_mark:   |
 | < 1.0   | :x:                |
 
