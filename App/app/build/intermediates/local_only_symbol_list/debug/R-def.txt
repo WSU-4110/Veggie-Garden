@@ -13,6 +13,7 @@ drawable ic_baseline_settings_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable plant
+id addPlant
 id backToMain
 id backToSettings
 id confirmPword
@@ -46,6 +47,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string account
 string account_list
+string add_a_new_plant
 string app_name
 string back
 string back2

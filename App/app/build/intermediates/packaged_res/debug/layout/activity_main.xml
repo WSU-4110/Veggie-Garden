@@ -41,6 +41,21 @@
         android:layout_marginEnd="310dp"
         android:layout_marginBottom="615dp"
         android:text="@string/textview"
+        android:textColor="#795548"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addPlant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="279dp"
+        android:text="@string/add_a_new_plant"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
