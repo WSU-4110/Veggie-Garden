@@ -1,8 +1,10 @@
 package com.example.app;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        showPopup();
 
         //set variables
         gearButton = findViewById(R.id.gearButton);
@@ -34,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         // Display user's name
         textView.setText(String.format("Hello %s", name));
 
+    }
+
+    private void showPopup() {
+        Dialog popup = new Dialog(this);
+        popup.setContentView(R.layout.main_page_welcome_popup);
+        popup.getWindow().setBackgroundDrawableResource(R.drawable.popup_background);
+
+        popup.show();
     }
 
 }

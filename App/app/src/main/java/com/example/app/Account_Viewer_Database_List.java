@@ -13,8 +13,7 @@ public class Account_Viewer_Database_List extends AppCompatActivity {
     Button backToSettings;
     ListView lv_credentials;
     DataBase db;
-    @SuppressWarnings("rawtypes")
-    ArrayAdapter arrayAdapter;
+    ArrayAdapter<Credentials> arrayAdapter;
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
