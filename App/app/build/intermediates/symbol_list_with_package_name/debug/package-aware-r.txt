@@ -2522,7 +2522,6 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-font fonts
 font roboto
 font roboto_bold
 font roboto_condensed_regular
@@ -2599,7 +2598,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addPlant
 id alertTitle
 id aligned
 id all
@@ -2768,6 +2766,7 @@ id image
 id immediateStop
 id included
 id info
+id instructions
 id invisible
 id inward
 id italic
@@ -2854,6 +2853,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id newPlant
 id noScroll
 id noState
 id none
@@ -2983,7 +2983,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id textView3
 id text_input_end_icon
@@ -3014,8 +3013,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id txt
-id txtDesc
 id unchecked
 id uniform
 id unlabeled
@@ -3030,6 +3027,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id welcome
 id west
 id withText
 id withinBounds
@@ -3260,6 +3258,7 @@ string abc_toolbar_collapse_description
 string account
 string account_list
 string add_a_new_plant
+string add_a_new_plant_
 string although_this_is_a_demo_project_and_this_project_is_all_about_the_customization_of_a_dialog_box_we_can_design_whatever_we_want
 string androidx_startup
 string app_name
