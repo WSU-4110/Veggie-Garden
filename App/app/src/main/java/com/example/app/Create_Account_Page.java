@@ -1,6 +1,7 @@
 package com.example.app;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -46,9 +47,10 @@ public class Create_Account_Page extends AppCompatActivity {
                         boolean insert = db.addOne(credentials);
                         if (insert) {
                             Toast.makeText(Create_Account_Page.this, "Account Created", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(view.getContext(), MainActivity.class);
-                            intent.putExtra("EMAIL", email);
-                            startActivity(intent);
+                                Intent intent = new Intent(view.getContext(), MainActivity.class);
+                                intent.putExtra("EMAIL", email);
+                                intent.putExtra("NEW_USER", true);
+                                startActivity(intent);
                         }
                         else {
                             Toast.makeText(Create_Account_Page.this, "Account Creation Failed", Toast.LENGTH_SHORT).show();
@@ -67,5 +69,4 @@ public class Create_Account_Page extends AppCompatActivity {
             }
         });
     }
-
 }

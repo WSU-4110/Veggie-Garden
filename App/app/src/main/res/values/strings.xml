@@ -33,4 +33,6 @@
     <string name="welcome_to_plant">Welcome to Plant!</string>
     <string name="to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize">To get started, exit this popup and press \'Add a new plant!\', or head over to settings and customize!</string>
     <string name="add_a_new_plant_">Add a New Plant!</string>
+    <string name="advance"><![CDATA[Advance>>]]></string>
+    <string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string>
 </resources>

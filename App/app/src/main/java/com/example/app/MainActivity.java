@@ -15,8 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        showPopup();
-
+        Intent intent1 = getIntent();
+        if (intent1.getExtras().getBoolean("NEW_USER", true)) {
+            showPopup();
+        }
         //set variables
         gearButton = findViewById(R.id.gearButton);
 
@@ -30,13 +32,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
     private void showPopup() {
         Dialog popup = new Dialog(this);
-        popup.setContentView(R.layout.main_page_welcome_popup);
+        popup.setContentView(R.layout.create_account_page_welcome_popup);
         popup.getWindow().setBackgroundDrawableResource(R.drawable.popup_background);
-
         popup.show();
     }
-
 }

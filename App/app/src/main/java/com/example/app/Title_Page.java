@@ -38,6 +38,7 @@ public class Title_Page extends AppCompatActivity {
                     Toast.makeText(Title_Page.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), MainActivity.class);
                     intent.putExtra("EMAIL", email);
+                    intent.putExtra("NEW_USER", false);
                     startActivity(intent);
                 }
                 else {
