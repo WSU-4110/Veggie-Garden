@@ -35,4 +35,6 @@
     <string name="add_a_new_plant_">Add a New Plant!</string>
     <string name="advance"><![CDATA[Advance>>]]></string>
     <string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string>
+    <string name="goes_back_to_title_page">goes back to title page</string>
+    <string name="backButton">Back</string>
 </resources>

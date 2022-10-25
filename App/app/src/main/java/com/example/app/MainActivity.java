@@ -1,5 +1,4 @@
 package com.example.app;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,19 +18,19 @@ public class MainActivity extends AppCompatActivity {
         if (intent1.getExtras().getBoolean("NEW_USER", true)) {
             showPopup();
         }
+
         //set variables
         gearButton = findViewById(R.id.gearButton);
-
-        // Retrieve account information
-                                                                                      //DataBase db = new DataBase(this);
+                                                                    // DataBase db = new DataBase(this);
                                                                     // how to get values: String name = db.getName(getIntent().getStringExtra("EMAIL"));
+        // Retrieve account information
         gearButton.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Settings.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             startActivity(intent);
         });
-
     }
+
     private void showPopup() {
         Dialog popup = new Dialog(this);
         popup.setContentView(R.layout.create_account_page_welcome_popup);

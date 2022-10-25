@@ -1,23 +1,21 @@
 package com.example.app;
-
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Create_Account_Page extends AppCompatActivity {
 
     //declare variables
     EditText nameInput, createEmail, createPassword, confirmPassword;
-    Button createButton;
+    Button createButton, backButton;
     DataBase db;
 
-    @SuppressLint("MissingInflatedId")        //recommended fix for error on line 30, use if needed, absolutely works
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
+    //recommended fix for error on line 30, use if needed, absolutely works
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +27,7 @@ public class Create_Account_Page extends AppCompatActivity {
         createPassword = findViewById(R.id.createPword);
         confirmPassword = findViewById(R.id.confirmPword);
         createButton = findViewById(R.id.createButton);
+        backButton = findViewById(R.id.backButton);
         db = new DataBase(this);
 
         //create button, store values
@@ -67,6 +66,11 @@ public class Create_Account_Page extends AppCompatActivity {
             else {
                 Toast.makeText(Create_Account_Page.this, "Invalid Entries", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        backButton.setOnClickListener(view -> {
+            Intent intent = new Intent(view.getContext(), Title_Page.class);
+            startActivity(intent);
         });
     }
 }
