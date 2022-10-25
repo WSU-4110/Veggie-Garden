@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\jexpa\.gradle\caches\transforms-3\bd4a99450df9efa1e9019504ea56c77f\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\jexpa\.gradle\caches\transforms-3\229612c218d9fe79705dc19c7f400585\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\jexpa\.gradle\caches\transforms-3\21755dfb125ba8aca0d81387a0fbc842\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -44,22 +44,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jexpa\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jexpa\.gradle\caches\transforms-3\5c31521eb266c26ef211a1f53b56b07e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\jexpa\.gradle\caches\transforms-3\66860c319137074465b1f3af9d4ca7e4\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\jexpa\.gradle\caches\transforms-3\d1b81e9b9294b0bc78ebcbc0700bfe58\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
 	package
 		INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:11-69
@@ -68,7 +68,7 @@ ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:22-68
 application
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:5-46:19
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:5-53:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\jexpa\.gradle\caches\transforms-3\bd4a99450df9efa1e9019504ea56c77f\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\jexpa\.gradle\caches\transforms-3\bd4a99450df9efa1e9019504ea56c77f\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\jexpa\.gradle\caches\transforms-3\229612c218d9fe79705dc19c7f400585\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -103,52 +103,58 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\je
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:15:9-41
 	android:dataExtractionRules
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:9-65
-activity#com.example.app.Account_Viewer_Database_List
+activity#com.example.app.CalendarView
 ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:exported
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:13-57
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:13-41
 meta-data#android.app.lib_name
 ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-22:36
 	android:value
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:17-33
 	android:name
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:17-52
-activity#com.example.app.Settings
+activity#com.example.app.Account_Viewer_Database_List
 ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:exported
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:13-37
-activity#com.example.app.Create_Account_Page
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:31:9-33:40
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:13-57
+activity#com.example.app.Settings
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:31:9-37:20
 	android:exported
 		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:32:13-48
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:32:13-37
+activity#com.example.app.Create_Account_Page
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:38:9-40:40
+	android:exported
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:40:13-37
+	android:name
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:39:13-48
 activity#com.example.app.MainActivity
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:34:9-36:40
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:35:13-41
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:42:13-41
 activity#com.example.app.Title_Page
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:37:9-45:20
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:44:9-52:20
 	android:exported
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:39:13-36
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:46:13-36
 	android:name
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:38:13-39
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:45:13-39
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:40:13-44:29
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:47:13-51:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:17-69
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:25-66
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:43:17-77
+ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:50:17-77
 	android:name
-		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:43:27-74
+		ADDED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml:50:27-74
 uses-sdk
 INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\jexpa\StudioProjects\Veggie-Garden\App\app\src\main\AndroidManifest.xml

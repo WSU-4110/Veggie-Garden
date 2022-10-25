@@ -2629,6 +2629,7 @@ id bounceEnd
 id bounceStart
 id buttonPanel
 id cache_measures
+id calendarView
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -2711,6 +2712,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextPersonName
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
@@ -3130,6 +3132,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_account_viewer_database_list
+layout activity_calendar_view
 layout activity_create_account_page
 layout activity_main
 layout activity_settings

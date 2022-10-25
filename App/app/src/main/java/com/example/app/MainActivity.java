@@ -3,6 +3,8 @@ package com.example.app;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     //declare variables
     ImageButton gearButton;
+    Button calendarButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         //set variables
         gearButton = findViewById(R.id.gearButton);
+        calendarButton = findViewById(R.id.calendarView);
 
         // Retrieve account information
                                                                                       //DataBase db = new DataBase(this);
@@ -29,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        calendarButton.setOnClickListener(view -> {
+            Intent intent = new Intent(view.getContext(), CalendarView.class);
+            startActivity(intent);
+        });
     }
 
     private void showPopup() {

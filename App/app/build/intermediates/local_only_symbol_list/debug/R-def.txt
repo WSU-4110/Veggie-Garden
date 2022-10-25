@@ -25,12 +25,14 @@ font robotoslabregular
 font sirukota
 id backToMain
 id backToSettings
+id calendarView
 id confirmPword
 id createAccountButton
 id createButton
 id createEmail
 id createPword
 id databaseButton
+id editTextTextPersonName
 id emailInput
 id gearButton
 id group
@@ -51,6 +53,7 @@ id toolbar2
 id toolbar3
 id welcome
 layout activity_account_viewer_database_list
+layout activity_calendar_view
 layout activity_create_account_page
 layout activity_main
 layout activity_settings
