@@ -31,6 +31,7 @@ id createAccountButton
 id createButton
 id createEmail
 id createPword
+id customizeList
 id databaseButton
 id emailInput
 id gearButton

@@ -2675,6 +2675,7 @@ id createPword
 id currentState
 id custom
 id customPanel
+id customizeList
 id cut
 id databaseButton
 id date_picker_actions

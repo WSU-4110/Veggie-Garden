@@ -20,10 +20,8 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
         //set variables
-
-         databaseButton = findViewById(R.id.databaseButton);
+        databaseButton = findViewById(R.id.databaseButton);
         backToMain = findViewById(R.id.backToMain);
-
 
         databaseButton.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Account_Viewer_Database_List.class);
