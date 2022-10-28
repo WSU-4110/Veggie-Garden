@@ -22,28 +22,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/databaseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="606dp"
-        android:text="@string/account_list"
-        android:color="@color/dark_purple"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
         android:id="@+id/backToMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/back2"
         android:color="@color/dark_purple"
+        android:text="@string/back2"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
         app:layout_constraintEnd_toEndOf="@+id/toolbar3"
         app:layout_constraintStart_toStartOf="@+id/toolbar3"
@@ -51,15 +34,19 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/customizeList"
-        android:layout_width="383dp"
-        android:layout_height="593dp"
+        android:layout_width="377dp"
+        android:layout_height="616dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar3"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/databaseButton" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:itemCount="8"
+        tools:listitem="@layout/settings_view_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

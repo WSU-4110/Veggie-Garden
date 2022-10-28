@@ -15,6 +15,7 @@ drawable back_arrow
 drawable background
 drawable exit
 drawable foreground
+drawable forward
 drawable plant
 drawable popup_background
 drawable settings_gear
@@ -26,13 +27,14 @@ font sirukota
 id backButton
 id backToMain
 id backToSettings
+id card_arrow
+id card_text
 id confirmPword
 id createAccountButton
 id createButton
 id createEmail
 id createPword
 id customizeList
-id databaseButton
 id emailInput
 id gearButton
 id group
@@ -46,6 +48,7 @@ id newPlant
 id plantLogo
 id pwordInput
 id root_vg
+id textView1
 id textView2
 id textView3
 id toolbar
@@ -58,6 +61,8 @@ layout activity_main
 layout activity_settings
 layout activity_title_page
 layout create_account_page_welcome_popup
+layout recycler_view_item
+layout settings_view_layout
 mipmap ic_launcher
 mipmap ic_launcher_round
 string account
@@ -67,6 +72,7 @@ string add_a_new_plant_
 string advance
 string although_this_is_a_demo_project_and_this_project_is_all_about_the_customization_of_a_dialog_box_we_can_design_whatever_we_want
 string app_name
+string arrow
 string back
 string back2
 string backButton

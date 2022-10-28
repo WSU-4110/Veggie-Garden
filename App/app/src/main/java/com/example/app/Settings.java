@@ -7,31 +7,29 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 public class Settings extends AppCompatActivity {
 
     //declare variables
-    Button databaseButton;
     Button backToMain;
 
-    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
+    ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
+
+
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})    // suppresses incorrect error messages
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_settings);        // declare layout
 
         //set variables
-        databaseButton = findViewById(R.id.databaseButton);
-        backToMain = findViewById(R.id.backToMain);
+        backToMain = findViewById(R.id.backToMain);      // declare back button
 
-        databaseButton.setOnClickListener(view -> {
-            Intent intent = new Intent(view.getContext(), Account_Viewer_Database_List.class);
-            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
-            startActivity(intent);
-        });
-
-        backToMain.setOnClickListener(view -> {
+        backToMain.setOnClickListener(view -> {                                     // back button actions
             Intent intent = new Intent(view.getContext(), MainActivity.class);
-            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
+            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
             startActivity(intent);
         });
     }

@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    //declare variables
+    // create variables
     ImageButton gearButton;
 
     @Override
@@ -16,17 +16,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent1 = getIntent();
         if (intent1.getExtras().getBoolean("NEW_USER", true)) {
-            showPopup();
+            showPopup();                                                              // check if new account, if so show popup
         }
 
         //set variables
         gearButton = findViewById(R.id.gearButton);
-                                                                    // DataBase db = new DataBase(this);
+                                                                    // DataBase db = new DataBase(this); can be used later if needed
                                                                     // how to get values: String name = db.getName(getIntent().getStringExtra("EMAIL"));
-        // Retrieve account information
+
         gearButton.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Settings.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);                                // check new account, move to settings
             startActivity(intent);
         });
     }
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private void showPopup() {
         Dialog popup = new Dialog(this);
         popup.setContentView(R.layout.create_account_page_welcome_popup);
-        popup.getWindow().setBackgroundDrawableResource(R.drawable.popup_background);
+        popup.getWindow().setBackgroundDrawableResource(R.drawable.popup_background);        // popup method
         popup.show();
     }
 }

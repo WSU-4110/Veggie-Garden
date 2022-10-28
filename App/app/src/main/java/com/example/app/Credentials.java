@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Credentials extends AppCompatActivity {
 
+    // set vars
     private String name;
     private String email;
     private String password;
 
-    //constructors
-
+    // constructor
     public Credentials(String name, String email, String password) {
         this.name = name;
         this.email = email;
@@ -26,7 +26,7 @@ public class Credentials extends AppCompatActivity {
                 + "\nPassword: " + password;
     }
 
-    // getters/setters
+    // getters
     public String getName() {
         return name;
     }

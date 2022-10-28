@@ -16,10 +16,6 @@
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\drawable-v24\\plant.png"
     },
     {
-        "merged": "com.example.app-merged_res-29:/layout_activity_title_page.xml.flat",
-        "source": "com.example.app-main-31:/layout/activity_title_page.xml"
-    },
-    {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\font_roboto_condensed_regular.ttf.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\font\\roboto_condensed_regular.ttf"
     },
@@ -32,6 +28,10 @@
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "com.example.app-merged_res-29:/layout_settings_view_layout.xml.flat",
+        "source": "com.example.app-main-31:/layout/settings_view_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\drawable_forward.xml.flat",
+        "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\drawable\\forward.xml"
     },
     {
-        "merged": "com.example.app-merged_res-29:/layout_activity_settings.xml.flat",
-        "source": "com.example.app-main-31:/layout/activity_settings.xml"
+        "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\layout_activity_title_page.xml.flat",
@@ -62,10 +62,6 @@
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.app-merged_res-29:/layout_activity_create_account_page.xml.flat",
-        "source": "com.example.app-main-31:/layout/activity_create_account_page.xml"
     },
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\drawable_back_arrow.xml.flat",
@@ -100,6 +96,10 @@
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\layout_recycler_view_item.xml.flat",
+        "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\layout\\recycler_view_item.xml"
+    },
+    {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\font_sirukota.ttf.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\font\\sirukota.ttf"
     },
@@ -120,10 +120,6 @@
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\drawable\\popup_background.xml"
     },
     {
-        "merged": "com.example.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.example.app-main-31:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\drawable_settings_gear.xml.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\drawable\\settings_gear.xml"
     },
@@ -138,6 +134,10 @@
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\font_roboto_bold.ttf.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\font\\roboto_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\layout_settings_view_layout.xml.flat",
+        "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-31:\\layout\\settings_view_layout.xml"
     },
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-29:\\drawable-anydpi-v24_foreground.xml.flat",
