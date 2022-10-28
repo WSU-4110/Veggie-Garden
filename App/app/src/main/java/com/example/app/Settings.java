@@ -4,9 +4,9 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.ImageView;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -23,8 +23,13 @@ public class Settings extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);        // declare layout
+        setContentView(R.layout.activity_settings);
+
+        RecyclerView recyclerView = findViewById(R.id.customizeList);
         RecycleModels();
+        RecyclerAdapter adapter = new RecyclerAdapter(this, recyclerViewSettings);            // recyclerview stuff
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         //set variables
         backToMain = findViewById(R.id.backToMain);      // declare back button

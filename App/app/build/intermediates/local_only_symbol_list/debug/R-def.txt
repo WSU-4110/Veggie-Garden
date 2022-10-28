@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array card_text_titles
 color black
 color dark_green
 color dark_purple
@@ -78,6 +79,7 @@ string back2
 string backButton
 string button
 string clear_data
+string click_off_this_popup_and_go_to_add_a_new_plant_to_get_started
 string confirm_password
 string create
 string create_an_account

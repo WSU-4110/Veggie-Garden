@@ -62,6 +62,7 @@ int animator mtrl_fab_hide_motion_spec 0x7f02001c
 int animator mtrl_fab_show_motion_spec 0x7f02001d
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f02001e
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f02001f
+int array card_text_titles 0x7f130000
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr actionBarDivider 0x7f030002
@@ -3283,6 +3284,7 @@ int string character_counter_pattern 0x7f0f002e
 int string chip_text 0x7f0f002f
 int string clear_data 0x7f0f0030
 int string clear_text_end_icon_content_description 0x7f0f0031
+int string click_off_this_popup_and_go_to_add_a_new_plant_to_get_started 0x7f0f00a2
 int string confirm_password 0x7f0f0032
 int string create 0x7f0f0033
 int string create_an_account 0x7f0f0034

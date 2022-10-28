@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="card_text_titles">
+        <item>Customize Profile</item>
+        <item>Notifications</item>
+        <item>Share</item>
+        <item>Help</item>
+        <item>Log Out</item>
+        <item>Delete This Account</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="dark_green">#064B1b</color>
     <color name="dark_purple">#080875</color>
@@ -24,6 +32,7 @@
     <string name="backButton">Back</string>
     <string name="button">Button</string>
     <string name="clear_data">Clear Data</string>
+    <string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="create">Create</string>
     <string name="create_an_account">Create an Account</string>

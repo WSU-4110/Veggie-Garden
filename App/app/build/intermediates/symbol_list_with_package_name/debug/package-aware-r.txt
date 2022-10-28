@@ -63,6 +63,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array card_text_titles
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3284,6 +3285,7 @@ string character_counter_pattern
 string chip_text
 string clear_data
 string clear_text_end_icon_content_description
+string click_off_this_popup_and_go_to_add_a_new_plant_to_get_started
 string confirm_password
 string create
 string create_an_account
