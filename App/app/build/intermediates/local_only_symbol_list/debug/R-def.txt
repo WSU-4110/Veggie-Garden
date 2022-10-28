@@ -76,7 +76,6 @@ string arrow
 string back
 string back2
 string backButton
-string balls
 string button
 string clear_data
 string confirm_password
@@ -85,6 +84,7 @@ string create_an_account
 string create_email_here
 string create_password_here
 string create_your
+string customize_profile
 string dark_mode
 string delete_account
 string delete_this_account
@@ -97,7 +97,6 @@ string exitButton
 string goes_back_to_title_page
 string home_page
 string login
-string nuts
 string textview
 string this_is_a_tool_for_developers
 string to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize

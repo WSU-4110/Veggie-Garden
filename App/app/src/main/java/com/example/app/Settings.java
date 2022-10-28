@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,6 +16,7 @@ public class Settings extends AppCompatActivity {
     Button backToMain;
 
     ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
+    int[] recyclerImages = {R.drawable.forward};
 
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})    // suppresses incorrect error messages
@@ -22,6 +24,7 @@ public class Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);        // declare layout
+        RecycleModels();
 
         //set variables
         backToMain = findViewById(R.id.backToMain);      // declare back button
@@ -32,5 +35,13 @@ public class Settings extends AppCompatActivity {
             intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
             startActivity(intent);
         });
+    }
+
+    private void RecycleModels() {                                                    // method for displaying full string array in recycler view
+        String[] options = getResources().getStringArray(R.array.card_text_titles);
+
+        for (int i = 0; i < options.length; i++) {
+            recyclerViewSettings.add(new RecyclerViewSettings(options[i], recyclerImages[i]));     // fill the list
+        }
     }
 }

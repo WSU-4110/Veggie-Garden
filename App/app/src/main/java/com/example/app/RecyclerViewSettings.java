@@ -1,12 +1,11 @@
 package com.example.app;
-import android.widget.ImageView;
 
 public class RecyclerViewSettings {
     String cardText;
-    ImageView cardArrow;             // declarations
+    int cardArrow;             // declarations
 
     // constructor
-    public RecyclerViewSettings(String cardText, ImageView cardArrow) {
+    public RecyclerViewSettings(String cardText, int cardArrow) {
         this.cardText = cardText;
         this.cardArrow = cardArrow;
     }
@@ -16,7 +15,7 @@ public class RecyclerViewSettings {
         return cardText;
     }
 
-    public ImageView getCardArrow() {
+    public int getCardArrow() {
         return cardArrow;
     }
 }
