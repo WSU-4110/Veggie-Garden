@@ -42,7 +42,7 @@ public class activity_plants_page extends AppCompatActivity {
 
             PlantId newPlant = new PlantId(this);
             newPlant.setPlantName("Test Plant");
-//            newPlant.setBackgroundColor(GREEN);
+            newPlant.setBackgroundColor(GREEN);
 //            newPlant.setTextColor(Color.valueOf(WHITE));
             newPlant.setPlantBirthday("10/19/2022");
 
