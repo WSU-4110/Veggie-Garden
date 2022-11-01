@@ -18,7 +18,6 @@ public class Settings extends AppCompatActivity {
     ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
     int[] recyclerImages = {R.drawable.forward};
 
-
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})    // suppresses incorrect error messages
     @Override
     protected void onCreate(Bundle savedInstanceState) {
