@@ -11,7 +11,7 @@ import java.util.List;
 
 public class DataBase extends SQLiteOpenHelper {
 
-
+// set variables
     public static final String USER_TABLE = "USER_INFO";
     public static final String USER_NAME = "USER_NAME";
     public static final String USER_EMAIL = "USER_EMAIL";
@@ -19,7 +19,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     public DataBase(Context context) {
         super(context, "plant.db", null, 1);
-    }
+    }          // constructor
 
     //this is called the first time database is accessed
     @Override
@@ -76,7 +76,7 @@ public class DataBase extends SQLiteOpenHelper {
         return cursor.getCount() > 0;
     }
 
-    public String getName(String email) {
+    public String getName(String email) {         // unused currently, returns name of currently logged in user
         SQLiteDatabase db = this.getWritableDatabase();
         @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT " + USER_NAME + " FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[] {email} );
         String name = "test";
@@ -86,7 +86,7 @@ public class DataBase extends SQLiteOpenHelper {
     }
 
     //accessible through the home page > settings > accounts > databaseButton (shows all collected info)
-    public List<Credentials> getAll() {
+    public List<Credentials> getAll() {        // this is unused currently in the app, only use for admin bug fixing
 
         List<Credentials> returnList = new ArrayList<>();
 
@@ -110,9 +110,9 @@ public class DataBase extends SQLiteOpenHelper {
            System.out.println("Something went wrong.");
         }
 
-        cursor.close();
+        cursor.close();               // always close this!
         db.close();
-        return returnList;
+        return returnList;   // spit out list
     }
 
 }

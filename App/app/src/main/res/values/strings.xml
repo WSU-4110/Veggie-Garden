@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">App</string>
-    <string name="balls">Balls</string>
-    <string name="nuts">nuts</string>
     <string name="login">Login</string>
     <string name="create_an_account">Create an Account</string>
     <string name="todo">TODO</string>
@@ -33,4 +31,20 @@
     <string name="welcome_to_plant">Welcome to Plant!</string>
     <string name="to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize">To get started, exit this popup and press \'Add a new plant!\', or head over to settings and customize!</string>
     <string name="add_a_new_plant_">Add a New Plant!</string>
+    <string name="advance"><![CDATA[Advance>>]]></string>
+    <string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string>
+    <string name="goes_back_to_title_page">goes back to title page</string>
+    <string name="backButton">Back</string>
+    <string name="arrow">arrow</string>
+    <string name="customize_profile">Customize Profile</string>
+    <string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string>
+    <string name="calendar">Calendar</string>
+    <string-array name="card_text_titles">
+        <item>Customize Profile</item>
+        <item>Notifications</item>
+        <item>Share</item>
+        <item>Help</item>
+        <item>Log Out</item>
+        <item>Delete This Account</item>
+    </string-array>
 </resources>

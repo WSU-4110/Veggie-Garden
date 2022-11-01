@@ -4,37 +4,49 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class Settings extends AppCompatActivity {
 
     //declare variables
-    Button databaseButton;
     Button backToMain;
 
-    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
+    ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
+    int[] recyclerImages = {R.drawable.forward};
+
+
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})    // suppresses incorrect error messages
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        RecyclerView recyclerView = findViewById(R.id.customizeList);
+        RecycleModels();
+        RecyclerAdapter adapter = new RecyclerAdapter(this, recyclerViewSettings);            // recyclerview stuff
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         //set variables
+        backToMain = findViewById(R.id.backToMain);      // declare back button
 
-         databaseButton = findViewById(R.id.databaseButton);
-        backToMain = findViewById(R.id.backToMain);
-
-
-        databaseButton.setOnClickListener(view -> {
-            Intent intent = new Intent(view.getContext(), Account_Viewer_Database_List.class);
-            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
-            startActivity(intent);
-        });
-
-        backToMain.setOnClickListener(view -> {
+        backToMain.setOnClickListener(view -> {                                     // back button actions
             Intent intent = new Intent(view.getContext(), MainActivity.class);
-            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
+            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
             startActivity(intent);
         });
+    }
+
+    private void RecycleModels() {                                                    // method for displaying full string array in recycler view
+        String[] options = getResources().getStringArray(R.array.card_text_titles);
+
+        for (int i = 0; i < options.length; i++) {
+            recyclerViewSettings.add(new RecyclerViewSettings(options[i], recyclerImages[i]));     // fill the list
+        }
     }
 }
