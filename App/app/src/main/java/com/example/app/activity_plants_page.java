@@ -29,7 +29,7 @@ public class activity_plants_page extends AppCompatActivity {
 //        ConstraintSet myConstraints = new ConstraintSet();
 //        myConstraints.clone(myLayout);
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 8; i++) {
             TextView newTextView = new TextView(this);
 //            newTextView.setText("View " + i);
 //            newTextView.setId(View.generateViewId());
