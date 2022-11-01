@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     // create variables
     ImageButton gearButton;
     Button calendarButton;
+    Button plantsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         gearButton = findViewById(R.id.gearButton);
                                                                     // DataBase db = new DataBase(this); can be used later if needed
         calendarButton = findViewById(R.id.calendarView);
+        plantsButton = findViewById(R.id.plantsButton);
 
         // Retrieve account information
                                                                                       //DataBase db = new DataBase(this);
@@ -39,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
         calendarButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, CalendarActivity.class);
+            startActivity(intent);
+        });
+
+        plantsButton.setOnClickListener(view -> {
+            Intent intent = new Intent(this, activity_plants_page.class);
             startActivity(intent);
         });
     }

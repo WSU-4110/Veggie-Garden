@@ -39,6 +39,7 @@
     <string name="customize_profile">Customize Profile</string>
     <string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string>
     <string name="calendar">Calendar</string>
+    <string name="plants">Plants</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>

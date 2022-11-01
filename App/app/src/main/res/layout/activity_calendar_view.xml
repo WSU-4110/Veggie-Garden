@@ -33,8 +33,9 @@
             android:id="@+id/calendar_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFF"
-            android:weekNumberColor="#000"
+            android:theme="@style/CalenderViewCustom"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
             android:showWeekNumber="true">
 
         </CalendarView>
