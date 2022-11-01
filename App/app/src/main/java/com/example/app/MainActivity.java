@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         calendarButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, CalendarView.class);
+            Intent intent = new Intent(this, CalendarActivity.class);
             startActivity(intent);
         });
     }
