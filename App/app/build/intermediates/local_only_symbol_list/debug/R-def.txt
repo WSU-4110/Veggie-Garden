@@ -52,7 +52,6 @@ id newPlant
 id plantLogo
 id pwordInput
 id root_vg
-id textView1
 id textView2
 id textView3
 id toolbar
@@ -66,7 +65,6 @@ layout activity_main
 layout activity_settings
 layout activity_title_page
 layout create_account_page_welcome_popup
-layout recycler_view_item
 layout settings_view_layout
 mipmap ic_launcher
 mipmap ic_launcher_round

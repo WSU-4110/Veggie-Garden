@@ -103,12 +103,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ni
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:15:9-41
 	android:dataExtractionRules
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:9-65
-activity#com.example.app.CalendarView
+activity#com.example.app.CalendarActivity
 ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:exported
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:13-41
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:13-45
 meta-data#android.app.lib_name
 ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-22:36
 	android:value
