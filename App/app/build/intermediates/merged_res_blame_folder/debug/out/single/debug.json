@@ -16,6 +16,10 @@
         "source": "com.example.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.app-merged_res-29:/layout_activity_calendar_view.xml.flat",
+        "source": "com.example.app-main-31:/layout/activity_calendar_view.xml"
+    },
+    {
         "merged": "com.example.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "com.example.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
     },

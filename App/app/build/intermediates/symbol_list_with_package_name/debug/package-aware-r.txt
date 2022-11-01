@@ -2632,6 +2632,8 @@ id bounceEnd
 id bounceStart
 id buttonPanel
 id cache_measures
+id calendarView
+id calendar_view
 id callMeasure
 id cancel_button
 id card_arrow
@@ -2681,6 +2683,7 @@ id custom
 id customPanel
 id customizeList
 id cut
+id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3136,6 +3139,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_account_viewer_database_list
+layout activity_calendar_view
 layout activity_create_account_page
 layout activity_main
 layout activity_settings
@@ -3279,6 +3283,7 @@ string backButton
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string button
+string calendar
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern

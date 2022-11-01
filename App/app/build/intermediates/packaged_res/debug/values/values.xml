@@ -31,6 +31,7 @@
     <string name="back2">BACK</string>
     <string name="backButton">Back</string>
     <string name="button">Button</string>
+    <string name="calendar">Calendar</string>
     <string name="clear_data">Clear Data</string>
     <string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string>
     <string name="confirm_password">Confirm Password</string>

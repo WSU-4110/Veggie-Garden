@@ -28,6 +28,8 @@ font sirukota
 id backButton
 id backToMain
 id backToSettings
+id calendarView
+id calendar_view
 id card_arrow
 id card_text
 id confirmPword
@@ -36,6 +38,7 @@ id createButton
 id createEmail
 id createPword
 id customizeList
+id date
 id emailInput
 id gearButton
 id group
@@ -57,6 +60,7 @@ id toolbar2
 id toolbar3
 id welcome
 layout activity_account_viewer_database_list
+layout activity_calendar_view
 layout activity_create_account_page
 layout activity_main
 layout activity_settings
@@ -78,6 +82,7 @@ string back
 string back2
 string backButton
 string button
+string calendar
 string clear_data
 string click_off_this_popup_and_go_to_add_a_new_plant_to_get_started
 string confirm_password
