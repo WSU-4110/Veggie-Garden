@@ -47,4 +47,7 @@
         <item>Log Out</item>
         <item>Delete This Account</item>
     </string-array>
+    <string name="title_activity_virtual_garden">VirtualGarden</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
