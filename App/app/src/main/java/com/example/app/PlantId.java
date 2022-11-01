@@ -28,6 +28,10 @@ public class PlantId extends View {
     public PlantId(Context context) {
         super(context);
         init();
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.setMargins(20, 20, 20, 50);
+        this.setLayoutParams(params);
     }
 
     // Initializes drawable objects to increase performance
@@ -38,14 +42,15 @@ public class PlantId extends View {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             textPaint.setColor(textColor.pack());
         }
-
+        textPaint.setTextSize(50);
         backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-        // Same deal as above; will probably upgrade build to v26
+        // Same deal as above; will probably u pgrade build to v26
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             backgroundPaint.setColor(backgroundColor.pack());
         }
-        backgroundPaint.setStyle(Paint.Style.FILL);
+        backgroundPaint.setStyle(Paint.Style.STROKE);
+        backgroundPaint.setTextSize(50);
     }
 
     // Called when first created and whenever screen size changes
@@ -54,12 +59,11 @@ public class PlantId extends View {
     public void onSizeChanged(int w, int h, int oldw, int oldh) {
         float xpad = (float) (getPaddingLeft() + getPaddingRight());
         float ypad = (float) (getPaddingBottom() + getPaddingTop());
+    }
 
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        params.setMargins(50, 50, 50, 50);
-        this.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        setMeasuredDimension(1600, 50);
     }
 
     // Called when displaying the PlantId
@@ -68,8 +72,9 @@ public class PlantId extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawRect(this.getX(), this.getY(), this.getX() + this.getWidth(), this.getY()+200, backgroundPaint);
-
+        canvas.drawRect(this.getX(), this.getY(), 1400, this.getY()+200, backgroundPaint);
+        canvas.drawText(plantName, this.getX()+ 50, this.getY()+50, textPaint);
+        canvas.drawText("Birthday: ", this.getX() + 50, this.getY() + 100, textPaint);
         
     }
 
