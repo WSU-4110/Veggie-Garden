@@ -45,8 +45,8 @@ public class Settings extends AppCompatActivity {
     private void RecycleModels() {                                                    // method for displaying full string array in recycler view
         String[] options = getResources().getStringArray(R.array.card_text_titles);
 
-        for (int i = 0; i < options.length; i++) {
-            recyclerViewSettings.add(new RecyclerViewSettings(options[i], recyclerImages[i]));     // fill the list
+        for (String option : options) {
+            recyclerViewSettings.add(new RecyclerViewSettings(option, recyclerImages[0]));     // fill the list
         }
     }
 }
