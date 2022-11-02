@@ -11,10 +11,18 @@ public class Credentials extends AppCompatActivity {
     private String password;
 
     // constructor
-    public Credentials(String name, String email, String password) {
+    private Credentials(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
+    }
+
+    private static class CredentialsHolder {
+        public static final Credentials instance = new Credentials();
+    }
+
+    public static Credentials getInstance() {
+        return CredentialsHolder.instance;
     }
 
     // toString

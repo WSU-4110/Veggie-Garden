@@ -852,6 +852,8 @@ attr placeholderText
 attr placeholderTextAppearance
 attr placeholderTextColor
 attr placeholder_emptyVisibility
+attr plantBirthday
+attr plantName
 attr polarRelativeTo
 attr popupMenuBackground
 attr popupMenuStyle
@@ -1051,6 +1053,7 @@ attr textBackgroundPanX
 attr textBackgroundPanY
 attr textBackgroundRotate
 attr textBackgroundZoom
+attr textColor
 attr textColorAlertDialogListItem
 attr textColorSearchUrl
 attr textEndPadding
@@ -2794,6 +2797,7 @@ id legacy
 id line1
 id line3
 id linear
+id linear_layout
 id listMode
 id list_item
 id loginButton
@@ -2894,6 +2898,7 @@ id peekHeight
 id percent
 id pin
 id plantLogo
+id plantsButton
 id position
 id postLayout
 id progress_circular
@@ -3147,6 +3152,7 @@ layout activity_account_viewer_database_list
 layout activity_calendar_view
 layout activity_create_account_page
 layout activity_main
+layout activity_plants_page
 layout activity_settings
 layout activity_title_page
 layout create_account_page_welcome_popup
@@ -3399,6 +3405,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string plants
 string search_menu_title
 string status_bar_notification_info_overflow
 string textview
@@ -3676,6 +3683,9 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
+style CalenderViewCustom
+style CalenderViewDateCustomText
+style CalenderViewWeekCustomText
 style CardView
 style CardView_Dark
 style CardView_Light
@@ -4570,6 +4580,7 @@ styleable NavigationRailView headerLayout itemMinHeight menuGravity paddingBotto
 styleable NavigationView android_layout_gravity android_background android_fitsSystemWindows android_maxWidth bottomInsetScrimEnabled dividerInsetEnd dividerInsetStart drawerLayoutCornerSize elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemRippleColor itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextColor itemVerticalPadding menu shapeAppearance shapeAppearanceOverlay subheaderColor subheaderInsetEnd subheaderInsetStart subheaderTextAppearance topInsetScrimEnabled
 styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
+styleable PlantId backgroundColor plantBirthday plantName textColor
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode

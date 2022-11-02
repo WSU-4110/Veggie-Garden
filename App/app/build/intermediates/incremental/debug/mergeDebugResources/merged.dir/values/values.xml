@@ -1734,6 +1734,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="plants">Plants</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="textview">TextView</string>
@@ -4778,6 +4779,17 @@
     <item name="shapeAppearanceOverlay">@null</item>
   </style>
     <style name="Base.Widget.MaterialComponents.TextView" parent="Widget.AppCompat.TextView"/>
+    <style name="CalenderViewCustom">
+        <item name="colorAccent">@color/purple_500</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+    <style name="CalenderViewDateCustomText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:weekNumberColor">@color/purple_500</item>
+    </style>
+    <style name="CalenderViewWeekCustomText">
+        <item name="android:textColor">@color/white</item>
+    </style>
     <style name="CardView" parent="Base.CardView">
     </style>
     <style name="CardView.Dark">
@@ -11237,6 +11249,12 @@
             <enum name="neverCompleteToEnd" value="7"/>
         </attr>
 
+    </declare-styleable>
+    <declare-styleable name="PlantId">
+        <attr format="string" name="plantName"/>
+        <attr format="string" name="plantBirthday"/>
+        <attr format="color" name="backgroundColor"/>
+        <attr format="color" name="textColor"/>
     </declare-styleable>
     <declare-styleable name="PopupWindow">
         
