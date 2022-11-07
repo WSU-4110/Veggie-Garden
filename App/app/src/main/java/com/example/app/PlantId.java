@@ -119,3 +119,36 @@ public class PlantId extends View {
         this.textColor = textColor;
     }
 }
+
+class PlantList {
+    int maxPlants;
+    int count;
+    PlantId[] plants;
+
+    public PlantList() {
+        plants = new PlantId[50];
+
+    }
+
+    public void addPlant(PlantId newPlant) {
+        if(count >= maxPlants) {
+            // Notify user they have too many plants
+            return;
+        }
+
+        plants[count] = newPlant;
+        count = count + 1;
+
+    }
+
+    public void removePlant(int pos) {
+        if(pos >= count) {
+            // Notify user index out of bounds
+            return;
+        }
+
+        for (int i = pos; i < count; i++) {
+            // Add remove code
+        }
+    }
+}
