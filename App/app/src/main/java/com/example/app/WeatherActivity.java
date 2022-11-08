@@ -45,6 +45,10 @@ import java.text.DecimalFormat;
         }
 
         public void getWeatherDetails(View view) {
+            String weatherTracker[];
+            weatherTracker = new String[8];
+            int locationTracker[];
+            locationTracker = new String[3];
             String tempUrl = "";
             String city = etCity.getText().toString().trim();
             String country = etCountry.getText().toString().trim();
@@ -63,20 +67,31 @@ import java.text.DecimalFormat;
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
                             JSONArray jsonArray = jsonResponse.getJSONArray("weather");
+                            weatherTracker[0]=jsonArray;
                             JSONObject jsonObjectWeather = jsonArray.getJSONObject(0);
                             String description = jsonObjectWeather.getString("description");
+                            weatherTracker[1]= description;
                             JSONObject jsonObjectMain = jsonResponse.getJSONObject("main");
                             double temp = jsonObjectMain.getDouble("temp") - 273.15;
+                            weatherTracker[2] = temp;
                             double feelsLike = jsonObjectMain.getDouble("feels_like") - 273.15;
+                            weatherTracker[3] = feelsLike;
                             float pressure = jsonObjectMain.getInt("pressure");
+                            weatherTracker[4] = pressure;
                             int humidity = jsonObjectMain.getInt("humidity");
+                            weatherTracker[5] = humidity;
                             JSONObject jsonObjectWind = jsonResponse.getJSONObject("wind");
                             String wind = jsonObjectWind.getString("speed");
+                            weatherTracker[6] = wind;
                             JSONObject jsonObjectClouds = jsonResponse.getJSONObject("clouds");
                             String clouds = jsonObjectClouds.getString("all");
+                            weatherTracker[7] = clouds;
                             JSONObject jsonObjectSys = jsonResponse.getJSONObject("sys");
+                            locationTracker[0] = jsonObjectSys;
                             String countryName = jsonObjectSys.getString("country");
+                            locationTracker[1] = countryName;
                             String cityName = jsonResponse.getString("name");
+                            locationTracker[2] = cityName;
                             tvResult.setTextColor(Color.rgb(68,134,199));
                             output += "Current weather of " + cityName + " (" + countryName + ")"
                                     + "\n Temp: " + df.format(temp) + " °C"
@@ -100,6 +115,17 @@ import java.text.DecimalFormat;
                 });
                 RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                 requestQueue.add(stringRequest);
+            }
+            for (int i = 0; i < 8; i++){
+                if(weatherTracker[i] == null){
+                    System.out.println("Error at index " + i);
+                }
+            
+            for (int i = 0; i < 3; i++) {
+                if(locationTracker[i] == null){
+                    System.out.println("Error at index " + i);
+                }
+            }
             }
         }
     }
