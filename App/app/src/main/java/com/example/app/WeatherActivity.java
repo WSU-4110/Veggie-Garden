@@ -96,7 +96,7 @@ import java.text.DecimalFormat;
                             output += "Current weather of " + cityName + " (" + countryName + ")"
                                     + "\n Temp: " + df.format(temp) + " °C"
                                     + "\n Feels Like: " + df.format(feelsLike) + " °C"
-                                    + "\n Humidity: " + humidity + "%"
+                                    + "\n Humidity: " + humidity + "%" 
                                     + "\n Description: " + description
                                     + "\n Wind Speed: " + wind + "m/s (meters per second)"
                                     + "\n Cloudiness: " + clouds + "%"
