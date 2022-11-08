@@ -116,6 +116,7 @@ import java.text.DecimalFormat;
                 RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                 requestQueue.add(stringRequest);
             }
+            public void checker(){
             for (int i = 0; i < 8; i++){
                 if(weatherTracker[i] == null){
                     System.out.println("Error at index " + i);
@@ -125,6 +126,7 @@ import java.text.DecimalFormat;
                 if(locationTracker[i] == null){
                     System.out.println("Error at index " + i);
                 }
+            }
             }
             }
         }
