@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.example.app.Iterator;
+import com.example.app.Collection;
+
 public class PlantId extends View {
 
     // Hard-coded values for debug purposes
@@ -54,13 +57,14 @@ public class PlantId extends View {
     }
 
     // Called when first created and whenever screen size changes
-    // Handles layout of PlantId view
+    // Handles internal layout of PlantId view
     @Override
     public void onSizeChanged(int w, int h, int oldw, int oldh) {
         float xpad = (float) (getPaddingLeft() + getPaddingRight());
         float ypad = (float) (getPaddingBottom() + getPaddingTop());
     }
 
+    // Called whenver drawn
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         setMeasuredDimension(1600, 50);
@@ -120,7 +124,8 @@ public class PlantId extends View {
     }
 }
 
-class PlantList {
+// Container class for plants
+class PlantList implements Collection {
     int maxPlants;
     int count;
     PlantId[] plants;
@@ -147,8 +152,73 @@ class PlantList {
             return;
         }
 
-        for (int i = pos; i < count; i++) {
-            // Add remove code
+        for (int i = pos; i < count - 1; i++) {
+            plants[pos] = plants[pos + 1];
         }
+
+        count = count - 1;
     }
+
+    public PlantId getPlant(int pos) {
+        if (pos >= count) {
+            return null;
+        }
+
+        return plants[pos];
+    }
+
+    @Override
+    public Iterator createIterator(int pos) {
+        return new PlantIterator(this, pos);
+    }
+}
+
+// Handles iterations over the plantList class
+class PlantIterator implements Iterator{
+    PlantList plants;
+    int pos;
+
+    public PlantIterator(PlantList plantList, int position) {
+        plants = plantList;
+        pos = position;
+    }
+
+    @Override
+    public boolean hasNext() {
+        if(pos >= plants.count)
+            return false;
+
+        return true;
+    }
+
+    @Override
+    public boolean hasPrev() {
+        if (pos < 0)
+            return false;
+
+        return true;
+    }
+
+    @Override
+    public PlantId next() {
+        if (!hasNext()) {
+            return null;
+        }
+
+        PlantId plant = plants.getPlant(pos);
+        pos++;
+        return plant;
+    }
+
+    @Override
+    public PlantId previous() {
+        if (!hasPrev()) {
+            return null;
+        }
+
+        PlantId plant = plants.getPlant(pos);
+        pos--;
+        return plant;
+    }
+
 }
