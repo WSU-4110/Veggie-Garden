@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:textColor="@android:color/white"
         android:textSize="40sp"
-        android:text="Weather Version 1.0" />
+        android:text="@string/weather_version_1_0" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,16 +29,18 @@
             android:id="@+id/etCity"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="Enter Name of City"
-            android:inputType="textPersonName" />
+            android:hint="@string/enter_name_of_city"
+            android:inputType="textPersonName"
+            android:autofillHints="TODO" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etCountry"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="Enter Name of Country"
-            android:inputType="textPersonName" />
+            android:hint="@string/enter_name_of_country"
+            android:inputType="textPersonName"
+            android:autofillHints="TODO" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,9 +49,9 @@
             android:background="#0070c7"
             android:textColor="@android:color/white"
             android:onClick="getWeatherDetails"
-            android:text="Get"
+            android:text="@string/get"
             app:backgroundTint="@null"
-            />
+            tools:ignore="UsingOnClickInXml" />
 
         <ScrollView
             android:layout_width="match_parent"

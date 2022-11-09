@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import androidx.annotation.RequiresApi;
+
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class PlantId extends View {
 
     // Hard-coded values for debug purposes
@@ -45,7 +48,7 @@ public class PlantId extends View {
         textPaint.setTextSize(50);
         backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-        // Same deal as above; will probably u pgrade build to v26
+        // Same deal as above; will probably upgrade build to v26
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             backgroundPaint.setColor(backgroundColor.pack());
         }
@@ -56,9 +59,9 @@ public class PlantId extends View {
     // Called when first created and whenever screen size changes
     // Handles layout of PlantId view
     @Override
-    public void onSizeChanged(int w, int h, int oldw, int oldh) {
-        float xpad = (float) (getPaddingLeft() + getPaddingRight());
-        float ypad = (float) (getPaddingBottom() + getPaddingTop());
+    public void onSizeChanged(int w, int h, int oldW, int oldH) {
+        float xPad = (float) (getPaddingLeft() + getPaddingRight());
+        float yPad = (float) (getPaddingBottom() + getPaddingTop());
     }
 
     @Override

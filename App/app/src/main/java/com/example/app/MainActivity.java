@@ -2,6 +2,7 @@ package com.example.app;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,5 +56,8 @@ public class MainActivity extends AppCompatActivity {
         popup.setContentView(R.layout.create_account_page_welcome_popup);
         popup.getWindow().setBackgroundDrawableResource(R.drawable.popup_background);        // popup method
         popup.show();
+    }
+
+    public void getWeatherDetails(View view) {
     }
 }

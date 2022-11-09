@@ -40,11 +40,16 @@
     <string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string>
     <string name="calendar">Calendar</string>
     <string name="plants">Plants</string>
+    <string name="plant_calendar">Plant Calendar</string>
+    <string name="weather_version_1_0">Weather Version 1.0</string>
+    <string name="enter_name_of_city">Enter Name of City</string>
+    <string name="enter_name_of_country">Enter Name of Country</string>
+    <string name="get">Get</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
-        <item>Share</item>
         <item>Help</item>
+        <item>Change Password</item>
         <item>Log Out</item>
         <item>Delete This Account</item>
     </string-array>
