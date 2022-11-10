@@ -25,6 +25,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.App" >
         <activity
+            android:name="com.example.app.activity_plants_page"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.app.CalendarActivity"
             android:exported="false" >
             <meta-data
@@ -51,6 +58,15 @@
         <activity
             android:name="com.example.app.MainActivity"
             android:exported="false" />
+        <activity
+            android:name="com.example.app.Title_Page"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

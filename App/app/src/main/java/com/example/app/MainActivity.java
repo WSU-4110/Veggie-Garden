@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         calendarButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, CalendarActivity.class);
+            Intent intent = new Intent(this, CalendarActivity.class);         // calendar button
             startActivity(intent);
         });
 
         plantsButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, activity_plants_page.class);
+            Intent intent = new Intent(this, PlantsPage.class);               // plant add button
             startActivity(intent);
         });
     }
@@ -58,6 +58,6 @@ public class MainActivity extends AppCompatActivity {
         popup.show();
     }
 
-    public void getWeatherDetails(View view) {
+    public void getWeatherDetails(View view) {                                         // weather button
     }
 }

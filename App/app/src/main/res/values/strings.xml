@@ -45,6 +45,9 @@
     <string name="enter_name_of_city">Enter Name of City</string>
     <string name="enter_name_of_country">Enter Name of Country</string>
     <string name="get">Get</string>
+    <string name="change_your_password">Change Your Password</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="save">Save</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>

@@ -7,7 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 // FOLLOW THIS FORMAT FOR CREATING VALUES/BUTTONS/MOVING PAGES/STORING DATA
-public class Title_Page extends AppCompatActivity {
+public class TitlePage extends AppCompatActivity {
 
     // create variables
     EditText loginEmail, loginPassword;
@@ -35,24 +35,24 @@ public class Title_Page extends AppCompatActivity {
                     email.contains(".org")) && password.length() >= 3) {
                 boolean checkEmailPass = db.checkEmailPassword(email, password);                  // cross check password and confirm password
                 if (checkEmailPass) {
-                    Toast.makeText(Title_Page.this, "Login Successful", Toast.LENGTH_SHORT).show();        // if it works, toast msg, login, don't display popup, move to main page
+                    Toast.makeText(TitlePage.this, "Login Successful", Toast.LENGTH_SHORT).show();        // if it works, toast msg, login, don't display popup, move to main page
                     Intent intent = new Intent(view.getContext(), MainActivity.class);
                     intent.putExtra("EMAIL", email);
                     intent.putExtra("NEW_USER", false);
                     startActivity(intent);
                 }
                 else {
-                    Toast.makeText(Title_Page.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();         // error toast
+                    Toast.makeText(TitlePage.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();         // error toast
                 }
             }
             else {
-                Toast.makeText(Title_Page.this, "Invalid Entry", Toast.LENGTH_SHORT).show();        // error toast
+                Toast.makeText(TitlePage.this, "Invalid Entry", Toast.LENGTH_SHORT).show();        // error toast
             }
         });
 
         //create account button, move pages
         createAccountButton.setOnClickListener(view -> {
-            Intent intent = new Intent(view.getContext(), Create_Account_Page.class);
+            Intent intent = new Intent(view.getContext(), CreateAccountPage.class);
             startActivity(intent);
         });
     }
