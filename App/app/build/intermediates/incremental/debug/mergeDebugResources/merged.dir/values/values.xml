@@ -3,8 +3,8 @@
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
-        <item>Share</item>
         <item>Help</item>
+        <item>Change Password</item>
         <item>Log Out</item>
         <item>Delete This Account</item>
     </string-array>
@@ -1644,6 +1644,8 @@
     <string name="enter_email">Enter Email Here</string>
     <string name="enter_email_here">Enter Email Here</string>
     <string name="enter_name_here">Enter Name Here</string>
+    <string name="enter_name_of_city">Enter Name of City</string>
+    <string name="enter_name_of_country">Enter Name of Country</string>
     <string name="enter_password_here">Enter Password Here</string>
     <string name="enter_pword_here">Enter Password Here</string>
     <string name="error_icon_content_description">Error</string>
@@ -1651,6 +1653,7 @@
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="get">Get</string>
     <string name="goes_back_to_title_page">goes back to title page</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home_page">Home Page</string>
@@ -1734,6 +1737,8 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="plant_calendar">Plant Calendar</string>
+    <string name="plants">Plants</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="textview">TextView</string>
@@ -1741,6 +1746,7 @@
     <string name="to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize">To get started, exit this popup and press \'Add a new plant!\', or head over to settings and customize!</string>
     <string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string>
     <string name="todo">TODO</string>
+    <string name="weather_version_1_0">Weather Version 1.0</string>
     <string name="welcome_to_plant">Welcome to Plant!</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -4778,6 +4784,17 @@
     <item name="shapeAppearanceOverlay">@null</item>
   </style>
     <style name="Base.Widget.MaterialComponents.TextView" parent="Widget.AppCompat.TextView"/>
+    <style name="CalenderViewCustom">
+        <item name="colorAccent">@color/purple_500</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+    <style name="CalenderViewDateCustomText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:weekNumberColor">@color/purple_500</item>
+    </style>
+    <style name="CalenderViewWeekCustomText">
+        <item name="android:textColor">@color/white</item>
+    </style>
     <style name="CardView" parent="Base.CardView">
     </style>
     <style name="CardView.Dark">
@@ -11237,6 +11254,12 @@
             <enum name="neverCompleteToEnd" value="7"/>
         </attr>
 
+    </declare-styleable>
+    <declare-styleable name="PlantId">
+        <attr format="string" name="plantName"/>
+        <attr format="string" name="plantBirthday"/>
+        <attr format="color" name="backgroundColor"/>
+        <attr format="color" name="textColor"/>
     </declare-styleable>
     <declare-styleable name="PopupWindow">
         

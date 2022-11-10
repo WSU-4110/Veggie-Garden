@@ -1,6 +1,10 @@
 R_DEF: Internal format may change without notice
 local
 array card_text_titles
+attr? backgroundColor
+attr? plantBirthday
+attr? plantName
+attr? textColor
 color black
 color dark_green
 color dark_purple
@@ -49,12 +53,14 @@ id gearButton
 id group
 id instructions
 id layout
+id linear_layout
 id loginButton
 id lv_credentials
 id message
 id nameInput
 id newPlant
 id plantLogo
+id plantsButton
 id pwordInput
 id root_vg
 id textView2
@@ -68,6 +74,7 @@ layout activity_account_viewer_database_list
 layout activity_calendar_view
 layout activity_create_account_page
 layout activity_main
+layout activity_plants_page
 layout activity_settings
 layout activity_title_page
 layout create_account_page_welcome_popup
@@ -103,19 +110,29 @@ string delete_this_account
 string enter_email
 string enter_email_here
 string enter_name_here
+string enter_name_of_city
+string enter_name_of_country
 string enter_password_here
 string enter_pword_here
 string exitButton
+string get
 string goes_back_to_title_page
 string home_page
 string login
+string plant_calendar
+string plants
 string textview
 string this_is_a_tool_for_developers
 string to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize
 string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
+string weather_version_1_0
 string welcome_to_plant
+style CalenderViewCustom
+style CalenderViewDateCustomText
+style CalenderViewWeekCustomText
 style Theme.App
+styleable PlantId plantName plantBirthday backgroundColor textColor
 xml backup_rules
 xml data_extraction_rules
 xml network_security_config

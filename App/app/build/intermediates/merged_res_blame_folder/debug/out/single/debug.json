@@ -76,6 +76,10 @@
         "source": "com.example.app-main-31:/drawable/popup_background.xml"
     },
     {
+        "merged": "com.example.app-merged_res-29:/layout_activity_plants_page.xml.flat",
+        "source": "com.example.app-main-31:/layout/activity_plants_page.xml"
+    },
+    {
         "merged": "com.example.app-merged_res-29:/font_roboto_bold.ttf.flat",
         "source": "com.example.app-main-31:/font/roboto_bold.ttf"
     },

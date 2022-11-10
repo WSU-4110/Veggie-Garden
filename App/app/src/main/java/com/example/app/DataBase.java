@@ -69,6 +69,13 @@ public class DataBase extends SQLiteOpenHelper {
         return cursor.getCount() > 0;
     }
 
+    // check password
+    public boolean checkPassword(String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_PWORD + " = ?" , new String[] {password} );
+        return cursor.getCount() > 0;
+    }
+
     // check both
     public boolean checkEmailPassword(String email, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
