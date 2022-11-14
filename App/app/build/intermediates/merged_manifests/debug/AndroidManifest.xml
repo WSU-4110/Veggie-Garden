@@ -22,10 +22,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.App" >
         <activity
-            android:name="com.example.app.activity_plants_page"
+            android:name="com.example.app.ChangePassword"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.app.PlantsPage"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -39,7 +45,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.app.Account_Viewer_Database_List"
+            android:name="com.example.app.AccountViewerDatabaseList"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -53,13 +59,13 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.app.Create_Account_Page"
+            android:name="com.example.app.CreateAccountPage"
             android:exported="false" />
         <activity
             android:name="com.example.app.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.app.Title_Page"
+            android:name="com.example.app.TitlePage"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
