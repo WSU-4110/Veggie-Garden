@@ -39,4 +39,9 @@ public class Credentials extends AppCompatActivity {
         return password;
     }
 
+    public String changePassword(String newPassword) {
+        password = newPassword;
+        return password;
+    }
+
 }

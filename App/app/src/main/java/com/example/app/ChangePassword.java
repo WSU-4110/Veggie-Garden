@@ -9,12 +9,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ChangePassword extends AppCompatActivity {
+public class ChangePassword extends Credentials {
 
     // set variables
     Button backToSettings, saveBtn;
     EditText oldPword, newPword, confirmNewPword;
     DataBase db;
+
+    public ChangePassword(String name, String email, String password) {
+        super(name, email, password);
+    }
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -44,6 +48,7 @@ public class ChangePassword extends AppCompatActivity {
             if (sameOldPw) {
                 if (!old.equals(newP)) {
                     if (newP.equals(confirmP) && newP.length() >= 3) {
+                        changePassword(newP);
                         Toast.makeText(this, "New Password Saved!", Toast.LENGTH_SHORT).show();       // success!
                         Intent intent = new Intent(this, Settings.class);
                         startActivity(intent);
