@@ -1624,6 +1624,7 @@
     <string description="A description of an action that a user of an accessibility service can perform to expand a bottomsheet halfway to its full height. [CHAR LIMIT=25]" name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="button">Button</string>
     <string name="calendar">Calendar</string>
+    <string name="change_your_password">Change Your Password</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
@@ -1641,6 +1642,7 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="delete_account">Delete Account</string>
     <string name="delete_this_account">Delete This Account</string>
+    <string name="enter_current_password">Enter Current Password</string>
     <string name="enter_email">Enter Email Here</string>
     <string name="enter_email_here">Enter Email Here</string>
     <string name="enter_name_here">Enter Name Here</string>
@@ -1739,6 +1741,7 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="plant_calendar">Plant Calendar</string>
     <string name="plants">Plants</string>
+    <string name="save">Save</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="textview">TextView</string>

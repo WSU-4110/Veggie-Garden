@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Settings extends AppCompatActivity {
+public class Settings extends AppCompatActivity implements RecyclerViewInterface{
 
     //declare variables
     Button backToMain;
@@ -26,7 +26,7 @@ public class Settings extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.customizeList);
         RecycleModels();
-        RecyclerAdapter adapter = new RecyclerAdapter(this, recyclerViewSettings);            // recyclerview stuff
+        RecyclerAdapter adapter = new RecyclerAdapter(this, recyclerViewSettings, this);            // recyclerview stuff
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -47,5 +47,10 @@ public class Settings extends AppCompatActivity {
         for (String option : options) {
             recyclerViewSettings.add(new RecyclerViewSettings(option, recyclerImages[0]));     // fill the list
         }
+    }
+
+    @Override
+    public void onItemClick(int position) {
+
     }
 }
