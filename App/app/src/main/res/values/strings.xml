@@ -48,6 +48,13 @@
     <string name="change_your_password">Change Your Password</string>
     <string name="enter_current_password">Enter Current Password</string>
     <string name="save">Save</string>
+    <string name="you_are_about_to_delete_your_account">You are about to delete your account!</string>
+    <string name="if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel">If you are sure, press the button below. If not, click off this popup message to cancel.</string>
+    <string name="i_am_sure">I am sure!</string>
+    <string name="need_help">Need Help?</string>
+    <string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string>
+    <string name="enable_disable_notifications">Enable/disable notifications?</string>
+    <string name="enable_disable">Enable/Disable</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>

@@ -2619,6 +2619,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id arc
+id are_you_sure
 id asConfigured
 id async
 id auto
@@ -2774,6 +2775,7 @@ id grouping
 id groups
 id guideline
 id header_title
+id help
 id hideable
 id home
 id homeAsUp
@@ -2806,6 +2808,7 @@ id line1
 id line3
 id linear
 id linear_layout
+id link
 id listMode
 id list_item
 id loginButton
@@ -2888,6 +2891,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notifs
 id off
 id oldPwordText
 id on
@@ -3042,6 +3046,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id turn_on_notifs
 id tvResult
 id unchecked
 id uniform
@@ -3058,6 +3063,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id warning
 id welcome
 id west
 id withText
@@ -3164,12 +3170,14 @@ layout activity_account_viewer_database_list
 layout activity_calendar_view
 layout activity_change_password
 layout activity_create_account_page
+layout activity_customize_profile
 layout activity_main
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
 layout create_account_page_welcome_popup
 layout custom_dialog
+layout delete_account_warning
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -3185,6 +3193,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout help_popup
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3239,6 +3248,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout notifications_popup
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3327,6 +3337,8 @@ string customize_profile
 string dark_mode
 string delete_account
 string delete_this_account
+string enable_disable
+string enable_disable_notifications
 string enter_current_password
 string enter_email
 string enter_email_here
@@ -3344,7 +3356,9 @@ string get
 string goes_back_to_title_page
 string hide_bottom_view_on_scroll_behavior
 string home_page
+string i_am_sure
 string icon_content_description
+string if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel
 string item_view_role_description
 string label
 string login
@@ -3419,6 +3433,8 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string need_help
+string our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3436,6 +3452,7 @@ string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
 string weather_version_1_0
 string welcome_to_plant
+string you_are_about_to_delete_your_account
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
