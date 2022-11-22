@@ -14,6 +14,7 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
 
     //declare variables
     Button backToMain;
+    String[] options;
 
     ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
     int[] recyclerImages = {R.drawable.forward};
@@ -42,7 +43,7 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
     }
 
     private void RecycleModels() {                                                    // method for displaying full string array in recycler view
-        String[] options = getResources().getStringArray(R.array.card_text_titles);
+        options = getResources().getStringArray(R.array.card_text_titles);
 
         for (String option : options) {
             recyclerViewSettings.add(new RecyclerViewSettings(option, recyclerImages[0]));     // fill the list
@@ -51,6 +52,19 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
 
     @Override
     public void onItemClick(int position) {
+
+      switch (position) {
+          case 0:
+              break;
+          case 1:
+              break;
+          case 2:
+              break;
+          case 3: Intent intent3 = new Intent(this, ChangePassword.class);
+              intent3.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+                    startActivity(intent3);
+              break;
+      }
 
     }
 }
