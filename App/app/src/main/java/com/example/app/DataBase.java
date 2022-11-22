@@ -83,6 +83,13 @@ public class DataBase extends SQLiteOpenHelper {
         return cursor.getCount() > 0;
     }
 
+    // change pass
+    public void updatePassword(String email, String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("UPDATE " + USER_TABLE + " SET " + USER_PWORD + " = ? " + " WHERE " + USER_EMAIL + " = ?", new String[] {password, email} );
+        cursor.getCount();
+    }
+
     public String getName(String email) {         // unused currently, returns name of currently logged in user
         SQLiteDatabase db = this.getWritableDatabase();
         @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT " + USER_NAME + " FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[] {email} );

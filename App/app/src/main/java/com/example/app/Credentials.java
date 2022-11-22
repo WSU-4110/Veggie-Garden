@@ -17,6 +17,10 @@ public class Credentials extends AppCompatActivity {
         this.password = password;
     }
 
+    public Credentials(){
+
+    }
+
     // toString
     @NonNull
     @Override
@@ -36,11 +40,6 @@ public class Credentials extends AppCompatActivity {
     }
 
     public String getPassword() {
-        return password;
-    }
-
-    public String changePassword(String newPassword) {
-        password = newPassword;
         return password;
     }
 
