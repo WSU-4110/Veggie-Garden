@@ -45,6 +45,8 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="delete_account">Delete Account</string>
     <string name="delete_this_account">Delete This Account</string>
+    <string name="enable_disable">Enable/Disable</string>
+    <string name="enable_disable_notifications">Enable/disable notifications?</string>
     <string name="enter_current_password">Enter Current Password</string>
     <string name="enter_email">Enter Email Here</string>
     <string name="enter_email_here">Enter Email Here</string>
@@ -57,7 +59,11 @@
     <string name="get">Get</string>
     <string name="goes_back_to_title_page">goes back to title page</string>
     <string name="home_page">Home Page</string>
+    <string name="i_am_sure">I am sure!</string>
+    <string name="if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel">If you are sure, press the button below. If not, click off this popup message to cancel.</string>
     <string name="login">Login</string>
+    <string name="need_help">Need Help?</string>
+    <string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string>
     <string name="plant_calendar">Plant Calendar</string>
     <string name="plants">Plants</string>
     <string name="save">Save</string>
@@ -68,6 +74,7 @@
     <string name="todo">TODO</string>
     <string name="weather_version_1_0">Weather Version 1.0</string>
     <string name="welcome_to_plant">Welcome to Plant!</string>
+    <string name="you_are_about_to_delete_your_account">You are about to delete your account!</string>
     <style name="CalenderViewCustom">
         <item name="colorAccent">@color/purple_500</item>
         <item name="colorPrimary">@color/white</item>

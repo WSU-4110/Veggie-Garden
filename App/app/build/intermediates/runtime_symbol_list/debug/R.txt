@@ -2614,6 +2614,7 @@ int id animateToStart 0x7f0a004d
 int id antiClockwise 0x7f0a004e
 int id anticipate 0x7f0a004f
 int id arc 0x7f0a0050
+int id are_you_sure 0x7f0a020f
 int id asConfigured 0x7f0a0051
 int id async 0x7f0a0052
 int id auto 0x7f0a0053
@@ -2769,6 +2770,7 @@ int id grouping 0x7f0a00e8
 int id groups 0x7f0a00e9
 int id guideline 0x7f0a00ea
 int id header_title 0x7f0a00eb
+int id help 0x7f0a0210
 int id hideable 0x7f0a00ec
 int id home 0x7f0a00ed
 int id homeAsUp 0x7f0a00ee
@@ -2799,6 +2801,7 @@ int id line1 0x7f0a0106
 int id line3 0x7f0a0107
 int id linear 0x7f0a0108
 int id linear_layout 0x7f0a0109
+int id link 0x7f0a0211
 int id listMode 0x7f0a010a
 int id list_item 0x7f0a010b
 int id loginButton 0x7f0a010c
@@ -2881,6 +2884,7 @@ int id north 0x7f0a0158
 int id notification_background 0x7f0a0159
 int id notification_main_column 0x7f0a015a
 int id notification_main_column_container 0x7f0a015b
+int id notifs 0x7f0a0213
 int id off 0x7f0a015c
 int id oldPwordText 0x7f0a015d
 int id on 0x7f0a015e
@@ -3035,6 +3039,7 @@ int id transition_position 0x7f0a01f2
 int id transition_scene_layoutid_cache 0x7f0a01f3
 int id transition_transform 0x7f0a01f4
 int id triangle 0x7f0a01f5
+int id turn_on_notifs 0x7f0a0214
 int id tvResult 0x7f0a01f6
 int id unchecked 0x7f0a01f7
 int id uniform 0x7f0a01f8
@@ -3050,6 +3055,7 @@ int id view_tree_saved_state_registry_owner 0x7f0a0201
 int id view_tree_view_model_store_owner 0x7f0a0202
 int id visible 0x7f0a0203
 int id visible_removing_fragment_view_tag 0x7f0a0204
+int id warning 0x7f0a0212
 int id welcome 0x7f0a0205
 int id west 0x7f0a0206
 int id withText 0x7f0a0207
@@ -3156,12 +3162,14 @@ int layout activity_account_viewer_database_list 0x7f0d001c
 int layout activity_calendar_view 0x7f0d001d
 int layout activity_change_password 0x7f0d001e
 int layout activity_create_account_page 0x7f0d001f
+int layout activity_customize_profile 0x7f0d0081
 int layout activity_main 0x7f0d0020
 int layout activity_plants_page 0x7f0d0021
 int layout activity_settings 0x7f0d0022
 int layout activity_title_page 0x7f0d0023
 int layout create_account_page_welcome_popup 0x7f0d0024
 int layout custom_dialog 0x7f0d0025
+int layout delete_account_warning 0x7f0d0082
 int layout design_bottom_navigation_item 0x7f0d0026
 int layout design_bottom_sheet_dialog 0x7f0d0027
 int layout design_layout_snackbar 0x7f0d0028
@@ -3177,6 +3185,7 @@ int layout design_navigation_menu 0x7f0d0031
 int layout design_navigation_menu_item 0x7f0d0032
 int layout design_text_input_end_icon 0x7f0d0033
 int layout design_text_input_start_icon 0x7f0d0034
+int layout help_popup 0x7f0d0083
 int layout m3_alert_dialog 0x7f0d0035
 int layout m3_alert_dialog_actions 0x7f0d0036
 int layout m3_alert_dialog_title 0x7f0d0037
@@ -3231,6 +3240,7 @@ int layout notification_template_custom_big 0x7f0d0067
 int layout notification_template_icon_group 0x7f0d0068
 int layout notification_template_part_chronometer 0x7f0d0069
 int layout notification_template_part_time 0x7f0d006a
+int layout notifications_popup 0x7f0d0084
 int layout select_dialog_item_material 0x7f0d006b
 int layout select_dialog_multichoice_material 0x7f0d006c
 int layout select_dialog_singlechoice_material 0x7f0d006d
@@ -3318,6 +3328,8 @@ int string customize_profile 0x7f10003a
 int string dark_mode 0x7f10003b
 int string delete_account 0x7f10003c
 int string delete_this_account 0x7f10003d
+int string enable_disable 0x7f1000b1
+int string enable_disable_notifications 0x7f1000b2
 int string enter_current_password 0x7f10003e
 int string enter_email 0x7f10003f
 int string enter_email_here 0x7f100040
@@ -3335,7 +3347,9 @@ int string get 0x7f10004b
 int string goes_back_to_title_page 0x7f10004c
 int string hide_bottom_view_on_scroll_behavior 0x7f10004d
 int string home_page 0x7f10004e
+int string i_am_sure 0x7f1000ab
 int string icon_content_description 0x7f10004f
+int string if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel 0x7f1000ac
 int string item_view_role_description 0x7f100050
 int string label 0x7f100051
 int string login 0x7f100052
@@ -3410,6 +3424,8 @@ int string mtrl_picker_toggle_to_day_selection 0x7f100096
 int string mtrl_picker_toggle_to_text_input_mode 0x7f100097
 int string mtrl_picker_toggle_to_year_selection 0x7f100098
 int string mtrl_timepicker_confirm 0x7f100099
+int string need_help 0x7f1000ad
+int string our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main 0x7f1000ae
 int string password_toggle_content_description 0x7f10009a
 int string path_password_eye 0x7f10009b
 int string path_password_eye_mask_strike_through 0x7f10009c
@@ -3427,6 +3443,7 @@ int string to_move_forward_hit_advance_here_and_then_add_a_new_plant 0x7f1000a7
 int string todo 0x7f1000a8
 int string weather_version_1_0 0x7f1000a9
 int string welcome_to_plant 0x7f1000aa
+int string you_are_about_to_delete_your_account 0x7f1000b0
 int style AlertDialog_AppCompat 0x7f110000
 int style AlertDialog_AppCompat_Light 0x7f110001
 int style AndroidThemeColorAccentYellow 0x7f110002

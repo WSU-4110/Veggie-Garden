@@ -1,9 +1,12 @@
 package com.example.app;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,7 +16,7 @@ import java.util.ArrayList;
 public class Settings extends AppCompatActivity implements RecyclerViewInterface{
 
     //declare variables
-    Button backToMain;
+    Button backToMain, iAmSure;
     String[] options;
 
     ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
@@ -33,6 +36,9 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
 
         //set variables
         backToMain = findViewById(R.id.backToMain);      // declare back button
+        iAmSure = findViewById(R.id.are_you_sure);
+
+
 
         backToMain.setOnClickListener(view -> {                                     // back button actions
             Intent intent = new Intent(view.getContext(), MainActivity.class);
@@ -54,17 +60,43 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
     public void onItemClick(int position) {
 
       switch (position) {
-          case 0:
+          case 0: Intent intent0 = new Intent(this, CustomizeProfile.class);
+              intent0.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));                       // customize profile page
+              startActivity(intent0);
               break;
-          case 1:
+          case 1: showPopup1();       // notifications popup
               break;
-          case 2:
+          case 2: showPopup2();       // help popup
               break;
           case 3: Intent intent3 = new Intent(this, ChangePassword.class);
-              intent3.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+              intent3.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));                       // update password page
                     startActivity(intent3);
               break;
+          case 4: Intent intent4 = new Intent(this, TitlePage.class);
+                    Toast.makeText(this, "Log Out Successful", Toast.LENGTH_SHORT).show();          // logout
+                    startActivity(intent4);
+              break;
+          case 5: showPopup5();
+              break;                            // delete account popup
       }
 
+    }
+
+    private void showPopup5() {
+        Dialog popup = new Dialog(this);
+        popup.setContentView(R.layout.delete_account_warning);        // popup method
+        popup.show();
+    }
+
+    private void showPopup1() {
+        Dialog popup = new Dialog(this);
+        popup.setContentView(R.layout.notifications_popup);        // popup method
+        popup.show();
+    }
+
+    private void showPopup2() {
+        Dialog popup = new Dialog(this);
+        popup.setContentView(R.layout.help_popup);        // popup method
+        popup.show();
     }
 }
