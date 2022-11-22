@@ -55,10 +55,8 @@ public class DataBase extends SQLiteOpenHelper {
     // delete account
     public boolean deleteOne(Credentials credentials) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?" + credentials.getEmail();
-
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, null);
-
+        String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?";
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {credentials.getEmail()});
         return cursor.moveToFirst();
     }
 

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class Settings extends AppCompatActivity implements RecyclerViewInterface{
 
     //declare variables
-    Button backToMain, iAmSure;
+    Button backToMain;
     String[] options;
 
     ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
@@ -36,9 +36,6 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
 
         //set variables
         backToMain = findViewById(R.id.backToMain);      // declare back button
-        iAmSure = findViewById(R.id.are_you_sure);
-
-
 
         backToMain.setOnClickListener(view -> {                                     // back button actions
             Intent intent = new Intent(view.getContext(), MainActivity.class);
@@ -77,15 +74,28 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
                     startActivity(intent4);
               break;
           case 5: showPopup5();
-              break;                            // delete account popup
+              break;                   // delete account popup
       }
 
     }
 
     private void showPopup5() {
+        Button sure;
+        DataBase db;
         Dialog popup = new Dialog(this);
         popup.setContentView(R.layout.delete_account_warning);        // popup method
+        sure = findViewById(R.id.are_you_sure);
+        db = new DataBase(this);
+
         popup.show();
+
+        //sure.setOnClickListener(view -> {
+           // Intent intent = new Intent(this, TitlePage.class);
+            //String x = getIntent().getStringExtra("EMAIL");
+           // Credentials deleting = new Credentials("NAME", x, "PASSWORD");
+            //db.deleteOne(deleting);
+           // startActivity(intent);
+       // });
     }
 
     private void showPopup1() {
