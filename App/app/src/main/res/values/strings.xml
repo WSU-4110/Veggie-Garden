@@ -58,6 +58,11 @@
     <string name="under_construction">Under Construction</string>
     <string name="if_you_are_unsure_just_press_cancel">If you are unsure, just press Cancel.</string>
     <string name="cancel">Cancel</string>
+    <string name="add_your_new_plant_s_information_below">Add your new plant\'s information below!</string>
+    <string name="add_this_plant">Add This Plant</string>
+    <string name="plant_s_birthday">Plant\'s Birthday</string>
+    <string name="outdoors">Outdoors?</string>
+    <string name="enter_plant_s_birthdate">Enter Plant\'s Birthdate</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
@@ -65,5 +70,26 @@
         <item>Change Password</item>
         <item>Log Out</item>
         <item>Delete This Account</item>
+    </string-array>
+    <string-array name="listOfPlants">
+        <item>Select a Plant!</item>
+        <item>Beefsteak Tomato</item>
+        <item>Beets</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Cherry Tomato</item>
+        <item>Corn</item>
+        <item>Cucumber</item>
+        <item>Eggplant</item>
+        <item>Garlic</item>
+        <item>Kale</item>
+        <item>Onions</item>
+        <item>Orchid</item>
+        <item>Radish</item>
+        <item>Sunflower</item>
+        <item>Turnip</item>
+        <item>Yellow Squash</item>
     </string-array>
 </resources>

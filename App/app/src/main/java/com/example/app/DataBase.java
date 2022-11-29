@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,11 +54,11 @@ public class DataBase extends SQLiteOpenHelper {
     }
 
     // delete account
-    public boolean deleteOne(Credentials credentials) {
+    public void deleteOne(Credentials credentials) {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?";
         @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {credentials.getEmail()});
-        return cursor.moveToFirst();
+        cursor.moveToFirst();
     }
 
     // check email

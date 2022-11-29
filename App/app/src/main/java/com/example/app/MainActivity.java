@@ -11,8 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     // create variables
     ImageButton gearButton;
-    Button calendarButton;
-    Button plantsButton;
+    Button calendarButton, plantsButton, newPlant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                                                                     // DataBase db = new DataBase(this); can be used later if needed
         calendarButton = findViewById(R.id.calendarView);
         plantsButton = findViewById(R.id.plantsButton);
+        newPlant = findViewById(R.id.newPlant);
 
         // Retrieve account information
                                                                                       //DataBase db = new DataBase(this);
@@ -42,11 +42,22 @@ public class MainActivity extends AppCompatActivity {
 
         calendarButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, CalendarActivity.class);         // calendar button
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);                                // check new account
             startActivity(intent);
         });
 
         plantsButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, PlantsPage.class);               // plant add button
+            Intent intent = new Intent(this, PlantsPage.class);               // show active plants button
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);                                // check new account
+            startActivity(intent);
+        });
+
+        newPlant.setOnClickListener(view -> {
+            Intent intent = new Intent(this, AddAPlant.class);                // add a new plant
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);                                // check new account
             startActivity(intent);
         });
     }

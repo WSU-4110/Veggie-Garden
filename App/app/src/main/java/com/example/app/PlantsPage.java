@@ -1,24 +1,38 @@
 package com.example.app;
 
 import static android.graphics.Color.WHITE;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.LinearLayout;
+import android.widget.Button;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PlantsPage extends AppCompatActivity {
 
+    // declare vars
+    Button back;
+
+    @SuppressLint("MissingInflatedId")
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plants_page);
 
+        // set vars
+        back = findViewById(R.id.backToMain);
 
-        LinearLayout linearLayout = findViewById(R.id.linear_layout);
+        back.setOnClickListener(view -> {                                     // back button actions
+            Intent intent = new Intent(view.getContext(), MainActivity.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
+            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
+            startActivity(intent);
+        });
 
 /**        ConstraintSet myConstraints = new ConstraintSet();
  myConstraints.clone(myLayout);
@@ -39,7 +53,7 @@ public class PlantsPage extends AppCompatActivity {
             newPlant.setTextColor(Color.valueOf(WHITE));
             newPlant.setPlantBirthday("10/19/2022");
 
-            linearLayout.addView(newPlant);
+            //linearLayout.addView(newPlant);
 
         }
     }
