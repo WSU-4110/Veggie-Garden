@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_beige"
+    tools:context=".DeleteAccountPage">
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="12dp"
+        android:text="@string/you_are_about_to_delete_your_account"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/if_you_are_unsure_just_press_cancel"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning" />
+
+    <Button
+        android:id="@+id/are_you_sure"
+        android:color="@color/dark_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/i_am_sure"
+        app:layout_constraintBottom_toTopOf="@+id/nevermind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructions" />
+
+    <Button
+        android:id="@+id/nevermind"
+        android:color="@color/dark_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="158dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/are_you_sure" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

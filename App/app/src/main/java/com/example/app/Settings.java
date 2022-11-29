@@ -73,30 +73,14 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
                     Toast.makeText(this, "Log Out Successful", Toast.LENGTH_SHORT).show();          // logout
                     startActivity(intent4);
               break;
-          case 5: showPopup5();
+          case 5: Intent intent5 = new Intent(this, DeleteAccountPage.class);               // move to delete page
+              intent5.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+              startActivity(intent5);
               break;                   // delete account popup
       }
 
     }
 
-    private void showPopup5() {
-        Button sure;
-        DataBase db;
-        Dialog popup = new Dialog(this);
-        popup.setContentView(R.layout.delete_account_warning);        // popup method
-        sure = findViewById(R.id.are_you_sure);
-        db = new DataBase(this);
-
-        popup.show();
-
-        //sure.setOnClickListener(view -> {
-           // Intent intent = new Intent(this, TitlePage.class);
-            //String x = getIntent().getStringExtra("EMAIL");
-           // Credentials deleting = new Credentials("NAME", x, "PASSWORD");
-            //db.deleteOne(deleting);
-           // startActivity(intent);
-       // });
-    }
 
     private void showPopup1() {
         Dialog popup = new Dialog(this);

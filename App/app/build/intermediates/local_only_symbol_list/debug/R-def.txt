@@ -8,6 +8,7 @@ attr? textColor
 color black
 color dark_green
 color dark_purple
+color dark_red
 color light_beige
 color lime_green
 color purple_200
@@ -63,6 +64,7 @@ id loginButton
 id lv_credentials
 id message
 id nameInput
+id nevermind
 id newPlant
 id newPwordText
 id notifs
@@ -70,10 +72,12 @@ id oldPwordText
 id plantLogo
 id plantsButton
 id pwordInput
+id r_layout
 id root_vg
 id textView
 id textView2
 id textView3
+id textView4
 id toolbar
 id toolbar2
 id toolbar3
@@ -86,12 +90,12 @@ layout activity_calendar_view
 layout activity_change_password
 layout activity_create_account_page
 layout activity_customize_profile
+layout activity_delete_account_page
 layout activity_main
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
 layout create_account_page_welcome_popup
-layout delete_account_warning
 layout help_popup
 layout notifications_popup
 layout settings_view_layout
@@ -111,6 +115,7 @@ string back2
 string backButton
 string button
 string calendar
+string cancel
 string change_your_password
 string clear_data
 string click_off_this_popup_and_go_to_add_a_new_plant_to_get_started
@@ -140,6 +145,7 @@ string goes_back_to_title_page
 string home_page
 string i_am_sure
 string if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel
+string if_you_are_unsure_just_press_cancel
 string login
 string need_help
 string our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main
@@ -151,6 +157,7 @@ string this_is_a_tool_for_developers
 string to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize
 string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
+string under_construction
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account
