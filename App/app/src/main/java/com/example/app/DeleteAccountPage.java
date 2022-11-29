@@ -3,13 +3,9 @@ package com.example.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 
 public class DeleteAccountPage extends AppCompatActivity {
 
@@ -31,7 +27,7 @@ public class DeleteAccountPage extends AppCompatActivity {
                 Intent intent = new Intent(this, TitlePage.class);
                 String x = getIntent().getStringExtra("EMAIL");
                 Credentials deleting = new Credentials("NAME", x, "PASSWORD");
-                db.deleteOne(deleting);
+                db.deleteUser(deleting);
                 startActivity(intent);
         });
 

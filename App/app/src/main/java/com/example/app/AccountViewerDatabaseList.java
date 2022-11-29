@@ -36,7 +36,7 @@ public class AccountViewerDatabaseList extends AppCompatActivity {
     }
 
    private void ShowListView(DataBase db) {
-        arrayAdapter = new ArrayAdapter<>(AccountViewerDatabaseList.this, android.R.layout.simple_list_item_1, db.getAll());
+        arrayAdapter = new ArrayAdapter<>(AccountViewerDatabaseList.this, android.R.layout.simple_list_item_1, db.getUsers());
         lv_credentials.setAdapter(arrayAdapter);
     }
 }

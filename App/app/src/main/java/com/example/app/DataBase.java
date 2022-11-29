@@ -17,6 +17,10 @@ public class DataBase extends SQLiteOpenHelper {
     public static final String USER_EMAIL = "USER_EMAIL";
     public static final String USER_PWORD = "USER_PWORD";
 
+    public static final String PLANT_TABLE = "PLANTS";
+    public static final String PLANT_NAME = "PLANT_NAME";
+    public static final String PLANT_TYPE = "PLANT_TYPE";
+
     public DataBase(Context context) {
         super(context, "plant.db", null, 1);
     }          // constructor
@@ -24,10 +28,16 @@ public class DataBase extends SQLiteOpenHelper {
     //this is called the first time database is accessed
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE " + USER_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, "
+        String createUserTable = "CREATE TABLE " + USER_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT)" ;  // long way
 
-        db.execSQL(createTableStatement);
+        String createPlantTable= "CREATE TABLE " + PLANT_TABLE
+                + "(id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                PLANT_NAME + " TEXT, " +
+                PLANT_TYPE + " TEXT)";
+
+        db.execSQL(createUserTable);
+        db.execSQL(createPlantTable);
     }
 
     //this is called if the database version number changes
@@ -38,7 +48,7 @@ public class DataBase extends SQLiteOpenHelper {
     }
 
     // add/insert values
-    public boolean addOne(Credentials credential) {
+    public boolean addUser(Credentials credential) {
 
         //mandatory entries, works like Intent
         SQLiteDatabase db = this.getWritableDatabase();
@@ -52,8 +62,17 @@ public class DataBase extends SQLiteOpenHelper {
         return insert != -1;
     }
 
+    public boolean addPlant(PlantId plant) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(PLANT_NAME, plant.getPlantName());
+        cv.put(PLANT_TYPE, plant.getPlantType());
+
+    }
+
     // delete account
-    public boolean deleteOne(Credentials credentials) {
+    public boolean deleteUser(Credentials credentials) {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?";
         @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {credentials.getEmail()});
@@ -98,7 +117,7 @@ public class DataBase extends SQLiteOpenHelper {
     }
 
     //accessible through the home page > settings > accounts > databaseButton (shows all collected info)
-    public List<Credentials> getAll() {        // this is unused currently in the app, only use for admin bug fixing
+    public List<Credentials> getUsers () {        // this is unused currently in the app, only use for admin bug fixing
 
         List<Credentials> returnList = new ArrayList<>();
 

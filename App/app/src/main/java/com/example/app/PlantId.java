@@ -22,6 +22,7 @@ public class PlantId extends View {
     private Color textColor = Color.valueOf(WHITE);
     private String plantName;
     private String plantBirthday;
+    private String plantType;
 
     private Paint textPaint;
     private Paint backgroundPaint;
@@ -120,5 +121,13 @@ public class PlantId extends View {
 
     public void setTextColor(Color textColor) {
         this.textColor = textColor;
+    }
+
+    public String getPlantType() {
+        return plantType;
+    }
+
+    public void setPlantType(String plantType) {
+        this.plantType = plantType;
     }
 }
