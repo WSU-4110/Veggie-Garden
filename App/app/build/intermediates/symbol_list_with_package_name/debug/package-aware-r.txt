@@ -2881,6 +2881,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id nevermind
 id newPlant
 id newPwordText
 id noScroll
@@ -2918,6 +2919,7 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id pwordInput
+id r_layout
 id radio
 id ratio
 id rectangles
@@ -3018,6 +3020,7 @@ id textTop
 id textView
 id textView2
 id textView3
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3171,13 +3174,13 @@ layout activity_calendar_view
 layout activity_change_password
 layout activity_create_account_page
 layout activity_customize_profile
+layout activity_delete_account_page
 layout activity_main
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
 layout create_account_page_welcome_popup
 layout custom_dialog
-layout delete_account_warning
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -3319,6 +3322,7 @@ string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string button
 string calendar
+string cancel
 string change_your_password
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -3359,6 +3363,7 @@ string home_page
 string i_am_sure
 string icon_content_description
 string if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel
+string if_you_are_unsure_just_press_cancel
 string item_view_role_description
 string label
 string login
@@ -3450,6 +3455,7 @@ string this_is_a_tool_for_developers
 string to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize
 string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
+string under_construction
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account

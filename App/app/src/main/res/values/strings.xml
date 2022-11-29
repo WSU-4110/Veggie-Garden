@@ -55,6 +55,9 @@
     <string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string>
     <string name="enable_disable_notifications">Enable/disable notifications?</string>
     <string name="enable_disable">Enable/Disable</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="if_you_are_unsure_just_press_cancel">If you are unsure, just press Cancel.</string>
+    <string name="cancel">Cancel</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
