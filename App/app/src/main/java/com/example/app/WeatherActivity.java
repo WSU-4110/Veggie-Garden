@@ -38,13 +38,15 @@ import java.text.DecimalFormat;
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            etCity=findViewById(R.id.etCity);
+            etCity=findViewById(R.id.etCity);           //Change to ZIP
             etCountry=findViewById(R.id.etCountry);
             tvResult=findViewById(R.id.tvResult); //Bug
 
         }
 
         public void getWeatherDetails(View view) {
+
+
             String tempUrl = "";
             String city = etCity.getText().toString().trim();
             String country = etCountry.getText().toString().trim();
