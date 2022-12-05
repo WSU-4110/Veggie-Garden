@@ -20,6 +20,8 @@ import java.text.DecimalFormat;
     public class WeatherActivity extends AppCompatActivity {
         EditText etCity, etCountry;
         TextView tvResult;
+        private final String url = "https://api.openweathermap.org/data/2.5/weather?q";
+        private final String appID = "94a4143658ad8966e26f35512cd0f006";
         DecimalFormat df = new DecimalFormat("#.##");
 
 
@@ -41,9 +43,7 @@ import java.text.DecimalFormat;
             if(city.equals("")){
                 tvResult.setText("City field can not be empty!");
             }else{
-                //Error with Url
-                String url = "https://api.openweatehrmap.org/data/2.5/weather";
-                String appID = "94a4143658ad8966e26f35512cd0f006";
+
                 if(!country.equals("")){
                     tempUrl = url + "?q=" + city + "," + country + "&appID=" + appID;
                 }else{
