@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.os.Build;
 import android.view.MotionEvent;
 import android.view.View;
@@ -84,7 +85,7 @@ public class PlantId extends View implements View.OnClickListener {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(1400, 200);
+        setMeasuredDimension(1400, 300);
     }
 
     // Called when displaying the PlantId
@@ -93,9 +94,12 @@ public class PlantId extends View implements View.OnClickListener {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawRect(this.getX(), this.getY(), 1400, this.getY()+200, backgroundPaint);
-        canvas.drawText(plantName, this.getX()+ 50, this.getY()+50, textPaint);
-        canvas.drawText("Birthday: ", this.getX() + 50, this.getY() + 100, textPaint);
+        Rect offsetView = new Rect();
+        this.getDrawingRect(offsetView);
+
+        canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
+        canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
+        canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
         
     }
 

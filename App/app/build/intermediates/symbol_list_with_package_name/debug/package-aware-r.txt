@@ -2759,6 +2759,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backButton
 id backToMain
+id backToPlants
 id backToSettings
 id barrier
 id baseline
@@ -3043,6 +3044,7 @@ id pin
 id plantBday
 id plantList
 id plantLogo
+id plantName
 id plantsButton
 id position
 id postLayout
@@ -3335,6 +3337,7 @@ layout activity_create_account_page
 layout activity_customize_profile
 layout activity_delete_account_page
 layout activity_main
+layout activity_plant_info
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
