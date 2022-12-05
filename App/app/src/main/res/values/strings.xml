@@ -66,15 +66,28 @@
         <item>Log Out</item>
         <item>Delete This Account</item>
     </string-array>
+    <string-array name="listOfPlants">
+        <item>Select a Plant!</item>
+        <item>Beefsteak Tomato</item>
+        <item>Beets</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Cherry Tomato</item>
+        <item>Corn</item>
+        <item>Cucumber</item>
+        <item>Eggplant</item>
+        <item>Garlic</item>
+        <item>Kale</item>
+        <item>Onions</item>
+        <item>Orchid</item>
+        <item>Radish</item>
+        <item>Sunflower</item>
+        <item>Turnip</item>
+        <item>Yellow Squash</item>
+    </string-array>
     <string name="title_activity_add_plant">AddPlant</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="plant_name">Plant name</string>
     <string name="plant_type">Plant type</string>
     <string name="plant_birthday">Plant birthday</string>

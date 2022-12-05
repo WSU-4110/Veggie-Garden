@@ -1,6 +1,9 @@
 package com.example.app;
 
 import static android.graphics.Color.WHITE;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,17 +18,28 @@ public class PlantsPage extends AppCompatActivity {
 
     DataBase db = new DataBase(this);
 
+    // declare vars
+    Button back;
+
+    @SuppressLint("MissingInflatedId")
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plants_page);
 
-
+        // set vars
+        back = findViewById(R.id.backToMain);
         LinearLayout linearLayout = findViewById(R.id.linear_layout);
 
-/**
- ConstraintSet myConstraints = new ConstraintSet();
+        back.setOnClickListener(view -> {                                     // back button actions
+            Intent intent = new Intent(view.getContext(), MainActivity.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
+            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
+            startActivity(intent);
+        });
+
+/**        ConstraintSet myConstraints = new ConstraintSet();
  myConstraints.clone(myLayout);
 
  for (int i = 0; i < 8; i++) {

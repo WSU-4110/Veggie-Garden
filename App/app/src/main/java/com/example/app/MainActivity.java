@@ -44,11 +44,15 @@ public class MainActivity extends AppCompatActivity {
 
         calendarButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, CalendarActivity.class);         // calendar button
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);                                // check new account
             startActivity(intent);
         });
 
         plantsButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, PlantsPage.class);               // plant add button
+            Intent intent = new Intent(this, PlantsPage.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
 

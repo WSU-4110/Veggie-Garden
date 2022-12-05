@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 array card_text_titles
+array listOfPlants
 attr? backgroundColor
 attr? plantBirthday
 attr? plantName
@@ -32,6 +33,7 @@ font roboto_bold
 font roboto_condensed_regular
 font robotoslabregular
 font sirukota
+id addPlant
 id are_you_sure
 id backButton
 id backToMain
@@ -60,6 +62,7 @@ id instructions
 id layout
 id linear_layout
 id link
+id location
 id loginButton
 id lv_credentials
 id message
@@ -69,6 +72,8 @@ id newPlant
 id newPwordText
 id notifs
 id oldPwordText
+id plantBday
+id plantList
 id plantLogo
 id plantsButton
 id pwordInput
@@ -78,6 +83,7 @@ id textView
 id textView2
 id textView3
 id textView4
+id titleMessage
 id toolbar
 id toolbar2
 id toolbar3
@@ -86,6 +92,7 @@ id tvResult
 id warning
 id welcome
 layout activity_account_viewer_database_list
+layout activity_add_aplant
 layout activity_calendar_view
 layout activity_change_password
 layout activity_create_account_page
@@ -106,6 +113,8 @@ string account
 string account_list
 string add_a_new_plant
 string add_a_new_plant_
+string add_this_plant
+string add_your_new_plant_s_information_below
 string advance
 string although_this_is_a_demo_project_and_this_project_is_all_about_the_customization_of_a_dialog_box_we_can_design_whatever_we_want
 string app_name
@@ -138,6 +147,7 @@ string enter_name_here
 string enter_name_of_city
 string enter_name_of_country
 string enter_password_here
+string enter_plant_s_birthdate
 string enter_pword_here
 string exitButton
 string get
@@ -149,7 +159,9 @@ string if_you_are_unsure_just_press_cancel
 string login
 string need_help
 string our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main
+string outdoors
 string plant_calendar
+string plant_s_birthday
 string plants
 string save
 string textview
