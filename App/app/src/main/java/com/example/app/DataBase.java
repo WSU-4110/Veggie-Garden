@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,11 @@ public class DataBase extends SQLiteOpenHelper {
     public static final String USER_EMAIL = "USER_EMAIL";
     public static final String USER_PWORD = "USER_PWORD";
 
+    public static final String PLANT_TABLE = "PLANT_TABLE";
+    public static final String PLANT_NAME = "PLANT_NAME";
+    public static final String PLANT_TYPE = "PLANT_TYPE";
+    public static final String PLANT_BDAY = "PLANT_BDAY";
+
     public DataBase(Context context) {
         super(context, "plant.db", null, 1);
     }          // constructor
@@ -24,16 +30,23 @@ public class DataBase extends SQLiteOpenHelper {
     //this is called the first time database is accessed
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE " + USER_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, "
+        String createUserTable = "CREATE TABLE " + USER_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT)" ;  // long way
 
-        db.execSQL(createTableStatement);
+        String createPlantTable = "CREATE TABLE " + PLANT_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                PLANT_NAME + " TEXT, " +
+                PLANT_TYPE + " TEXT, " +
+                PLANT_BDAY + " TEXT)";
+
+        db.execSQL(createUserTable);
+        db.execSQL(createPlantTable);
     }
 
     //this is called if the database version number changes
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop Table if exists Credentials");  // short way
+        db.execSQL("DROP TABLE IF EXISTS " + PLANT_TABLE);
         onCreate(db);
     }
 
@@ -53,11 +66,11 @@ public class DataBase extends SQLiteOpenHelper {
     }
 
     // delete account
-    public boolean deleteOne(Credentials credentials) {
+    public void deleteOne(Credentials credentials) {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?";
         @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {credentials.getEmail()});
-        return cursor.moveToFirst();
+        cursor.moveToFirst();
     }
 
     // check email
@@ -127,4 +140,49 @@ public class DataBase extends SQLiteOpenHelper {
         return returnList;   // spit out list
     }
 
+    public boolean addPlant(Plant plant) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(PLANT_NAME, plant.getName());
+        cv.put(PLANT_TYPE, plant.getType());
+        cv.put(PLANT_BDAY, plant.getBday());
+
+        long insert = db.insert(PLANT_TABLE, null, cv);
+        return insert != -1;
+    }
+
+    public boolean deleteOne(Plant plant) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String queryString = "DELETE FROM " + PLANT_TABLE + " WHERE " + PLANT_NAME + " = ?";
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {plant.getName()});
+        return cursor.moveToFirst();
+    }
+
+    public List<Plant> getPlants() {        // this is unused currently in the app, only use for admin bug fixing
+
+        List<Plant> returnList = new ArrayList<>();
+
+        String queryString = "SELECT * FROM " + PLANT_TABLE;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(queryString, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                String name = cursor.getString(1);
+                String type = cursor.getString(2);
+                String bday = cursor.getString(3);
+
+                Plant plant = new Plant(name, type, bday);
+                returnList.add(plant);
+            } while (cursor.moveToNext());
+        }
+        else {
+            System.out.println("Something went wrong.");
+        }
+
+        cursor.close();
+        db.close();
+        return returnList;
+    }
 }

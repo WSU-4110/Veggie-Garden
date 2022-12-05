@@ -37,6 +37,19 @@ public class PlantId extends View {
         this.setLayoutParams(params);
     }
 
+    public PlantId(Context context, Plant plant) {
+        super(context);
+        init();
+
+        this.plantName = plant.getName();
+        this.plantBirthday = plant.getBday();
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.setMargins(20, 20, 20, 50);
+        this.setLayoutParams(params);
+
+    }
+
     // Initializes drawable objects to increase performance
     private void init() {
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);

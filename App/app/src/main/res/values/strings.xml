@@ -66,4 +66,30 @@
         <item>Log Out</item>
         <item>Delete This Account</item>
     </string-array>
+    <string-array name="listOfPlants">
+        <item>Select a Plant!</item>
+        <item>Beefsteak Tomato</item>
+        <item>Beets</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Cherry Tomato</item>
+        <item>Corn</item>
+        <item>Cucumber</item>
+        <item>Eggplant</item>
+        <item>Garlic</item>
+        <item>Kale</item>
+        <item>Onions</item>
+        <item>Orchid</item>
+        <item>Radish</item>
+        <item>Sunflower</item>
+        <item>Turnip</item>
+        <item>Yellow Squash</item>
+    </string-array>
+    <string name="title_activity_add_plant">AddPlant</string>
+    <string name="plant_name">Plant name</string>
+    <string name="plant_type">Plant type</string>
+    <string name="plant_birthday">Plant birthday</string>
+    <string name="create_plant">Create Plant</string>
 </resources>

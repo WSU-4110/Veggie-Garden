@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -18,7 +17,35 @@
         android:theme="@style/Theme.App"
         tools:targetApi="31">
         <activity
-            android:name=".activity_plants_page"
+            android:name=".addPlant"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DeleteAccountPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CustomizeProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PlantsPage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -32,7 +59,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Account_Viewer_Database_List"
+            android:name=".AccountViewerDatabaseList"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -46,16 +73,17 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Create_Account_Page"
+            android:name=".CreateAccountPage"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_test_page"
+            android:name=".TitlePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
