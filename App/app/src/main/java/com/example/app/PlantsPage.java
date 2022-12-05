@@ -27,12 +27,12 @@ public class PlantsPage extends AppCompatActivity {
         back = findViewById(R.id.backToMain);
         LinearLayout linearLayout = findViewById(R.id.linear_layout);
 
-//        back.setOnClickListener(view -> {                                     // back button actions
-//            Intent intent = new Intent(view.getContext(), MainActivity.class);
-//            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
-//            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
-//            startActivity(intent);
-//        });
+        back.setOnClickListener(view -> {                                     // back button actions
+            Intent intent = new Intent(view.getContext(), MainActivity.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
+            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
+            startActivity(intent);
+        });
 
         db = new DataBase(this);
         List<Plant> plantList = db.getPlants();                                 // display list
@@ -44,7 +44,6 @@ public class PlantsPage extends AppCompatActivity {
                 Intent intent = new Intent(this, plantInfo.class);
                 intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
                 intent.putExtra("PLANT_NAME", plant.getName());
-                intent.putExtra("NEW_USER", false);
                 startActivity(intent);
             });
             linearLayout.addView(newPlant);
