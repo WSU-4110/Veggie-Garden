@@ -12,7 +12,7 @@ import java.util.List;
 
 public class DataBase extends SQLiteOpenHelper {
 
-// set variables
+    // set variables
     public static final String USER_TABLE = "USER_INFO";
     public static final String USER_NAME = "USER_NAME";
     public static final String USER_EMAIL = "USER_EMAIL";
@@ -31,7 +31,7 @@ public class DataBase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createUserTable = "CREATE TABLE " + USER_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT)" ;  // long way
+                + USER_NAME + " TEXT, " + USER_EMAIL + " TEXT, " + USER_PWORD + " TEXT)";  // long way
 
         String createPlantTable = "CREATE TABLE " + PLANT_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 PLANT_NAME + " TEXT, " +
@@ -69,41 +69,41 @@ public class DataBase extends SQLiteOpenHelper {
     public void deleteOne(Credentials credentials) {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?";
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {credentials.getEmail()});
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[]{credentials.getEmail()});
         cursor.moveToFirst();
     }
 
     // check email
     public boolean checkEmail(String email) {
         SQLiteDatabase db = this.getWritableDatabase();
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?" , new String[] {email} );
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[]{email});
         return cursor.getCount() > 0;
     }
 
     // check password
     public boolean checkPassword(String password) {
         SQLiteDatabase db = this.getWritableDatabase();
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_PWORD + " = ?" , new String[] {password} );
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_PWORD + " = ?", new String[]{password});
         return cursor.getCount() > 0;
     }
 
     // check both
     public boolean checkEmailPassword(String email, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ? AND " + USER_PWORD + " = ?", new String[] {email, password} );
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ? AND " + USER_PWORD + " = ?", new String[]{email, password});
         return cursor.getCount() > 0;
     }
 
     // change pass
     public void updatePassword(String email, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("UPDATE " + USER_TABLE + " SET " + USER_PWORD + " = ? " + " WHERE " + USER_EMAIL + " = ?", new String[] {password, email} );
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("UPDATE " + USER_TABLE + " SET " + USER_PWORD + " = ? " + " WHERE " + USER_EMAIL + " = ?", new String[]{password, email});
         cursor.getCount();
     }
 
     public String getName(String email) {         // unused currently, returns name of currently logged in user
         SQLiteDatabase db = this.getWritableDatabase();
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT " + USER_NAME + " FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[] {email} );
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT " + USER_NAME + " FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[]{email});
         String name = "test";
         if (cursor.moveToFirst())
             name = cursor.getString(0);
@@ -130,9 +130,8 @@ public class DataBase extends SQLiteOpenHelper {
                 Credentials newUser = new Credentials(userName, userEmail, userPword);
                 returnList.add(newUser);
             } while (cursor.moveToNext());
-        }
-        else {
-           System.out.println("Something went wrong.");
+        } else {
+            System.out.println("Something went wrong.");
         }
 
         cursor.close();               // always close this!
@@ -140,7 +139,7 @@ public class DataBase extends SQLiteOpenHelper {
         return returnList;   // spit out list
     }
 
-    public boolean addPlant(Plant plant) {
+    public void addPlant(Plant plant) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -149,13 +148,12 @@ public class DataBase extends SQLiteOpenHelper {
         cv.put(PLANT_BDAY, plant.getBday());
 
         long insert = db.insert(PLANT_TABLE, null, cv);
-        return insert != -1;
     }
 
     public boolean deleteOne(Plant plant) {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + PLANT_TABLE + " WHERE " + PLANT_NAME + " = ?";
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {plant.getName()});
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[]{plant.getName()});
         return cursor.moveToFirst();
     }
 
@@ -176,8 +174,7 @@ public class DataBase extends SQLiteOpenHelper {
                 Plant plant = new Plant(name, type, bday);
                 returnList.add(plant);
             } while (cursor.moveToNext());
-        }
-        else {
+        } else {
             System.out.println("Something went wrong.");
         }
 

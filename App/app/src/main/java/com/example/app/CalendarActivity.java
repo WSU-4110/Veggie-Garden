@@ -16,7 +16,7 @@ public class CalendarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
 
-            backToMain.findViewById(R.id.backToMain);
+        backToMain = findViewById(R.id.backToMain);
 
         backToMain.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), MainActivity.class);

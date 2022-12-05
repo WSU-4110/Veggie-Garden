@@ -89,11 +89,11 @@ public class PlantId extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawRect(this.getX(), this.getY(), 1400, this.getY()+200, backgroundPaint);
-        canvas.drawText(plantName.toUpperCase(), this.getX()+ 50, this.getY()+50, textPaint);
+        canvas.drawRect(this.getX(), this.getY(), 1400, this.getY() + 200, backgroundPaint);
+        canvas.drawText(plantName.toUpperCase(), this.getX() + 50, this.getY() + 50, textPaint);
         canvas.drawText("Birthday: " + plantBirthday, this.getX() + 50, this.getY() + 100, textPaint);
         canvas.drawText(outOrIn, this.getX() + 50, this.getY() + 150, textPaint);
-        
+
     }
 
     public Color getBackgroundColor() {

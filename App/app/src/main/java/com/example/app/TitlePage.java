@@ -1,9 +1,11 @@
 package com.example.app;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 // FOLLOW THIS FORMAT FOR CREATING VALUES/BUTTONS/MOVING PAGES/STORING DATA
@@ -40,12 +42,10 @@ public class TitlePage extends AppCompatActivity {
                     intent.putExtra("EMAIL", email);
                     intent.putExtra("NEW_USER", false);
                     startActivity(intent);
-                }
-                else {
+                } else {
                     Toast.makeText(TitlePage.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();         // error toast
                 }
-            }
-            else {
+            } else {
                 Toast.makeText(TitlePage.this, "Invalid Entry", Toast.LENGTH_SHORT).show();        // error toast
             }
         });

@@ -2757,7 +2757,7 @@ int id autoComplete 0x7f0a0057
 int id autoCompleteToEnd 0x7f0a0058
 int id autoCompleteToStart 0x7f0a0059
 int id backButton 0x7f0a005a
-int id backToMainAct 0x7f0a021d
+int id backToMain 0x7f0a005b
 int id backToSettings 0x7f0a005c
 int id barrier 0x7f0a005d
 int id baseline 0x7f0a005e

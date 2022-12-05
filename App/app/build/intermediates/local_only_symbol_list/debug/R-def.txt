@@ -36,7 +36,7 @@ font sirukota
 id addPlant
 id are_you_sure
 id backButton
-id backToMainAct
+id backToMain
 id backToSettings
 id btnGet
 id calendarView

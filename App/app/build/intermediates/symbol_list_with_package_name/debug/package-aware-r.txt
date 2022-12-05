@@ -2758,7 +2758,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backButton
-id backToMainAct
+id backToMain
 id backToSettings
 id barrier
 id baseline
