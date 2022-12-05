@@ -1,26 +1,20 @@
 package com.example.app;
 
-import static android.graphics.Color.WHITE;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.LinearLayout;
-
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.List;
 
 public class PlantsPage extends AppCompatActivity {
 
-    DataBase db = new DataBase(this);
-
     // declare vars
     Button back;
+    DataBase db;
 
     @SuppressLint("MissingInflatedId")
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -40,25 +34,12 @@ public class PlantsPage extends AppCompatActivity {
             startActivity(intent);
         });
 
-/**        ConstraintSet myConstraints = new ConstraintSet();
- myConstraints.clone(myLayout);
-
- for (int i = 0; i < 8; i++) {
- TextView newTextView = new TextView(this);
- newTextView.setText("View " + i);
- newTextView.setId(View.generateViewId());
-
- myConstraints.connect(newTextView.getId(), ConstraintSet.RIGHT, R.id.linear_layout, ConstraintSet.RIGHT, 0);
- myConstraints.connect(newTextView.getId(), ConstraintSet.TOP, R.id.linear_layout, ConstraintSet.TOP, 0);
-
- linearLayout.addView(newTextView);}
- **/
-
-        List<Plant> plantList = db.getPlants();
+        db = new DataBase(this);
+        List<Plant> plantList = db.getPlants();                      // display list
 
         for (Plant plant :
                 plantList) {
-            PlantId newPlant = new PlantId(this, plant);
+            PlantId newPlant = new PlantId(this, plant);                       // displays plants
             linearLayout.addView(newPlant);
         }
     }

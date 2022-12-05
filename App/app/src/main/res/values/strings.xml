@@ -58,6 +58,10 @@
     <string name="under_construction">Under Construction</string>
     <string name="if_you_are_unsure_just_press_cancel">If you are unsure, just press Cancel.</string>
     <string name="cancel">Cancel</string>
+    <string name="add_your_new_plant_s_information_below">Add your new plant\'s information below!</string>
+    <string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string>
+    <string name="outdoors">Outdoors?</string>
+    <string name="add_this_plant">Add This Plant</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
@@ -87,9 +91,4 @@
         <item>Turnip</item>
         <item>Yellow Squash</item>
     </string-array>
-    <string name="title_activity_add_plant">AddPlant</string>
-    <string name="plant_name">Plant name</string>
-    <string name="plant_type">Plant type</string>
-    <string name="plant_birthday">Plant birthday</string>
-    <string name="create_plant">Create Plant</string>
 </resources>

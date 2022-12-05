@@ -41,6 +41,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <item name="linear_layout" type="id"/>
     <string name="account">Account!</string>
     <string name="account_list">Account List</string>
     <string name="add_a_new_plant">Add a New Plant!</string>
@@ -79,7 +80,7 @@
     <string name="enter_name_of_city">Enter Name of City</string>
     <string name="enter_name_of_country">Enter Name of Country</string>
     <string name="enter_password_here">Enter Password Here</string>
-    <string name="enter_plant_s_birthdate">Enter Plant\'s Birthdate</string>
+    <string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string>
     <string name="enter_pword_here">Enter Password Here</string>
     <string name="exitButton">exit button</string>
     <string name="get">Get</string>
@@ -93,7 +94,6 @@
     <string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string>
     <string name="outdoors">Outdoors?</string>
     <string name="plant_calendar">Plant Calendar</string>
-    <string name="plant_s_birthday">Plant\'s Birthday</string>
     <string name="plants">Plants</string>
     <string name="save">Save</string>
     <string name="textview">TextView</string>
@@ -127,6 +127,12 @@
         <item name="colorOnSecondary">@color/black</item>
         
     </style>
+    <style name="Theme.App.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.App.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.App.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <declare-styleable name="PlantId">
         <attr format="string" name="plantName"/>
         <attr format="string" name="plantBirthday"/>

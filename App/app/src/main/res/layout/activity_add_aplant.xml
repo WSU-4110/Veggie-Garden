@@ -78,13 +78,11 @@
 
     <EditText
         android:id="@+id/plantBday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="107dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginEnd="94dp"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
-        android:hint="@string/enter_plant_s_birthdate"
+        android:hint="@string/enter_plant_s_bday_mm_dd_yyyy"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
