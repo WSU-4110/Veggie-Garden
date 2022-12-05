@@ -76,6 +76,9 @@
             android:name=".AddAPlant"
             android:exported="false" />
         <activity
+            android:name=".WeatherActivity"
+            android:exported="false" />
+        <activity
             android:name=".TitlePage"
             android:exported="true">
             <intent-filter>
