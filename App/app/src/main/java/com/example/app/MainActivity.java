@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
         addWeather.setOnClickListener(view -> {
             Intent intent = new Intent (this, WeatherActivity.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
 
