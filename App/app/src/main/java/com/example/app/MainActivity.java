@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
         addPlant.setOnClickListener(view -> {
             Intent intent = new Intent(this, AddAPlant.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
     }

@@ -4,18 +4,21 @@ import static android.graphics.Color.GREEN;
 import static android.graphics.Color.WHITE;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Build;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
-public class PlantId extends View {
+public class PlantId extends View implements View.OnClickListener {
 
     // Hard-coded values for debug purposes
     private Color backgroundColor = Color.valueOf(GREEN);
@@ -25,6 +28,8 @@ public class PlantId extends View {
 
     private Paint textPaint;
     private Paint backgroundPaint;
+
+    OnClickListener listener;
 
     // Constructor for PlantId
     // Will call init to create all drawable objects
@@ -79,7 +84,7 @@ public class PlantId extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(1600, 50);
+        setMeasuredDimension(1400, 200);
     }
 
     // Called when displaying the PlantId
@@ -133,5 +138,24 @@ public class PlantId extends View {
 
     public void setTextColor(Color textColor) {
         this.textColor = textColor;
+    }
+
+    public void setOnClickListener(OnClickListener listener) {
+        if(!isClickable())
+            setClickable(true);
+        this.listener = listener;
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        super.onTouchEvent(event);
+        this.onClick(this);
+        return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (listener != null)
+            listener.onClick(v);
     }
 }
