@@ -22,14 +22,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CalendarView"
+            android:name=".CalendarActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Account_Viewer_Database_List"
+            android:name=".AccountViewerDatabaseList"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -43,13 +43,13 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Create_Account_Page"
+            android:name=".CreateAccountPage"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Title_Page"
+            android:name=".TitlePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

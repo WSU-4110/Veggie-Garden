@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
@@ -15,12 +16,15 @@ public class NotificationDev extends AppCompatActivity {
     public static final String channel_1_id = "channel1";
     //id for notif channel 1
     Button notifBtn;
-
+    Button backToSettings;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_dev);
 
+        notifBtn = findViewById(R.id.notifBtn);
+        backToSettings = findViewById(R.id.backToSettings);
 
         notifBtn.setOnClickListener(view -> {
             NotificationCompat.Builder build = new NotificationCompat.Builder(NotificationDev.this, channel_1_id);
@@ -35,6 +39,13 @@ public class NotificationDev extends AppCompatActivity {
 
             NotificationManagerCompat managerCompat = NotificationManagerCompat.from(NotificationDev.this);
             managerCompat.notify(1,build.build());
+        });
+
+        backToSettings.setOnClickListener(view -> {                                     // back button actions
+            Intent intent = new Intent(view.getContext(), Settings.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
+            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
+            startActivity(intent);
         });
 
         createNotifChann();
