@@ -34,8 +34,8 @@ public class DataBase extends SQLiteOpenHelper {
 
         String createPlantTable = "CREATE TABLE " + PLANT_TABLE + "( ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 PLANT_NAME + " TEXT, " +
-                PLANT_TYPE + "TEXT, " +
-                PLANT_BDAY + "Text)";
+                PLANT_TYPE + " TEXT, " +
+                PLANT_BDAY + " TEXT)";
 
         db.execSQL(createUserTable);
         db.execSQL(createPlantTable);

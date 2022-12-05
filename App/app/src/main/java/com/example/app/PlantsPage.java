@@ -9,7 +9,11 @@ import android.widget.LinearLayout;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.List;
+
 public class PlantsPage extends AppCompatActivity {
+
+    DataBase db = new DataBase(this);
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -20,7 +24,8 @@ public class PlantsPage extends AppCompatActivity {
 
         LinearLayout linearLayout = findViewById(R.id.linear_layout);
 
-/**        ConstraintSet myConstraints = new ConstraintSet();
+/**
+ ConstraintSet myConstraints = new ConstraintSet();
  myConstraints.clone(myLayout);
 
  for (int i = 0; i < 8; i++) {
@@ -34,15 +39,15 @@ public class PlantsPage extends AppCompatActivity {
  linearLayout.addView(newTextView);}
  **/
 
-            PlantId newPlant = new PlantId(this);
-            newPlant.setPlantName("Test Plant");
-            newPlant.setTextColor(Color.valueOf(WHITE));
-            newPlant.setPlantBirthday("10/19/2022");
+        List<Plant> plantList = db.getPlants();
 
+        for (Plant plant :
+                plantList) {
+            PlantId newPlant = new PlantId(this, plant);
             linearLayout.addView(newPlant);
-
         }
     }
+}
 
 
 

@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton gearButton;
     Button calendarButton;
     Button plantsButton;
+    Button addPlant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
                                                                     // DataBase db = new DataBase(this); can be used later if needed
         calendarButton = findViewById(R.id.calendarView);
         plantsButton = findViewById(R.id.plantsButton);
+        addPlant = findViewById(R.id.newPlant);
 
         // Retrieve account information
                                                                                       //DataBase db = new DataBase(this);
@@ -47,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
         plantsButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, PlantsPage.class);               // plant add button
+            startActivity(intent);
+        });
+
+        addPlant.setOnClickListener(view -> {
+            Intent intent = new Intent(this, addPlant.class);
             startActivity(intent);
         });
     }
