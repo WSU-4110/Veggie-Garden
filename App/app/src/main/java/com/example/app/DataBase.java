@@ -6,12 +6,13 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class DataBase extends SQLiteOpenHelper {
 
-
+// set variables
     public static final String USER_TABLE = "USER_INFO";
     public static final String USER_NAME = "USER_NAME";
     public static final String USER_EMAIL = "USER_EMAIL";
@@ -19,7 +20,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     public DataBase(Context context) {
         super(context, "plant.db", null, 1);
-    }
+    }          // constructor
 
     //this is called the first time database is accessed
     @Override
@@ -53,19 +54,24 @@ public class DataBase extends SQLiteOpenHelper {
     }
 
     // delete account
-    public boolean deleteOne(Credentials credentials) {
+    public void deleteOne(Credentials credentials) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = " + credentials.getEmail();
-
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, null);
-
-        return cursor.moveToFirst();
+        String queryString = "DELETE FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?";
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(queryString, new String[] {credentials.getEmail()});
+        cursor.moveToFirst();
     }
 
     // check email
     public boolean checkEmail(String email) {
         SQLiteDatabase db = this.getWritableDatabase();
         @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?" , new String[] {email} );
+        return cursor.getCount() > 0;
+    }
+
+    // check password
+    public boolean checkPassword(String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT * FROM " + USER_TABLE + " WHERE " + USER_PWORD + " = ?" , new String[] {password} );
         return cursor.getCount() > 0;
     }
 
@@ -76,7 +82,14 @@ public class DataBase extends SQLiteOpenHelper {
         return cursor.getCount() > 0;
     }
 
-    public String getName(String email) {
+    // change pass
+    public void updatePassword(String email, String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("UPDATE " + USER_TABLE + " SET " + USER_PWORD + " = ? " + " WHERE " + USER_EMAIL + " = ?", new String[] {password, email} );
+        cursor.getCount();
+    }
+
+    public String getName(String email) {         // unused currently, returns name of currently logged in user
         SQLiteDatabase db = this.getWritableDatabase();
         @SuppressLint("Recycle") Cursor cursor = db.rawQuery("SELECT " + USER_NAME + " FROM " + USER_TABLE + " WHERE " + USER_EMAIL + " = ?", new String[] {email} );
         String name = "test";
@@ -86,7 +99,7 @@ public class DataBase extends SQLiteOpenHelper {
     }
 
     //accessible through the home page > settings > accounts > databaseButton (shows all collected info)
-    public List<Credentials> getAll() {
+    public List<Credentials> getAll() {        // this is unused currently in the app, only use for admin bug fixing
 
         List<Credentials> returnList = new ArrayList<>();
 
@@ -110,9 +123,9 @@ public class DataBase extends SQLiteOpenHelper {
            System.out.println("Something went wrong.");
         }
 
-        cursor.close();
+        cursor.close();               // always close this!
         db.close();
-        return returnList;
+        return returnList;   // spit out list
     }
 
 }

@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">App</string>
-    <string name="balls">Balls</string>
-    <string name="nuts">nuts</string>
     <string name="login">Login</string>
     <string name="create_an_account">Create an Account</string>
     <string name="todo">TODO</string>
@@ -33,4 +31,65 @@
     <string name="welcome_to_plant">Welcome to Plant!</string>
     <string name="to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize">To get started, exit this popup and press \'Add a new plant!\', or head over to settings and customize!</string>
     <string name="add_a_new_plant_">Add a New Plant!</string>
+    <string name="advance"><![CDATA[Advance>>]]></string>
+    <string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string>
+    <string name="goes_back_to_title_page">goes back to title page</string>
+    <string name="backButton">Back</string>
+    <string name="arrow">arrow</string>
+    <string name="customize_profile">Customize Profile</string>
+    <string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string>
+    <string name="calendar">Calendar</string>
+    <string name="plants">Plants</string>
+    <string name="plant_calendar">Plant Calendar</string>
+    <string name="weather_version_1_0">Weather Version 1.0</string>
+    <string name="enter_name_of_city">Enter Name of City</string>
+    <string name="enter_name_of_country">Enter Name of Country</string>
+    <string name="get">Get</string>
+    <string name="change_your_password">Change Your Password</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="save">Save</string>
+    <string name="you_are_about_to_delete_your_account">You are about to delete your account!</string>
+    <string name="if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel">If you are sure, press the button below. If not, click off this popup message to cancel.</string>
+    <string name="i_am_sure">I am sure!</string>
+    <string name="need_help">Need Help?</string>
+    <string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string>
+    <string name="enable_disable_notifications">Enable/disable notifications?</string>
+    <string name="enable_disable">Enable/Disable</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="if_you_are_unsure_just_press_cancel">If you are unsure, just press Cancel.</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_your_new_plant_s_information_below">Add your new plant\'s information below!</string>
+    <string name="add_this_plant">Add This Plant</string>
+    <string name="plant_s_birthday">Plant\'s Birthday</string>
+    <string name="outdoors">Outdoors?</string>
+    <string name="enter_plant_s_birthdate">Enter Plant\'s Birthdate</string>
+    <string-array name="card_text_titles">
+        <item>Customize Profile</item>
+        <item>Notifications</item>
+        <item>Help</item>
+        <item>Change Password</item>
+        <item>Log Out</item>
+        <item>Delete This Account</item>
+    </string-array>
+    <string-array name="listOfPlants">
+        <item>Select a Plant!</item>
+        <item>Beefsteak Tomato</item>
+        <item>Beets</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Cherry Tomato</item>
+        <item>Corn</item>
+        <item>Cucumber</item>
+        <item>Eggplant</item>
+        <item>Garlic</item>
+        <item>Kale</item>
+        <item>Onions</item>
+        <item>Orchid</item>
+        <item>Radish</item>
+        <item>Sunflower</item>
+        <item>Turnip</item>
+        <item>Yellow Squash</item>
+    </string-array>
 </resources>
