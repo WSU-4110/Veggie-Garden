@@ -41,8 +41,9 @@ public class PlantsPage extends AppCompatActivity {
                 plantList) {
             PlantId newPlant = new PlantId(this, plant);                       // displays plants
             newPlant.setOnClickListener(view -> {
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, plantInfo.class);
                 intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+                intent.putExtra("PLANT_NAME", plant.getName());
                 intent.putExtra("NEW_USER", false);
                 startActivity(intent);
             });
