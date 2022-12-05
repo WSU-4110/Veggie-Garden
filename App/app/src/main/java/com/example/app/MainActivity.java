@@ -48,15 +48,4 @@ public class MainActivity extends AppCompatActivity {
         popup.show();
     }
 
-    //notifications
-    public void notifChann1 (View v) {
-
-    }
-
-    public void notifChann2 (View v) {
-
-    }
-
-
-
 }

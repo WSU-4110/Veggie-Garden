@@ -16,14 +16,4 @@
         app:layout_constraintTop_toTopOf="parent"
         android:onClick="notifChann1"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="76dp"
-        android:text="Channel 2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="notifChann2"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

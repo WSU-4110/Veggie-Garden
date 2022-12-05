@@ -1,22 +1,41 @@
 package com.example.app;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class NotificationDev extends AppCompatActivity {
     public static final String channel_1_id = "channel1";
     //id for notif channel 1
-    public static final String channel_2_id = "channel2";
-    //id for notif channel 2
+    Button notifBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_dev);
+
+
+        notifBtn.setOnClickListener(view -> {
+            NotificationCompat.Builder build = new NotificationCompat.Builder(NotificationDev.this, channel_1_id);
+            //code for notification
+            build.setContentTitle("Notification Dev");
+            //title
+            build.setContentText("This is a notification for developers");
+            //content of the notification
+            //build.setSmallIcon() <- this sets the icon that shows up with the notification.
+            //I think we should use the logo for it
+            build.setAutoCancel(true);
+
+            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(NotificationDev.this);
+            managerCompat.notify(1,build.build());
+        });
 
         createNotifChann();
     }
@@ -28,14 +47,8 @@ public class NotificationDev extends AppCompatActivity {
             c1.setDescription("Channel 1");
             //channel 1 is a test for high importance
 
-            NotificationChannel c2 = new NotificationChannel(
-                    channel_2_id, "Channel 2", NotificationManager.IMPORTANCE_LOW);
-            c2.setDescription("Channel 2");
-            //channel 2 is a test for low importance
-
             NotificationManager manage = getSystemService(NotificationManager.class);
             manage.createNotificationChannel(c1);
-            manage.createNotificationChannel(c2);
         }
     }
 }
