@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -14,8 +16,9 @@ public class AddAPlant extends AppCompatActivity {
 
     // declare vars
     Button back, add;
-    Spinner plantList;
     DataBase db;
+    EditText bday;
+    CheckBox location;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -26,7 +29,9 @@ public class AddAPlant extends AppCompatActivity {
         // set vars
         back = findViewById(R.id.backToMain);
         add = findViewById(R.id.addPlant);
-        plantList = findViewById(R.id.plantList);
+        bday = findViewById(R.id.plantBday);
+        location = findViewById(R.id.location);
+        final Spinner plantList = findViewById(R.id.plantList);            // dropdown menu
         db = new DataBase(this);
 
         // set array adapter
@@ -43,7 +48,16 @@ public class AddAPlant extends AppCompatActivity {
 
         add.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
-            // add database stuff here ___________________________________________________________________________
+            String spinner_data = plantList.getSelectedItem().toString();                // convert it to data
+            String name = spinner_data.toLowerCase();
+            String date = bday.getText().toString();
+            String outdoors;
+            if (location.isChecked()) outdoors = "yes";
+            else outdoors = "no";
+
+            Plant plant = new Plant(name, outdoors, date);                       // creates plant credentials, adds to database
+            db.addPlant(plant);
+
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
             intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
             Toast.makeText(this, "Plant added!", Toast.LENGTH_SHORT).show();

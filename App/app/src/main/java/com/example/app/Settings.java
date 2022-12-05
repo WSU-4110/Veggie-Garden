@@ -30,7 +30,7 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
 
         RecyclerView recyclerView = findViewById(R.id.customizeList);
         RecycleModels();
-        RecyclerAdapter adapter = new RecyclerAdapter(this, recyclerViewSettings, this);            // recyclerview stuff
+        RecyclerAdapter adapter = new RecyclerAdapter(this, recyclerViewSettings, this);            // recyclerview adapter
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

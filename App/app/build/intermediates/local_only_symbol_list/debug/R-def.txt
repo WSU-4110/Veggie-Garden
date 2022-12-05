@@ -46,6 +46,7 @@ id card_text
 id confirmNewPword
 id confirmNewPwordText
 id confirmPword
+id constraint_layout
 id createAccountButton
 id createButton
 id createEmail
@@ -147,7 +148,7 @@ string enter_name_here
 string enter_name_of_city
 string enter_name_of_country
 string enter_password_here
-string enter_plant_s_birthdate
+string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
 string exitButton
 string get
@@ -161,7 +162,6 @@ string need_help
 string our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main
 string outdoors
 string plant_calendar
-string plant_s_birthday
 string plants
 string save
 string textview
@@ -177,6 +177,9 @@ style CalenderViewCustom
 style CalenderViewDateCustomText
 style CalenderViewWeekCustomText
 style Theme.App
+style Theme.App.AppBarOverlay
+style Theme.App.NoActionBar
+style Theme.App.PopupOverlay
 styleable PlantId plantName plantBirthday backgroundColor textColor
 xml backup_rules
 xml data_extraction_rules
