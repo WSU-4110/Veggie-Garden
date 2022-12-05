@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,10 +30,10 @@ import java.text.DecimalFormat;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.weather_activity);
             etCity=findViewById(R.id.etCity);
             etCountry=findViewById(R.id.etCountry);
-            tvResult=findViewById(R.id.tvResult); //Bug
+            tvResult=findViewById(R.id.tvResult);
         }
 
         @SuppressLint("SetTextI18n")

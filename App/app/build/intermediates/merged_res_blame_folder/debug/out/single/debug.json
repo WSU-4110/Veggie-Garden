@@ -4,10 +4,6 @@
         "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\popup_background.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_main.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -134,6 +130,10 @@
     {
         "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.app-merged_res-30:/layout_weather_activity.xml.flat",
+        "source": "com.example.app-main-32:/layout/weather_activity.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",

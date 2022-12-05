@@ -53,11 +53,12 @@
             app:backgroundTint="@null"
             tools:ignore="UsingOnClickInXml" />
 
-        <ScrollView
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tvResult"  />
 
     </LinearLayout>
+
 
 </LinearLayout>
