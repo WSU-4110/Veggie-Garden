@@ -48,12 +48,11 @@ public class AddAPlant extends AppCompatActivity {
 
         add.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
-            String spinner_data = plantList.getSelectedItem().toString();                // convert it to data
-            String name = spinner_data.toLowerCase();
+            String name = plantList.getSelectedItem().toString();
             String date = bday.getText().toString();
             String outdoors;
-            if (location.isChecked()) outdoors = "yes";
-            else outdoors = "no";
+            if (location.isChecked()) outdoors = "It is outdoors.";
+            else outdoors = "It is indoors.";
 
             Plant plant = new Plant(name, outdoors, date);                       // creates plant credentials, adds to database
             db.addPlant(plant);

@@ -34,7 +34,7 @@ public class ChangePassword extends Credentials {
             startActivity(intent);
         });
 
-        saveBtn.setOnClickListener(view ->{
+        saveBtn.setOnClickListener(view -> {
             String old = oldPword.getText().toString();
             String newP = newPword.getText().toString();
             String confirmP = confirmNewPword.getText().toString();

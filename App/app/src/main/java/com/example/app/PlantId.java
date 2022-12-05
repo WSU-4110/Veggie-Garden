@@ -1,7 +1,7 @@
 package com.example.app;
 
+import static android.graphics.Color.BLACK;
 import static android.graphics.Color.GREEN;
-import static android.graphics.Color.WHITE;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -19,10 +19,10 @@ public class PlantId extends View {
 
     // Hard-coded values for debug purposes
     private Color backgroundColor = Color.valueOf(GREEN);
-    private Color textColor = Color.valueOf(WHITE);
+    private Color textColor = Color.valueOf(BLACK);
     private String plantName;
     private String plantBirthday;
-
+    private String outOrIn;
     private Paint textPaint;
     private Paint backgroundPaint;
 
@@ -43,6 +43,7 @@ public class PlantId extends View {
 
         this.plantName = plant.getName();
         this.plantBirthday = plant.getBday();
+        this.outOrIn = plant.getType();
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.setMargins(20, 20, 20, 50);
@@ -89,8 +90,9 @@ public class PlantId extends View {
         super.onDraw(canvas);
 
         canvas.drawRect(this.getX(), this.getY(), 1400, this.getY()+200, backgroundPaint);
-        canvas.drawText(plantName, this.getX()+ 50, this.getY()+50, textPaint);
-        canvas.drawText("Birthday: ", this.getX() + 50, this.getY() + 100, textPaint);
+        canvas.drawText(plantName.toUpperCase(), this.getX()+ 50, this.getY()+50, textPaint);
+        canvas.drawText("Birthday: " + plantBirthday, this.getX() + 50, this.getY() + 100, textPaint);
+        canvas.drawText(outOrIn, this.getX() + 50, this.getY() + 150, textPaint);
         
     }
 

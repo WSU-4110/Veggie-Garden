@@ -2757,7 +2757,7 @@ int id autoComplete 0x7f0a0057
 int id autoCompleteToEnd 0x7f0a0058
 int id autoCompleteToStart 0x7f0a0059
 int id backButton 0x7f0a005a
-int id backToMain 0x7f0a005b
+int id backToMainAct 0x7f0a021d
 int id backToSettings 0x7f0a005c
 int id barrier 0x7f0a005d
 int id baseline 0x7f0a005e
@@ -2824,7 +2824,6 @@ int id custom 0x7f0a0099
 int id customPanel 0x7f0a009a
 int id customizeList 0x7f0a009b
 int id cut 0x7f0a009c
-int id date 0x7f0a009d
 int id date_picker_actions 0x7f0a009e
 int id decelerate 0x7f0a009f
 int id decelerateAndComplete 0x7f0a00a0
@@ -2932,6 +2931,7 @@ int id legacy 0x7f0a0105
 int id line1 0x7f0a0106
 int id line3 0x7f0a0107
 int id linear 0x7f0a0108
+int id linearLayout 0x7f0a021b
 int id linear_layout 0x7f0a0109
 int id link 0x7f0a010a
 int id listMode 0x7f0a010b
@@ -3040,6 +3040,7 @@ int id peekHeight 0x7f0a0171
 int id percent 0x7f0a0172
 int id pin 0x7f0a0173
 int id plantBday 0x7f0a0174
+int id plantCal 0x7f0a021c
 int id plantList 0x7f0a0175
 int id plantLogo 0x7f0a0176
 int id plantsButton 0x7f0a0177
