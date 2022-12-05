@@ -2826,7 +2826,6 @@ id custom
 id customPanel
 id customizeList
 id cut
-id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2934,6 +2933,7 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id linear_layout
 id link
 id listMode
@@ -3042,6 +3042,7 @@ id peekHeight
 id percent
 id pin
 id plantBday
+id plantCal
 id plantList
 id plantLogo
 id plantName

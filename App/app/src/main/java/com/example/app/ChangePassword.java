@@ -34,7 +34,7 @@ public class ChangePassword extends Credentials {
             startActivity(intent);
         });
 
-        saveBtn.setOnClickListener(view ->{
+        saveBtn.setOnClickListener(view -> {
             String old = oldPword.getText().toString();
             String newP = newPword.getText().toString();
             String confirmP = confirmNewPword.getText().toString();
@@ -47,16 +47,13 @@ public class ChangePassword extends Credentials {
                         Toast.makeText(this, "New Password Saved!", Toast.LENGTH_SHORT).show();       // success!
                         Intent intent = new Intent(this, Settings.class);
                         startActivity(intent);
-                    }
-                    else {
+                    } else {
                         Toast.makeText(this, "Passwords must match", Toast.LENGTH_SHORT).show();       // error
                     }
-                }
-                else {
+                } else {
                     Toast.makeText(this, "New password cannot be the same as current", Toast.LENGTH_SHORT).show();       // error
                 }
-            }
-            else {
+            } else {
                 Toast.makeText(this, "Incorrect entry for current password", Toast.LENGTH_SHORT).show();       // error
             }
         });

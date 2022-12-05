@@ -53,7 +53,6 @@ id createButton
 id createEmail
 id createPword
 id customizeList
-id date
 id emailInput
 id etCity
 id etCountry
@@ -62,6 +61,7 @@ id group
 id help
 id instructions
 id layout
+id linearLayout
 id linear_layout
 id link
 id location
@@ -75,6 +75,7 @@ id newPwordText
 id notifs
 id oldPwordText
 id plantBday
+id plantCal
 id plantList
 id plantLogo
 id plantName

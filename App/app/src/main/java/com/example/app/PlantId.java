@@ -1,5 +1,6 @@
 package com.example.app;
 
+import static android.graphics.Color.BLACK;
 import static android.graphics.Color.GREEN;
 import static android.graphics.Color.WHITE;
 
@@ -23,10 +24,10 @@ public class PlantId extends View implements View.OnClickListener {
 
     // Hard-coded values for debug purposes
     private Color backgroundColor = Color.valueOf(GREEN);
-    private Color textColor = Color.valueOf(WHITE);
+    private Color textColor = Color.valueOf(BLACK);
     private String plantName;
     private String plantBirthday;
-
+    private String outOrIn;
     private Paint textPaint;
     private Paint backgroundPaint;
 
@@ -49,6 +50,7 @@ public class PlantId extends View implements View.OnClickListener {
 
         this.plantName = plant.getName();
         this.plantBirthday = plant.getBday();
+        this.outOrIn = plant.getType();
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.setMargins(20, 20, 20, 50);
@@ -100,7 +102,7 @@ public class PlantId extends View implements View.OnClickListener {
         canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
         canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
         canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
-        
+        canvas.drawText(outOrIn, this.getX() + 50, this.getY() + 150, textPaint);
     }
 
     public Color getBackgroundColor() {

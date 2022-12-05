@@ -81,12 +81,14 @@
         android:layout_width="275dp"
         android:layout_height="48dp"
         android:layout_marginTop="72dp"
+        android:layout_marginBottom="18dp"
         android:ems="10"
         android:hint="@string/enter_plant_s_bday_mm_dd_yyyy"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#795548"
+        app:layout_constraintBottom_toTopOf="@+id/location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plantList" />
@@ -96,11 +98,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
-        android:layout_marginEnd="160dp"
         android:layout_marginBottom="208dp"
         android:text="@string/outdoors"
         app:layout_constraintBottom_toTopOf="@+id/addPlant"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plantBday" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

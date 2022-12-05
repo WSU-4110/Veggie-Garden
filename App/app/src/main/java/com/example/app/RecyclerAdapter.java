@@ -6,8 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.myViewHolder> {                        // this whole class helps display the recycler on settings page
@@ -54,9 +56,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.myView
             card_text = itemView.findViewById(R.id.card_text);
 
             itemView.setOnClickListener(view -> {
-                if(recyclerViewInterface != null){
+                if (recyclerViewInterface != null) {
                     int position = getAdapterPosition();
-                    if(position != RecyclerView.NO_POSITION) {
+                    if (position != RecyclerView.NO_POSITION) {
                         recyclerViewInterface.onItemClick(position);
                     }
                 }
