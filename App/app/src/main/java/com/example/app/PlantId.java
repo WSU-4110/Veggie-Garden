@@ -99,7 +99,7 @@ public class PlantId extends View implements View.OnClickListener {
         canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
         canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
         canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
-        canvas.drawText(outOrIn, this.getX() + 50, this.getY() + 150, textPaint);
+        canvas.drawText(outOrIn, offsetView.left + 50, offsetView.top + 150, textPaint);
     }
 
     public Color getBackgroundColor() {
