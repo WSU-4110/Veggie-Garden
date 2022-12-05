@@ -26,21 +26,13 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etCity"
+            android:id="@+id/etZip"
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="@string/enter_name_of_city"
             android:inputType="textPersonName"
             android:autofillHints="TODO" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etCountry"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="@string/enter_name_of_country"
-            android:inputType="textPersonName"
-            android:autofillHints="TODO" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,9 +46,9 @@
             tools:ignore="UsingOnClickInXml" />
 
         <TextView
+            android:id="@+id/tvResult"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvResult"  />
+            android:layout_height="423dp" />
 
     </LinearLayout>
 
