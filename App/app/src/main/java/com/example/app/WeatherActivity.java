@@ -20,7 +20,7 @@ import java.text.DecimalFormat;
     public class WeatherActivity extends AppCompatActivity {
         EditText etZip;
         TextView tvResult;
-        private final String url = "http://api.openweathermap.org/data/2.5/forecast?id=524901&zip=48312&cnt=1&appid=94a4143658ad8966e26f35512cd0f006";
+        private  String url = "http://api.openweathermap.org/data/2.5/forecast?id=524901&zip=48312&cnt=1&appid=94a4143658ad8966e26f35512cd0f006";
         private final String appID = "94a4143658ad8966e26f35512cd0f006";
         DecimalFormat df = new DecimalFormat("#.##");
 
@@ -37,6 +37,7 @@ import java.text.DecimalFormat;
         @SuppressLint("SetTextI18n")
         public void getWeatherDetails(View view) {
             String zip = etZip.getText().toString().trim();
+            url="http://api.openweathermap.org/data/2.5/forecast?id=524901&zip="+zip+"&cnt=1&appid=94a4143658ad8966e26f35512cd0f006";
             if(zip.equals("")){
                 tvResult.setText("Zip field can not be empty!");
             }
@@ -59,27 +60,15 @@ import java.text.DecimalFormat;
                 JSONObject clouds = jsonObject.getJSONObject("clouds");
                 String cloudy = clouds.getString("all");            //clouds
                 JSONObject city = jsonResponse.getJSONObject("city");
-                String name = city.getString("name");          //city name
-                output += name;
+                String name = city.getString("name");                   //city name
+                JSONArray jsonArray1 = jsonObject.getJSONArray("weather");
+                JSONObject weather = jsonArray1.getJSONObject(0);
+                String conditions = weather.getString("main");      //weather conditions
 
-
-//                      JSONObject jsonResponse = new JSONObject(response);
-//                        JSONArray jsonArray = jsonResponse.getJSONArray("weather");
-//                        JSONObject jsonObjectWeather = jsonArray.getJSONObject(0);
-//                        String description = jsonObjectWeather.getString("description");
-//                        JSONObject jsonObjectMain = jsonResponse.getJSONObject("main");
-//                        double temp = jsonObjectMain.getDouble("temp") - 273.15;
-//                        double feelsLike = jsonObjectMain.getDouble("feels_like") - 273.15;
-//                        float pressure = jsonObjectMain.getInt("pressure");
-//                        int humidity = jsonObjectMain.getInt("humidity");
-//                        JSONObject jsonObjectWind = jsonResponse.getJSONObject("wind");
-//                        String wind = jsonObjectWind.getString("speed");
-//                        JSONObject jsonObjectClouds = jsonResponse.getJSONObject("clouds");
-//                        String clouds = jsonObjectClouds.getString("all");
-//                        JSONObject jsonObjectSys = jsonResponse.getJSONObject("sys");
-//                        String countryName = jsonObjectSys.getString("country");
-//                        String cityName = jsonResponse.getString("name");
-//                        tvResult.setTextColor(Color.rgb(68,134,199));
+                        output += "Current weather conditions of " + name + " on " + dtxt + ":\n"
+                                + "Temperature: " + temp + "\n"
+                                + "Conditions: " + conditions + "\n"
+                                + "Cloudiness: " + cloudy;
 
 
 //                        output += "Current weather of " + cityName + " (" + countryName + ")"
