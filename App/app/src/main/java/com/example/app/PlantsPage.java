@@ -2,6 +2,7 @@ package com.example.app;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.ViewGroup;
@@ -51,6 +52,7 @@ public class PlantsPage extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT
             );
 
+            layoutParams.setMargins(10, 10, 10, 10);
 
             PlantId newPlant = new PlantId(this, plant);                       // displays plants
             newPlant.setOnClickListener(view -> {
@@ -59,7 +61,15 @@ public class PlantsPage extends AppCompatActivity {
                 intent.putExtra("PLANT_NAME", plant.getName());
                 startActivity(intent);
             });
-            linearLayout.addView(newPlant);
+            cardView.addView(newPlant);
+            cardView.setLayoutParams(layoutParams);
+            cardView.setPadding(10, 10, 10, 10);
+            cardView.setCardBackgroundColor(Color.WHITE);
+            cardView.setRadius(100);
+
+
+
+            linearLayout.addView(cardView);
         }
     }
 }

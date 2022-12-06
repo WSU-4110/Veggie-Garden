@@ -25,11 +25,7 @@ public class plantInfo extends AppCompatActivity {
         textView = findViewById(R.id.plant_name);
         Button back = findViewById(R.id.backToPlants);
 
-
-
         textView.setText(String.format("Name: %s\nType: %s\nBirthday: %s", plant.getName(), plant.getType(), plant.getBday()));
-
-
 
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, PlantsPage.class);
