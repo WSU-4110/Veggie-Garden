@@ -1,7 +1,12 @@
 package com.example.app;
 
 import android.annotation.SuppressLint;
+import android.app.AlarmManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -10,7 +15,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Calendar;
 
 public class AddAPlant extends AppCompatActivity {
 
@@ -19,7 +27,9 @@ public class AddAPlant extends AppCompatActivity {
     DataBase db;
     EditText bday;
     CheckBox location;
+    public static final String plantNotifChannelID = "channel 1";
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +66,25 @@ public class AddAPlant extends AppCompatActivity {
 
             Plant plant = new Plant(name, outdoors, date);                       // creates plant credentials, adds to database
             db.addPlant(plant);
+
+            //set up daily reminders for notifications
+            Calendar cal = Calendar.getInstance();
+            cal.set(Calendar.HOUR_OF_DAY, 00);
+            cal.set(Calendar.MINUTE, 00);
+            cal.set(Calendar.SECOND, 00);
+
+            if (Calendar.getInstance().after(cal)) {
+                cal.add(Calendar.DAY_OF_MONTH, 1);
+            }
+
+            Intent notifIntent = new Intent(AddAPlant.this,plantBroadCast.class);
+            PendingIntent plantPendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0, notifIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+            AlarmManager plantAlarm = (AlarmManager) getSystemService(ALARM_SERVICE);
+            plantAlarm.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), AlarmManager.INTERVAL_DAY,plantPendingIntent);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                plantAlarm.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,cal.getTimeInMillis(),plantPendingIntent);
+            }
 
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
             intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
