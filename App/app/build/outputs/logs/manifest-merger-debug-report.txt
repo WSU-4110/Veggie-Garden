@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\nicka\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\nicka\.gradle\caches\transforms-3\229612c218d9fe79705dc19c7f400585\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\nicka\.gradle\caches\transforms-3\21755dfb125ba8aca0d81387a0fbc842\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -51,22 +51,22 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\nicka\.gradle\caches\transforms-3\66860c319137074465b1f3af9d4ca7e4\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\nicka\.gradle\caches\transforms-3\b72326ebc58ae513a4b2ca23b3b41f53\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\nicka\.gradle\caches\transforms-3\d1b81e9b9294b0bc78ebcbc0700bfe58\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
 	package
 		INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-95:12
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:2:11-69
@@ -83,7 +83,7 @@ ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:5
 	android:name
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:22-68
 application
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:5-93:19
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:5-97:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\nicka\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\nicka\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\nicka\.gradle\caches\transforms-3\229612c218d9fe79705dc19c7f400585\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -116,96 +116,104 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ni
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:9-41
+	android:networkSecurityConfig
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:9-69
 	android:dataExtractionRules
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.example.app.plantInfo
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:9-26:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:13-38
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:13-38
 meta-data#android.app.lib_name
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:22:13-24:36
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:13-25:36
 	android:value
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:17-33
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:17-33
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:17-52
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:17-52
 activity#com.example.app.DeleteAccountPage
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:9-32:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:9-33:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:13-46
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:13-46
 activity#com.example.app.CustomizeProfile
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:33:9-39:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:34:9-40:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:35:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:34:13-45
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:35:13-45
 activity#com.example.app.ChangePassword
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:40:9-46:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:9-47:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:41:13-43
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:42:13-43
 activity#com.example.app.PlantsPage
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:47:9-53:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:48:9-54:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:48:13-39
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:49:13-39
 activity#com.example.app.CalendarActivity
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:54:9-60:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:55:9-61:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:56:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:57:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:55:13-45
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:56:13-45
 activity#com.example.app.AccountViewerDatabaseList
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:61:9-67:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:62:9-68:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:63:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:62:13-54
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:63:13-54
 activity#com.example.app.Settings
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:68:9-74:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:69:9-75:20
 	android:exported
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:71:13-37
+	android:name
 		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:70:13-37
-	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:69:13-37
 activity#com.example.app.CreateAccountPage
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:75:9-77:40
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:76:9-78:40
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:77:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:78:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:76:13-46
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:77:13-46
 activity#com.example.app.MainActivity
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:78:9-80:40
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:79:9-81:40
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:80:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:81:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:79:13-41
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:80:13-41
 activity#com.example.app.AddAPlant
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:81:9-83:40
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:82:9-84:40
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:83:13-37
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:84:13-37
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:82:13-38
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:83:13-38
+activity#com.example.app.WeatherActivity
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:85:9-87:40
+	android:exported
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:87:13-37
+	android:name
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:86:13-44
 activity#com.example.app.TitlePage
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:84:9-92:20
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:88:9-96:20
 	android:exported
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:86:13-36
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:90:13-36
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:85:13-38
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:89:13-38
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:87:13-91:29
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:91:13-95:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:88:17-69
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:92:17-69
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:88:25-66
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:92:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:90:17-77
+ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:94:17-77
 	android:name
-		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:90:27-74
+		ADDED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:94:27-74
 uses-sdk
 INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
