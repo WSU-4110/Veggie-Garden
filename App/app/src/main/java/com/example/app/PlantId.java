@@ -14,10 +14,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
 import androidx.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
-public class PlantId extends View implements View.OnClickListener {
+public class PlantId extends ViewGroup implements View.OnClickListener {
 
     // Hard-coded values for debug purposes
     private Color backgroundColor = Color.valueOf(GREEN);
@@ -27,6 +29,10 @@ public class PlantId extends View implements View.OnClickListener {
     private String outOrIn;
     private Paint textPaint;
     private Paint backgroundPaint;
+    private LinearLayout plantLayout;
+    private TextView name;
+    private TextView type;
+    private TextView bday;
 
     OnClickListener listener;
 
@@ -39,6 +45,16 @@ public class PlantId extends View implements View.OnClickListener {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.setMargins(20, 20, 20, 50);
         this.setLayoutParams(params);
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        Rect offsetView = new Rect();
+        this.getDrawingRect(offsetView);
+
+        name.layout(offsetView.left, offsetView.top, offsetView.left + 50, offsetView.top+50);
+        type.layout(offsetView.left, offsetView.top + 50, offsetView.left + 50, offsetView.top+100);
+        bday.layout(offsetView.left, offsetView.top + 100, offsetView.left + 50, offsetView.top+150);
     }
 
     public PlantId(Context context, Plant plant) {
@@ -72,6 +88,27 @@ public class PlantId extends View implements View.OnClickListener {
         }
         backgroundPaint.setStyle(Paint.Style.STROKE);
         backgroundPaint.setTextSize(50);
+
+        plantLayout = new LinearLayout(this.getContext());
+        LinearLayout.LayoutParams plantLayoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+        );
+        plantLayoutParams.setMargins(10,  10,10, 10);
+        plantLayout.setLayoutParams(plantLayoutParams);
+        plantLayout.setOrientation(LinearLayout.HORIZONTAL);
+
+        name = new TextView(this.getContext());
+        type = new TextView(this.getContext());
+        bday = new TextView(this.getContext());
+
+        name.setText(this.plantName);
+        type.setText(this.outOrIn);
+        bday.setText(this.plantBirthday);
+
+        this.addView(name);
+        this.addView(type);
+        this.addView(bday);
     }
 
     // Called when first created and whenever screen size changes
@@ -97,9 +134,9 @@ public class PlantId extends View implements View.OnClickListener {
         this.getDrawingRect(offsetView);
 
 //        canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
-        canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
-        canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
-        canvas.drawText(outOrIn, offsetView.left + 50, offsetView.top + 150, textPaint);
+//        canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
+//        canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
+//        canvas.drawText(outOrIn, offsetView.left + 50, offsetView.top + 150, textPaint);
     }
 
     public Color getBackgroundColor() {

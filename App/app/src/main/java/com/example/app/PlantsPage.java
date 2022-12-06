@@ -3,6 +3,7 @@ package com.example.app;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.icu.lang.UCharacter;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.ViewGroup;
@@ -32,7 +33,7 @@ public class PlantsPage extends AppCompatActivity {
 
         // set vars
         back = findViewById(R.id.backToMain);
-        LinearLayout linearLayout = findViewById(R.id.linear_layout);
+        LinearLayout root = findViewById(R.id.linear_layout);
 
         back.setOnClickListener(view -> {                                     // back button actions
             Intent intent = new Intent(view.getContext(), MainActivity.class);
@@ -61,15 +62,14 @@ public class PlantsPage extends AppCompatActivity {
                 intent.putExtra("PLANT_NAME", plant.getName());
                 startActivity(intent);
             });
-            cardView.addView(newPlant);
-            cardView.setLayoutParams(layoutParams);
-            cardView.setPadding(10, 10, 10, 10);
-            cardView.setCardBackgroundColor(Color.WHITE);
-            cardView.setRadius(100);
+//            cardView.addView(newPlant);
+//            cardView.setLayoutParams(layoutParams);
+//            cardView.setPadding(10, 10, 10, 10);
+//            cardView.setCardBackgroundColor(Color.WHITE);
+//            cardView.setRadius(100);
 
 
-
-            linearLayout.addView(cardView);
+            root.addView(newPlant);
         }
     }
 }
