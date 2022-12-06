@@ -75,6 +75,7 @@
     <string name="enter_zip_code">Enter Zip Code</string>
     <string name="get_conditions">Get Conditions</string>
     <string name="plants_title">Plants</string>
+    <string name="delete_plant">delete plant</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
