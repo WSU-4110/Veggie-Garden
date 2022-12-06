@@ -2,10 +2,9 @@ package com.example.app;
 
 import static android.graphics.Color.BLACK;
 import static android.graphics.Color.GREEN;
-import static android.graphics.Color.WHITE;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -15,8 +14,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.Toast;
-
 import androidx.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
@@ -29,7 +26,6 @@ public class PlantId extends View implements View.OnClickListener {
     private String plantBirthday;
     private String outOrIn;
     private Paint textPaint;
-    private Paint backgroundPaint;
 
     OnClickListener listener;
 
@@ -67,7 +63,7 @@ public class PlantId extends View implements View.OnClickListener {
             textPaint.setColor(textColor.pack());
         }
         textPaint.setTextSize(50);
-        backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        Paint backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Same deal as above; will probably upgrade build to v26
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -96,10 +92,10 @@ public class PlantId extends View implements View.OnClickListener {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        Rect offsetView = new Rect();
+        @SuppressLint("DrawAllocation") Rect offsetView = new Rect();
         this.getDrawingRect(offsetView);
 
-        canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
+//        canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
         canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
         canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
         canvas.drawText(outOrIn, offsetView.left + 50, offsetView.top + 150, textPaint);
@@ -152,6 +148,7 @@ public class PlantId extends View implements View.OnClickListener {
         this.listener = listener;
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         super.onTouchEvent(event);

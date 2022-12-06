@@ -57,7 +57,7 @@ public class AddAPlant extends AppCompatActivity {
         });
 
         add.setOnClickListener(view -> {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, PlantsPage.class);
             String name = plantList.getSelectedItem().toString();
             String date = bday.getText().toString();
             String outdoors;
@@ -69,16 +69,16 @@ public class AddAPlant extends AppCompatActivity {
 
             //set up daily reminders for notifications
             Calendar cal = Calendar.getInstance();
-            cal.set(Calendar.HOUR_OF_DAY, 00);
-            cal.set(Calendar.MINUTE, 00);
-            cal.set(Calendar.SECOND, 00);
+            cal.set(Calendar.HOUR_OF_DAY, 0);
+            cal.set(Calendar.MINUTE, 0);
+            cal.set(Calendar.SECOND, 0);
 
             if (Calendar.getInstance().after(cal)) {
                 cal.add(Calendar.DAY_OF_MONTH, 1);
             }
 
             Intent notifIntent = new Intent(AddAPlant.this,plantBroadCast.class);
-            PendingIntent plantPendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0, notifIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            @SuppressLint("UnspecifiedImmutableFlag") PendingIntent plantPendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0, notifIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
             AlarmManager plantAlarm = (AlarmManager) getSystemService(ALARM_SERVICE);
             plantAlarm.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), AlarmManager.INTERVAL_DAY,plantPendingIntent);

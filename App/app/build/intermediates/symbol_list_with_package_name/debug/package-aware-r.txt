@@ -2657,6 +2657,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable plant
+drawable plant_background
 drawable popup_background
 drawable settings_gear
 drawable test_level_drawable
@@ -2740,6 +2741,7 @@ id actions
 id activity_chooser_view_content
 id add
 id addPlant
+id addWeather
 id alertTitle
 id aligned
 id all
@@ -2766,6 +2768,7 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
+id birthdateInfo
 id blocking
 id bottom
 id bounce
@@ -2868,11 +2871,11 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id etCity
-id etCountry
+id etZip
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id expectedDate
 id fade
 id fill
 id fill_horizontal
@@ -2914,6 +2917,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -2934,6 +2938,7 @@ id line1
 id line3
 id linear
 id linearLayout
+id linearLayout2
 id linear_layout
 id link
 id listMode
@@ -3128,6 +3133,8 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id summary
+id sunPreference
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3200,6 +3207,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id warning
+id waterFrequency
 id welcome
 id west
 id withText
@@ -3502,6 +3510,7 @@ string create_password_here
 string create_your
 string customize_profile
 string dark_mode
+string database_accessed_image
 string delete_account
 string delete_this_account
 string enable_disable
@@ -3518,6 +3527,7 @@ string enter_pword_here
 string error_a11y_label
 string error_icon_content_description
 string exitButton
+string expected_harvest_bloom_date
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3527,10 +3537,12 @@ string hide_bottom_view_on_scroll_behavior
 string home_page
 string i_am_sure
 string icon_content_description
+string if_you_are_not_entirely_sure_on_your_plant_s_birthdate_if_it_is_older_then_just_estimate_the_expected_harvest_bloom_date_is_an_estimation_anyways_and_we_will_get_as_close_as_we_can
 string if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel
 string if_you_are_unsure_just_press_cancel
 string item_view_role_description
 string login
+string logo
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3627,16 +3639,21 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string plant_calendar
+string plant_name
 string plants
+string preferred_sunlight
 string save
 string search_menu_title
 string status_bar_notification_info_overflow
+string summary
 string textview
 string this_is_a_tool_for_developers
 string to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize
 string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
 string under_construction
+string water_frequency
+string weather_information
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account

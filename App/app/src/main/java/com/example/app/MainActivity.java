@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button calendarButton;
     Button plantsButton;
     Button addPlant;
+    Button addWeather;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         calendarButton = findViewById(R.id.calendarView);
         plantsButton = findViewById(R.id.plantsButton);
         addPlant = findViewById(R.id.newPlant);
-
+        addWeather = findViewById(R.id.addWeather);
         // Retrieve account information
         //DataBase db = new DataBase(this);
         // how to get values: String name = db.getName(getIntent().getStringExtra("EMAIL"));
@@ -64,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
+
+        addWeather.setOnClickListener(view -> {
+            Intent intent = new Intent (this, WeatherActivity.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);
+            startActivity(intent);
+        });
     }
 
     private void showPopup() {
@@ -73,6 +80,6 @@ public class MainActivity extends AppCompatActivity {
         popup.show();
     }
 
-    public void getWeatherDetails(View view) {                                         // weather button
+    public void getWeatherDetails(View view) {
     }
 }
