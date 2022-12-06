@@ -51,6 +51,7 @@ id createButton
 id createEmail
 id createPword
 id customizeList
+id databaseButton2
 id date
 id emailInput
 id etCity
@@ -70,6 +71,7 @@ id nameInput
 id nevermind
 id newPlant
 id newPwordText
+id notifBtn
 id notifs
 id oldPwordText
 id plantBday
@@ -99,6 +101,7 @@ layout activity_create_account_page
 layout activity_customize_profile
 layout activity_delete_account_page
 layout activity_main
+layout activity_notification_dev
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
