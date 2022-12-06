@@ -159,6 +159,7 @@ string customize_profile
 string dark_mode
 string database_accessed_image
 string delete_account
+string delete_plant
 string delete_this_account
 string enable_disable
 string enable_disable_notifications

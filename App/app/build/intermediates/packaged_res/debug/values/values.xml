@@ -71,6 +71,7 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="database_accessed_image">database accessed image</string>
     <string name="delete_account">Delete Account</string>
+    <string name="delete_plant">delete plant</string>
     <string name="delete_this_account">Delete This Account</string>
     <string name="enable_disable">Enable/Disable</string>
     <string name="enable_disable_notifications">Enable/disable notifications?</string>
