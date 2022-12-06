@@ -8,10 +8,31 @@
         <item>Log Out</item>
         <item>Delete This Account</item>
     </string-array>
+    <string-array name="listOfPlants">
+        <item>Select a Plant!</item>
+        <item>Beefsteak Tomato</item>
+        <item>Beets</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Cherry Tomato</item>
+        <item>Corn</item>
+        <item>Cucumber</item>
+        <item>Eggplant</item>
+        <item>Garlic</item>
+        <item>Kale</item>
+        <item>Onions</item>
+        <item>Orchid</item>
+        <item>Radish</item>
+        <item>Sunflower</item>
+        <item>Turnip</item>
+        <item>Yellow Squash</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="dark_green">#064B1b</color>
     <color name="dark_purple">#080875</color>
-    <color name="dark_red">920A25</color>
+    <color name="dark_red">#920A25</color>
     <color name="light_beige">#FFDBD4</color>
     <color name="lime_green">#09AB10</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -20,10 +41,13 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <item name="linear_layout" type="id"/>
     <string name="account">Account!</string>
     <string name="account_list">Account List</string>
     <string name="add_a_new_plant">Add a New Plant!</string>
     <string name="add_a_new_plant_">Add a New Plant!</string>
+    <string name="add_this_plant">Add This Plant</string>
+    <string name="add_your_new_plant_s_information_below">Add your new plant\'s information below!</string>
     <string name="advance"><![CDATA[Advance>>]]></string>
     <string name="although_this_is_a_demo_project_and_this_project_is_all_about_the_customization_of_a_dialog_box_we_can_design_whatever_we_want">Although this is a demo project, And this project is all about the customization of a Dialog Box. We can design whatever we want!</string>
     <string name="app_name">App</string>
@@ -56,6 +80,7 @@
     <string name="enter_name_of_city">Enter Name of City</string>
     <string name="enter_name_of_country">Enter Name of Country</string>
     <string name="enter_password_here">Enter Password Here</string>
+    <string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string>
     <string name="enter_pword_here">Enter Password Here</string>
     <string name="exitButton">exit button</string>
     <string name="get">Get</string>
@@ -67,6 +92,7 @@
     <string name="login">Login</string>
     <string name="need_help">Need Help?</string>
     <string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string>
+    <string name="outdoors">Outdoors?</string>
     <string name="plant_calendar">Plant Calendar</string>
     <string name="plants">Plants</string>
     <string name="save">Save</string>
@@ -101,6 +127,12 @@
         <item name="colorOnSecondary">@color/black</item>
         
     </style>
+    <style name="Theme.App.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.App.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.App.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <declare-styleable name="PlantId">
         <attr format="string" name="plantName"/>
         <attr format="string" name="plantBirthday"/>

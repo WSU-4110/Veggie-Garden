@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="32" />
+        android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -23,6 +23,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App" >
+        <activity
+            android:name="com.example.app.plantInfo"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name="com.example.app.DeleteAccountPage"
             android:exported="false" >
@@ -77,6 +84,9 @@
             android:exported="false" />
         <activity
             android:name="com.example.app.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.app.AddAPlant"
             android:exported="false" />
         <activity
             android:name="com.example.app.TitlePage"

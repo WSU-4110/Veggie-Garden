@@ -1,10 +1,12 @@
 package com.example.app;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateAccountPage extends AppCompatActivity {
@@ -39,31 +41,27 @@ public class CreateAccountPage extends AppCompatActivity {
 
             if (name.length() >= 1 && (email.contains("@") || email.contains(".com") || email.contains(".net") || email.contains(".gov") ||       // check @, .com/gov/net/org and pword length
                     email.contains(".org")) && password.length() >= 3) {
-                if (password.equals(confirm) ) {                              // if pword same, advance
+                if (password.equals(confirm)) {                              // if pword same, advance
                     boolean checkAccount = db.checkEmail(email);              // check if email in use
                     if (!checkAccount) {
                         Credentials credentials = new Credentials(name, email, password);        // cross ref w credentials.java
                         boolean insert = db.addUser(credentials);                                 // add to cred.java
                         if (insert) {
                             Toast.makeText(CreateAccountPage.this, "Account Created", Toast.LENGTH_SHORT).show();   // toast msg, login, make new_user true, move to main
-                                Intent intent = new Intent(view.getContext(), MainActivity.class);
-                                intent.putExtra("EMAIL", email);
-                                intent.putExtra("NEW_USER", true);
-                                startActivity(intent);
-                        }
-                        else {
+                            Intent intent = new Intent(view.getContext(), MainActivity.class);
+                            intent.putExtra("EMAIL", email);
+                            intent.putExtra("NEW_USER", true);
+                            startActivity(intent);
+                        } else {
                             Toast.makeText(CreateAccountPage.this, "Account Creation Failed", Toast.LENGTH_SHORT).show();       // error
                         }
-                    }
-                    else {
+                    } else {
                         Toast.makeText(CreateAccountPage.this, "User Already Exists", Toast.LENGTH_SHORT).show();           // error
                     }
-                }
-                else {
+                } else {
                     Toast.makeText(CreateAccountPage.this, "Passwords are not the same", Toast.LENGTH_SHORT).show();          // error
                 }
-            }
-            else {
+            } else {
                 Toast.makeText(CreateAccountPage.this, "Invalid Entries", Toast.LENGTH_SHORT).show();                      // error
             }
         });

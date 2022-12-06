@@ -1,11 +1,11 @@
 package com.example.app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DeleteAccountPage extends AppCompatActivity {
 
@@ -24,11 +24,11 @@ public class DeleteAccountPage extends AppCompatActivity {
         db = new DataBase(this);
 
         sure.setOnClickListener(view -> {
-                Intent intent = new Intent(this, TitlePage.class);
-                String x = getIntent().getStringExtra("EMAIL");
-                Credentials deleting = new Credentials("NAME", x, "PASSWORD");
-                db.deleteUser(deleting);
-                startActivity(intent);
+            Intent intent = new Intent(this, TitlePage.class);
+            String x = getIntent().getStringExtra("EMAIL");
+            Credentials deleting = new Credentials("NAME", x, "PASSWORD");
+            db.deleteOne(deleting);
+            startActivity(intent);
         });
 
         nevermind.setOnClickListener(view -> {
@@ -36,8 +36,6 @@ public class DeleteAccountPage extends AppCompatActivity {
             startActivity(intent);
         });
     }
-
-
 
 
 }
