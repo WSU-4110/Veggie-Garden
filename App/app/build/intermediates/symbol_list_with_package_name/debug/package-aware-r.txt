@@ -3049,7 +3049,6 @@ id plantCal
 id plantList
 id plantLogo
 id plantName
-id plant_name
 id plantsButton
 id position
 id postLayout

@@ -22,7 +22,7 @@ public class plantInfo extends AppCompatActivity {
         DataBase db = new DataBase(this);
 
         Plant plant = db.getPlant(getIntent().getStringExtra("PLANT_NAME"));
-        textView = findViewById(R.id.plant_name);
+        textView = findViewById(R.id.plantName);
         Button back = findViewById(R.id.backToPlants);
 
         textView.setText(String.format("Name: %s\nType: %s\nBirthday: %s", plant.getName(), plant.getType(), plant.getBday()));
