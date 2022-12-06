@@ -57,6 +57,7 @@ id createButton
 id createEmail
 id createPword
 id customizeList
+id delete
 id emailInput
 id etZip
 id expectedDate
@@ -203,7 +204,6 @@ string water_frequency
 string weather_information
 string weather_informationn
 string weather_version_1_0
-string weathericon
 string welcome_to_plant
 string you_are_about_to_delete_your_account
 style CalenderViewCustom

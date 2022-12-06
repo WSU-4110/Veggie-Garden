@@ -2834,6 +2834,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3662,7 +3663,6 @@ string water_frequency
 string weather_information
 string weather_informationn
 string weather_version_1_0
-string weathericon
 string welcome_to_plant
 string you_are_about_to_delete_your_account
 style AlertDialog_AppCompat
