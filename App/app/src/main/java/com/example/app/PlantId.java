@@ -1,30 +1,37 @@
 package com.example.app;
 
+import static android.graphics.Color.BLACK;
 import static android.graphics.Color.GREEN;
 import static android.graphics.Color.WHITE;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.os.Build;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
-public class PlantId extends View {
+public class PlantId extends View implements View.OnClickListener {
 
     // Hard-coded values for debug purposes
     private Color backgroundColor = Color.valueOf(GREEN);
-    private Color textColor = Color.valueOf(WHITE);
+    private Color textColor = Color.valueOf(BLACK);
     private String plantName;
     private String plantBirthday;
-
+    private String outOrIn;
     private Paint textPaint;
     private Paint backgroundPaint;
+
+    OnClickListener listener;
 
     // Constructor for PlantId
     // Will call init to create all drawable objects
@@ -43,6 +50,7 @@ public class PlantId extends View {
 
         this.plantName = plant.getName();
         this.plantBirthday = plant.getBday();
+        this.outOrIn = plant.getType();
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.setMargins(20, 20, 20, 50);
@@ -79,7 +87,7 @@ public class PlantId extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(1600, 50);
+        setMeasuredDimension(1400, 300);
     }
 
     // Called when displaying the PlantId
@@ -88,10 +96,13 @@ public class PlantId extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawRect(this.getX(), this.getY(), 1400, this.getY()+200, backgroundPaint);
-        canvas.drawText(plantName, this.getX()+ 50, this.getY()+50, textPaint);
-        canvas.drawText("Birthday: ", this.getX() + 50, this.getY() + 100, textPaint);
-        
+        Rect offsetView = new Rect();
+        this.getDrawingRect(offsetView);
+
+        canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
+        canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
+        canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
+        canvas.drawText(outOrIn, offsetView.left + 50, offsetView.top + 150, textPaint);
     }
 
     public Color getBackgroundColor() {
@@ -133,5 +144,24 @@ public class PlantId extends View {
 
     public void setTextColor(Color textColor) {
         this.textColor = textColor;
+    }
+
+    public void setOnClickListener(OnClickListener listener) {
+        if(!isClickable())
+            setClickable(true);
+        this.listener = listener;
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        super.onTouchEvent(event);
+        this.onClick(this);
+        return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (listener != null)
+            listener.onClick(v);
     }
 }

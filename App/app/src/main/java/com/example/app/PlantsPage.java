@@ -6,8 +6,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.List;
 
 public class PlantsPage extends AppCompatActivity {
@@ -35,11 +37,17 @@ public class PlantsPage extends AppCompatActivity {
         });
 
         db = new DataBase(this);
-        List<Plant> plantList = db.getPlants();                      // display list
+        List<Plant> plantList = db.getPlants();                                 // display list
 
         for (Plant plant :
                 plantList) {
             PlantId newPlant = new PlantId(this, plant);                       // displays plants
+            newPlant.setOnClickListener(view -> {
+                Intent intent = new Intent(this, plantInfo.class);
+                intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+                intent.putExtra("PLANT_NAME", plant.getName());
+                startActivity(intent);
+            });
             linearLayout.addView(newPlant);
         }
     }

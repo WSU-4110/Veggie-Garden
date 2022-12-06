@@ -2760,6 +2760,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backButton
 id backToMain
+id backToPlants
 id backToSettings
 id barrier
 id baseline
@@ -2826,7 +2827,6 @@ id custom
 id customPanel
 id customizeList
 id cut
-id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2933,6 +2933,7 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id linear_layout
 id link
 id listMode
@@ -3041,8 +3042,10 @@ id peekHeight
 id percent
 id pin
 id plantBday
+id plantCal
 id plantList
 id plantLogo
+id plantName
 id plantsButton
 id position
 id postLayout
@@ -3335,6 +3338,7 @@ layout activity_create_account_page
 layout activity_customize_profile
 layout activity_delete_account_page
 layout activity_main
+layout activity_plant_info
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page

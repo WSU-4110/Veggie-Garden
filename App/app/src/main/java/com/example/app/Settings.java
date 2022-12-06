@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Settings extends AppCompatActivity implements RecyclerViewInterface{
+public class Settings extends AppCompatActivity implements RecyclerViewInterface {
 
     //declare variables
     Button backToMain;
@@ -56,29 +56,35 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
     @Override
     public void onItemClick(int position) {
 
-      switch (position) {
-          case 0: Intent intent0 = new Intent(this, CustomizeProfile.class);
-              intent0.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));                       // customize profile page
-              startActivity(intent0);
-              break;
-          case 1: showPopup1();       // notifications popup
-              break;
-          case 2: showPopup2();       // help popup
-              break;
-          case 3: Intent intent3 = new Intent(this, ChangePassword.class);
-              intent3.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));                       // update password page
-                    startActivity(intent3);
-              break;
-          case 4: Intent intent4 = new Intent(this, TitlePage.class);
-                    Toast.makeText(this, "Log Out Successful", Toast.LENGTH_SHORT).show();          // logout
-                    startActivity(intent4);
-              break;
-          case 5: Intent intent5 = new Intent(this, DeleteAccountPage.class);               // move to delete page
-              intent5.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
-              Toast.makeText(this, "Account Deleted Successfully", Toast.LENGTH_SHORT).show();
-              startActivity(intent5);
-              break;                   // delete account popup
-      }
+        switch (position) {
+            case 0:
+                Intent intent0 = new Intent(this, CustomizeProfile.class);
+                intent0.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));                       // customize profile page
+                startActivity(intent0);
+                break;
+            case 1:
+                showPopup1();       // notifications popup
+                break;
+            case 2:
+                showPopup2();       // help popup
+                break;
+            case 3:
+                Intent intent3 = new Intent(this, ChangePassword.class);
+                intent3.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));                       // update password page
+                startActivity(intent3);
+                break;
+            case 4:
+                Intent intent4 = new Intent(this, TitlePage.class);
+                Toast.makeText(this, "Log Out Successful", Toast.LENGTH_SHORT).show();          // logout
+                startActivity(intent4);
+                break;
+            case 5:
+                Intent intent5 = new Intent(this, DeleteAccountPage.class);               // move to delete page
+                intent5.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+                Toast.makeText(this, "Account Deleted Successfully", Toast.LENGTH_SHORT).show();
+                startActivity(intent5);
+                break;                   // delete account popup
+        }
 
     }
 

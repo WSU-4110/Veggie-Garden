@@ -38,6 +38,7 @@ id addWeather
 id are_you_sure
 id backButton
 id backToMain
+id backToPlants
 id backToSettings
 id btnGet
 id calendarView
@@ -53,7 +54,6 @@ id createButton
 id createEmail
 id createPword
 id customizeList
-id date
 id emailInput
 id etZip
 id gearButton
@@ -61,6 +61,7 @@ id group
 id help
 id instructions
 id layout
+id linearLayout
 id linear_layout
 id link
 id location
@@ -74,8 +75,10 @@ id newPwordText
 id notifs
 id oldPwordText
 id plantBday
+id plantCal
 id plantList
 id plantLogo
+id plantName
 id plantsButton
 id pwordInput
 id r_layout
@@ -100,6 +103,7 @@ layout activity_create_account_page
 layout activity_customize_profile
 layout activity_delete_account_page
 layout activity_main
+layout activity_plant_info
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
