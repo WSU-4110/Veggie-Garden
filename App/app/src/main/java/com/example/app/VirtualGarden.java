@@ -23,7 +23,7 @@ public class VirtualGarden extends AppCompatActivity {
 
 
     //button to go to home page
-    Button backButton;
+    Button backButton, goToPlants;
     //backButton.setOnClickListener.
 
     @Override
@@ -33,8 +33,17 @@ public class VirtualGarden extends AppCompatActivity {
 
         //Button to go to MainActivity
         backButton = findViewById(R.id.back_to_main_page_from_virtual_garden);
-        backButton.setOnClickListener(view -> {
-            Intent intent = new Intent(view.getContext(),MainActivity.class);
+        backButton.setOnClickListener(view -> {                                     // back button actions
+            Intent intent = new Intent(view.getContext(), MainActivity.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
+            intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
+            startActivity(intent);
+        });
+        goToPlants = findViewById(R.id.go_to_plants_from_virtual_garden);
+        goToPlants.setOnClickListener(view -> {
+            Intent intent = new Intent(this, PlantsPage.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
     }

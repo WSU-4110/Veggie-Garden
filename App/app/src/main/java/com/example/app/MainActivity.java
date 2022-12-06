@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     // create variables
     ImageButton gearButton, addWeather;
-    Button calendarButton, plantsButton, addPlant;
+    Button calendarButton, plantsButton, addPlant, virtualGardenButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
 
         plantsButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, PlantsPage.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
+            intent.putExtra("NEW_USER", false);
+            startActivity(intent);
+        });
+
+        virtualGardenButton.setOnClickListener(view -> {
+            Intent intent = new Intent (this, VirtualGarden.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
             intent.putExtra("NEW_USER", false);
             startActivity(intent);

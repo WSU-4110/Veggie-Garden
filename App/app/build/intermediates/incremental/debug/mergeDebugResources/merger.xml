@@ -10765,7 +10765,7 @@
         <item>Sunflower</item>
         <item>Turnip</item>
         <item>Yellow Squash</item>
-    </string-array></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="PlantId">
+    </string-array><string name="virtual_garden">Virtual Garden</string></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="PlantId">
         <attr format="string" name="plantName"/>
         <attr format="string" name="plantBirthday"/>
         <attr format="color" name="backgroundColor"/>
