@@ -2740,6 +2740,7 @@ id actions
 id activity_chooser_view_content
 id add
 id addPlant
+id addWeather
 id alertTitle
 id aligned
 id all
@@ -2868,8 +2869,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id etCity
-id etCountry
+id etZip
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu

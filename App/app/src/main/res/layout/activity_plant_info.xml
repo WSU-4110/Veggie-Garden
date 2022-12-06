@@ -5,7 +5,121 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_beige"
-    tools:context=".CustomizeProfile">
+    tools:context=".CustomizeProfile"
+    tools:layout_editor_absoluteX="-80dp"
+    tools:layout_editor_absoluteY="-54dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="316dp"
+        android:layout_height="615dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/plantName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="223dp"
+                    android:layout_height="148dp"
+                    android:layout_marginTop="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/plantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plant_name" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="233dp"
+                android:layout_height="277dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/material_dynamic_neutral70"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="170dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:drawableLeft="@drawable/forward"
+                        android:text="TextView"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="170dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:drawableLeft="@drawable/forward"
+                        android:text="TextView"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="170dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:drawableLeft="@drawable/forward"
+                        android:text="TextView"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="170dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:drawableLeft="@drawable/forward"
+                        android:text="TextView"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <Button
         android:id="@+id/backToPlants"
@@ -13,6 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="-269dp"
         android:layout_marginBottom="4dp"
+        android:alpha="0.2"
         android:color="@color/dark_purple"
         android:text="@string/back2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,18 +146,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/plantName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="248dp"
-        android:layout_marginBottom="580dp"
-        android:text="@string/under_construction"
-        android:textColor="#795548"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
