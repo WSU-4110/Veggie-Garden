@@ -50,6 +50,7 @@ id card_text
 id confirmNewPword
 id confirmNewPwordText
 id confirmPword
+id constraint
 id constraint_layout
 id createAccountButton
 id createButton
@@ -94,10 +95,12 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
 id titleMessage
 id toolbar
 id toolbar2
 id toolbar3
+id toolbar4
 id turn_on_notifs
 id tvResult
 id warning
@@ -180,6 +183,7 @@ string outdoors
 string plant_calendar
 string plant_name
 string plants
+string plants_title
 string preferred_sunlight
 string save
 string summary

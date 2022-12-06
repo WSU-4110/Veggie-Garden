@@ -54,7 +54,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="188dp"
-            app:layout_constraintBottom_toTopOf="@+id/plantName"
+            app:layout_constraintBottom_toTopOf="@+id/constraint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +75,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/plant_name"
+            android:id="@+id/plantName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/plant_name"

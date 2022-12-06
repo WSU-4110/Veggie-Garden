@@ -53,7 +53,7 @@ public class PlantsPage extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT
             );
 
-            layoutParams.setMargins(10, 10, 10, 10);
+            layoutParams.setMargins(10, 20, 10, 10);
 
             PlantId newPlant = new PlantId(this, plant);                       // displays plants
             newPlant.setOnClickListener(view -> {

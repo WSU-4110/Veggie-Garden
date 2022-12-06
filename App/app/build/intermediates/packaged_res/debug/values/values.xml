@@ -100,6 +100,7 @@
     <string name="plant_calendar">Plant Calendar</string>
     <string name="plant_name">Plant Name</string>
     <string name="plants">Plants</string>
+    <string name="plants_title">Plants</string>
     <string name="preferred_sunlight">Preferred Sunlight</string>
     <string name="save">Save</string>
     <string name="summary">Summary</string>

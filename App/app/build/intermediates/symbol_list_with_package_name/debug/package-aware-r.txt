@@ -3159,6 +3159,7 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3177,6 +3178,7 @@ id toggle
 id toolbar
 id toolbar2
 id toolbar3
+id toolbar4
 id top
 id topPanel
 id touch_outside
@@ -3638,6 +3640,7 @@ string path_password_strike_through
 string plant_calendar
 string plant_name
 string plants
+string plants_title
 string preferred_sunlight
 string save
 string search_menu_title
