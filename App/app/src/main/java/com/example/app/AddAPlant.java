@@ -61,7 +61,7 @@ public class AddAPlant extends AppCompatActivity {
             String name = plantList.getSelectedItem().toString();
             String date = bday.getText().toString();
             String outdoors;
-            if (location.isChecked()) outdoors = "It is outdoors.";
+             if (location.isChecked()) outdoors = "It is outdoors.";
             else outdoors = "It is indoors.";
 
             Plant plant = new Plant(name, outdoors, date);                       // creates plant credentials, adds to database
