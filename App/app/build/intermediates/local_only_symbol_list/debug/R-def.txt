@@ -34,6 +34,7 @@ font roboto_condensed_regular
 font robotoslabregular
 font sirukota
 id addPlant
+id addWeather
 id are_you_sure
 id backButton
 id backToMain
@@ -54,8 +55,8 @@ id createEmail
 id createPword
 id customizeList
 id emailInput
-id etCity
-id etCountry
+id etZip
+id expectedDate
 id gearButton
 id group
 id help
@@ -63,6 +64,7 @@ id imageView
 id instructions
 id layout
 id linearLayout
+id linearLayout2
 id linear_layout
 id link
 id location
@@ -85,6 +87,8 @@ id plantsButton
 id pwordInput
 id r_layout
 id root_vg
+id summary
+id sunPreference
 id textView
 id textView2
 id textView3
@@ -96,6 +100,7 @@ id toolbar3
 id turn_on_notifs
 id tvResult
 id warning
+id waterFrequency
 id welcome
 layout activity_account_viewer_database_list
 layout activity_add_aplant
@@ -143,6 +148,7 @@ string create_password_here
 string create_your
 string customize_profile
 string dark_mode
+string database_accessed_image
 string delete_account
 string delete_this_account
 string enable_disable
@@ -157,6 +163,7 @@ string enter_password_here
 string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
 string exitButton
+string expected_harvest_bloom_date
 string get
 string goes_back_to_title_page
 string home_page
@@ -170,13 +177,16 @@ string outdoors
 string plant_calendar
 string plant_name
 string plants
+string preferred_sunlight
 string save
+string summary
 string textview
 string this_is_a_tool_for_developers
 string to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize
 string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
 string under_construction
+string water_frequency
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account

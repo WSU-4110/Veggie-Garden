@@ -42,6 +42,21 @@
         tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
     <Button
+        android:id="@+id/addWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="284dp"
+        android:text="Weather Information"
+        android:color="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/newPlant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,8 +68,10 @@
         android:text="@string/add_a_new_plant_"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/calendarView"

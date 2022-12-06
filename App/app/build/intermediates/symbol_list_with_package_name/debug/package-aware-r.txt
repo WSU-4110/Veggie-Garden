@@ -2740,6 +2740,7 @@ id actions
 id activity_chooser_view_content
 id add
 id addPlant
+id addWeather
 id alertTitle
 id aligned
 id all
@@ -2868,11 +2869,11 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id etCity
-id etCountry
+id etZip
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id expectedDate
 id fade
 id fill
 id fill_horizontal
@@ -2935,6 +2936,7 @@ id line1
 id line3
 id linear
 id linearLayout
+id linearLayout2
 id linear_layout
 id link
 id listMode
@@ -3128,6 +3130,8 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id summary
+id sunPreference
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3200,6 +3204,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id warning
+id waterFrequency
 id welcome
 id west
 id withText
@@ -3501,6 +3506,7 @@ string create_password_here
 string create_your
 string customize_profile
 string dark_mode
+string database_accessed_image
 string delete_account
 string delete_this_account
 string enable_disable
@@ -3517,6 +3523,7 @@ string enter_pword_here
 string error_a11y_label
 string error_icon_content_description
 string exitButton
+string expected_harvest_bloom_date
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3628,15 +3635,18 @@ string path_password_strike_through
 string plant_calendar
 string plant_name
 string plants
+string preferred_sunlight
 string save
 string search_menu_title
 string status_bar_notification_info_overflow
+string summary
 string textview
 string this_is_a_tool_for_developers
 string to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize
 string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
 string under_construction
+string water_frequency
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account
