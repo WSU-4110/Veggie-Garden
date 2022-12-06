@@ -29,13 +29,13 @@ drawable plant
 drawable plant_background
 drawable popup_background
 drawable settings_gear
+drawable weathericon
 font roboto
 font roboto_bold
 font roboto_condensed_regular
 font robotoslabregular
 font sirukota
 id addPlant
-id addWeather
 id are_you_sure
 id backButton
 id backToMain
@@ -104,6 +104,7 @@ id turn_on_notifs
 id tvResult
 id warning
 id waterFrequency
+id weatherButton
 id welcome
 layout activity_account_viewer_database_list
 layout activity_add_aplant
@@ -166,9 +167,11 @@ string enter_name_of_country
 string enter_password_here
 string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
+string enter_zip_code
 string exitButton
 string expected_harvest_bloom_date
 string get
+string get_conditions
 string goes_back_to_title_page
 string home_page
 string i_am_sure
@@ -194,7 +197,9 @@ string todo
 string under_construction
 string water_frequency
 string weather_information
+string weather_informationn
 string weather_version_1_0
+string weathericon
 string welcome_to_plant
 string you_are_about_to_delete_your_account
 style CalenderViewCustom

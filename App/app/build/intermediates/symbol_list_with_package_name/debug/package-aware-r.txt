@@ -2663,6 +2663,7 @@ drawable settings_gear
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable weathericon
 font roboto
 font roboto_bold
 font roboto_condensed_regular
@@ -2741,7 +2742,6 @@ id actions
 id activity_chooser_view_content
 id add
 id addPlant
-id addWeather
 id alertTitle
 id aligned
 id all
@@ -3208,6 +3208,7 @@ id visible
 id visible_removing_fragment_view_tag
 id warning
 id waterFrequency
+id weatherButton
 id welcome
 id west
 id withText
@@ -3524,6 +3525,7 @@ string enter_name_of_country
 string enter_password_here
 string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
+string enter_zip_code
 string error_a11y_label
 string error_icon_content_description
 string exitButton
@@ -3532,6 +3534,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string get
+string get_conditions
 string goes_back_to_title_page
 string hide_bottom_view_on_scroll_behavior
 string home_page
@@ -3654,7 +3657,9 @@ string todo
 string under_construction
 string water_frequency
 string weather_information
+string weather_informationn
 string weather_version_1_0
+string weathericon
 string welcome_to_plant
 string you_are_about_to_delete_your_account
 style AlertDialog_AppCompat
