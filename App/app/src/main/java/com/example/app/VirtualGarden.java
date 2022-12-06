@@ -1,5 +1,14 @@
 package com.example.app;
 
+//import android.widget.*;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -12,6 +21,23 @@ public class VirtualGarden extends AppCompatActivity {
 
     //table filled with containers that can show little pictures and can contain a link when clicked on
 
+
+    //button to go to home page
+    Button backButton;
+    //backButton.setOnClickListener.
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_virtual_garden);
+
+        //Button to go to MainActivity
+        backButton = findViewById(R.id.back_to_main_page_from_virtual_garden);
+        backButton.setOnClickListener(view -> {
+            Intent intent = new Intent(view.getContext(),MainActivity.class);
+            startActivity(intent);
+        });
+    }
 
     class VirtualGardenState {
         public void changeToOppositeState() {
