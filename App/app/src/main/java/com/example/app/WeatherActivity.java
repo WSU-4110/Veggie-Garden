@@ -17,10 +17,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.text.DecimalFormat;
 
+    @SuppressWarnings("IntegerDivisionInFloatingPointContext")
     public class WeatherActivity extends AppCompatActivity {
         EditText etZip;
         TextView tvResult;
-        private  String url = "http://api.openweathermap.org/data/2.5/forecast?id=524901&zip=48312&cnt=1&appid=94a4143658ad8966e26f35512cd0f006";
         private final String appID = "94a4143658ad8966e26f35512cd0f006";
         DecimalFormat df = new DecimalFormat("#.##");
 
@@ -37,7 +37,7 @@ import java.text.DecimalFormat;
         @SuppressLint("SetTextI18n")
         public void getWeatherDetails(View view) {
             String zip = etZip.getText().toString().trim();
-            url="http://api.openweathermap.org/data/2.5/forecast?id=524901&zip="+zip+"&cnt=1&appid=94a4143658ad8966e26f35512cd0f006";
+            String url = "http://api.openweathermap.org/data/2.5/forecast?id=524901&zip=" + zip + "&cnt=1&appid=94a4143658ad8966e26f35512cd0f006";
             if(zip.equals("")){
                 tvResult.setText("Zip field can not be empty!");
             }

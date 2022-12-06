@@ -14,8 +14,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-
 import androidx.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
@@ -28,12 +26,7 @@ public class PlantId extends View implements View.OnClickListener {
     private String plantBirthday;
     private String outOrIn;
     private Paint textPaint;
-    private Paint namePaint;
     private Paint backgroundPaint;
-    private LinearLayout plantLayout;
-    private TextView name;
-    private TextView type;
-    private TextView bday;
 
     OnClickListener listener;
 
@@ -65,14 +58,12 @@ public class PlantId extends View implements View.OnClickListener {
     // Initializes drawable objects to increase performance
     private void init() {
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        namePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Only works in SDK v26 or above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             textPaint.setColor(textColor.pack());
         }
-        textPaint.setTextSize(60);
-        namePaint.setTextSize(100);
+        textPaint.setTextSize(50);
         backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Same deal as above; will probably upgrade build to v26
