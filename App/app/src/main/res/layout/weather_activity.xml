@@ -31,7 +31,9 @@
             android:ems="10"
             android:hint="@string/enter_zip_code"
             android:inputType="textPersonName"
-            android:autofillHints="TODO" />
+            android:autofillHints="TODO"
+            android:textColor="@color/dark_red"
+            />
 
         <Button
             android:layout_width="match_parent"
@@ -42,7 +44,7 @@
             android:textColor="@android:color/white"
             android:onClick="getWeatherDetails"
             android:text="@string/get_conditions"
-            app:backgroundTint="@null"
+            app:backgroundTint="@color/dark_red"
             tools:ignore="UsingOnClickInXml" />
 
         <TextView
