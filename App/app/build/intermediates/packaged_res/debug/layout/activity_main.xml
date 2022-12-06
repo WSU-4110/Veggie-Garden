@@ -31,32 +31,33 @@
         app:srcCompat="@drawable/plant"
         tools:ignore="ImageContrastCheck" />
 
-    <Button
-        android:id="@+id/addWeather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="340dp"
-        android:layout_marginEnd="116dp"
-        android:color="@color/dark_purple"
-        android:text="@string/weather_information"
+    <ImageButton
+        android:id="@+id/weatherButton"
+        android:layout_width="114dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="-10dp"
+        android:contentDescription="@string/weathericon"
+        app:layout_constraintBottom_toTopOf="@+id/newPlant"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/plantLogo"
+        app:srcCompat="@drawable/weathericon"
+        tools:ignore="ImageContrastCheck" />
 
     <Button
         android:id="@+id/newPlant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="23dp"
         android:layout_marginEnd="116dp"
         android:color="@color/dark_purple"
         android:text="@string/add_a_new_plant_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/weatherButton" />
 
     <Button
         android:id="@+id/calendarView"

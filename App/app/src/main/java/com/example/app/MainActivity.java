@@ -11,11 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     // create variables
-    ImageButton gearButton;
-    Button calendarButton;
-    Button plantsButton;
-    Button addPlant;
-    Button addWeather;
+    ImageButton gearButton, addWeather;
+    Button calendarButton, plantsButton, addPlant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         calendarButton = findViewById(R.id.calendarView);
         plantsButton = findViewById(R.id.plantsButton);
         addPlant = findViewById(R.id.newPlant);
-        addWeather = findViewById(R.id.addWeather);
+        addWeather = findViewById(R.id.weatherButton);
         // Retrieve account information
         //DataBase db = new DataBase(this);
         // how to get values: String name = db.getName(getIntent().getStringExtra("EMAIL"));

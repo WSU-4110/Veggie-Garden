@@ -74,6 +74,7 @@
     <string name="weather_informationn">Weather Information</string>
     <string name="enter_zip_code">Enter Zip Code</string>
     <string name="get_conditions">Get Conditions</string>
+    <string name="weathericon">weatherIcon</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>

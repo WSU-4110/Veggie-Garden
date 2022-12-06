@@ -83,9 +83,11 @@
     <string name="enter_password_here">Enter Password Here</string>
     <string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string>
     <string name="enter_pword_here">Enter Password Here</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
     <string name="exitButton">exit button</string>
     <string name="expected_harvest_bloom_date">Expected Harvest/Bloom Date:</string>
     <string name="get">Get</string>
+    <string name="get_conditions">Get Conditions</string>
     <string name="goes_back_to_title_page">goes back to title page</string>
     <string name="home_page">Home Page</string>
     <string name="i_am_sure">I am sure!</string>
@@ -111,7 +113,9 @@
     <string name="under_construction">Under Construction</string>
     <string name="water_frequency">Water Frequency</string>
     <string name="weather_information">Weather Information</string>
+    <string name="weather_informationn">Weather Information</string>
     <string name="weather_version_1_0">Weather Version 1.0</string>
+    <string name="weathericon">weatherIcon</string>
     <string name="welcome_to_plant">Welcome to Plant!</string>
     <string name="you_are_about_to_delete_your_account">You are about to delete your account!</string>
     <style name="CalenderViewCustom">
