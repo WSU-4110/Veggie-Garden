@@ -9,10 +9,9 @@ import android.widget.TextView;
 
 public class plantInfo extends AppCompatActivity {
 
-    private String plantName;
-
-    private TextView textView;
-    private Button back;
+    String plantName;
+    TextView textView;
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +23,6 @@ public class plantInfo extends AppCompatActivity {
         back = findViewById(R.id.backToPlants);
 
         textView.setText(plantName);
-
 
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, PlantsPage.class);

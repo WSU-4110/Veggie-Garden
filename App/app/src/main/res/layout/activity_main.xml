@@ -4,54 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_beige"
+    android:background="@drawable/plant_background"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/light_beige"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:context=".MainActivity"
-        tools:ignore="ContentDescription" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="425dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:background="#788306"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/gearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="360dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginBottom="88dp"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/settings_gear"
         tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
+    <ImageView
+        android:id="@+id/plantLogo"
+        android:layout_width="253dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plant"
+        tools:ignore="ImageContrastCheck" />
+
     <Button
         android:id="@+id/addWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="340dp"
         android:layout_marginEnd="116dp"
-        android:layout_marginBottom="284dp"
-        android:text="Weather Information"
         android:color="@color/dark_purple"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        android:text="@string/weather_information"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,17 +49,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="343dp"
+        android:layout_marginTop="428dp"
         android:layout_marginEnd="116dp"
-        android:layout_marginBottom="284dp"
         android:color="@color/dark_purple"
         android:text="@string/add_a_new_plant_"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/calendarView"
@@ -80,6 +65,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/calendar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newPlant" />
 
@@ -87,7 +73,7 @@
         android:id="@+id/plantsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:text="@string/plants"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

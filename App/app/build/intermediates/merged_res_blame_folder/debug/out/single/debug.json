@@ -4,6 +4,10 @@
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\font\\roboto_condensed_regular.ttf"
     },
     {
+        "merged": "com.example.app-merged_res-30:/layout_activity_main.xml.flat",
+        "source": "com.example.app-main-32:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_settings_gear.xml.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\settings_gear.xml"
     },
@@ -48,6 +52,10 @@
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable-xhdpi_plant_background.jpg.flat",
+        "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-debug-31:\\drawable-xhdpi\\plant_background.jpg"
+    },
+    {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -82,6 +90,10 @@
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable-v24_plant.png.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable-v24\\plant.png"
+    },
+    {
+        "merged": "com.example.app-merged_res-30:/layout_weather_activity.xml.flat",
+        "source": "com.example.app-main-32:/layout/weather_activity.xml"
     },
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\xml_network_security_config.xml.flat",
@@ -138,10 +150,6 @@
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\font_sirukota.ttf.flat",
         "source": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\font\\sirukota.ttf"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/layout_activity_plant_info.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_plant_info.xml"
     },
     {
         "merged": "C:\\Users\\nicka\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_help_popup.xml.flat",
