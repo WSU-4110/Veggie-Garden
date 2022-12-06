@@ -59,7 +59,7 @@ import java.text.DecimalFormat;
 
 
 
-                output += weather2;
+                output += ;
 
 
 //                      JSONObject jsonResponse = new JSONObject(response);

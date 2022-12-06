@@ -55,8 +55,7 @@ id createPword
 id customizeList
 id date
 id emailInput
-id etCity
-id etCountry
+id etZip
 id gearButton
 id group
 id help
