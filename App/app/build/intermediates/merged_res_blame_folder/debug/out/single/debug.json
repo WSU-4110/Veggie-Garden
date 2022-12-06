@@ -1,190 +1,194 @@
 [
     {
-        "merged": "com.example.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_help_popup.xml.flat",
-        "source": "com.example.app-main-32:/layout/help_popup.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_forward.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\forward.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_title_page.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_title_page.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_main.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_settings_gear.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\settings_gear.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/drawable_popup_background.xml.flat",
-        "source": "com.example.app-main-32:/drawable/popup_background.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\font_roboto.ttf.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\font\\roboto.ttf"
     },
     {
-        "merged": "com.example.app-merged_res-30:/xml_backup_rules.xml.flat",
-        "source": "com.example.app-main-32:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_plants_page.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_plants_page.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_delete_account_page.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_delete_account_page.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_notifications_popup.xml.flat",
-        "source": "com.example.app-main-32:/layout/notifications_popup.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_title_page.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_title_page.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-pngs-25:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_settings_view_layout.xml.flat",
-        "source": "com.example.app-main-32:/layout/settings_view_layout.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_plant_info.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_plant_info.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_delete_account_page.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_delete_account_page.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_calendar_view.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_calendar_view.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/drawable_forward.xml.flat",
-        "source": "com.example.app-main-32:/drawable/forward.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\font_robotoslabregular.ttf.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\font\\robotoslabregular.ttf"
     },
     {
-        "merged": "com.example.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_create_account_page_welcome_popup.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\create_account_page_welcome_popup.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_settings.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_settings.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_account_viewer_database_list.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_account_viewer_database_list.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_plant_info.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_plant_info.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_help_popup.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\help_popup.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.app-main-32:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.app-merged_res-30:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/font_roboto_bold.ttf.flat",
-        "source": "com.example.app-main-32:/font/roboto_bold.ttf"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.app-main-32:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/layout_activity_change_password.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_change_password.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/layout_activity_account_viewer_database_list.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_account_viewer_database_list.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/drawable_back_arrow.xml.flat",
-        "source": "com.example.app-main-32:/drawable/back_arrow.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.app-pngs-25:/drawable-anydpi-v24/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.app-main-32:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/layout_activity_create_account_page.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_create_account_page.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/drawable-anydpi-v24_foreground.xml.flat",
-        "source": "com.example.app-pngs-25:/drawable-anydpi-v24/foreground.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.app-main-32:/xml/data_extraction_rules.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/drawable_exit.xml.flat",
-        "source": "com.example.app-main-32:/drawable/exit.xml"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.app-merged_res-30:/layout_create_account_page_welcome_popup.xml.flat",
-        "source": "com.example.app-main-32:/layout/create_account_page_welcome_popup.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "com.example.app-merged_res-30:/layout_weather_activity.xml.flat",
         "source": "com.example.app-main-32:/layout/weather_activity.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_add_aplant.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_add_aplant.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_settings_view_layout.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\settings_view_layout.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/drawable_background.xml.flat",
-        "source": "com.example.app-main-32:/drawable/background.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\font_roboto_condensed_regular.ttf.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\font\\roboto_condensed_regular.ttf"
     },
     {
-        "merged": "com.example.app-merged_res-30:/font_roboto.ttf.flat",
-        "source": "com.example.app-main-32:/font/roboto.ttf"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.app-main-32:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_exit.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\exit.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_customize_profile.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_customize_profile.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable-v24_plant.png.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable-v24\\plant.png"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_plants_page.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_plants_page.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_change_password.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_change_password.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/xml_network_security_config.xml.flat",
-        "source": "com.example.app-main-32:/xml/network_security_config.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.app-merged_res-30:/drawable_settings_gear.xml.flat",
-        "source": "com.example.app-main-32:/drawable/settings_gear.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_popup_background.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\popup_background.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/font_roboto_condensed_regular.ttf.flat",
-        "source": "com.example.app-main-32:/font/roboto_condensed_regular.ttf"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.app-merged_res-30:/font_sirukota.ttf.flat",
-        "source": "com.example.app-main-32:/font/sirukota.ttf"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable-anydpi-v24_foreground.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-pngs-25:\\drawable-anydpi-v24\\foreground.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/drawable-v24_plant.png.flat",
-        "source": "com.example.app-main-32:/drawable-v24/plant.png"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_settings.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/font_robotoslabregular.ttf.flat",
-        "source": "com.example.app-main-32:/font/robotoslabregular.ttf"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_calendar_view.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_calendar_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_weather_activity.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\weather_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_customize_profile.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_customize_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_create_account_page.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_create_account_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\font_roboto_bold.ttf.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\font\\roboto_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_background.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\font_sirukota.ttf.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\font\\sirukota.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_activity_add_aplant.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\activity_add_aplant.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\layout_notifications_popup.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\layout\\notifications_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\drawable_back_arrow.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\drawable\\back_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-merged_res-30:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\7.4\\com.example.app-main-32:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     }
 ]

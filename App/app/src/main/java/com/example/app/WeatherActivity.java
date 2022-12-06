@@ -56,7 +56,7 @@ import java.text.DecimalFormat;
                 JSONObject jsonObject = jsonArray.getJSONObject(0);
                 String dtxt = jsonObject.getString("dt_txt");       //Date-Time
                 JSONObject main = jsonObject.getJSONObject("main");
-                String temp = main.getString("temp");           //temperature
+                double temp = (main.getDouble("temp")-273.15)*(9/5)+32;           //temperature
                 JSONObject clouds = jsonObject.getJSONObject("clouds");
                 String cloudy = clouds.getString("all");            //clouds
                 JSONObject city = jsonResponse.getJSONObject("city");
@@ -65,10 +65,11 @@ import java.text.DecimalFormat;
                 JSONObject weather = jsonArray1.getJSONObject(0);
                 String conditions = weather.getString("main");      //weather conditions
 
+
                         output += "Current weather conditions of " + name + " on " + dtxt + ":\n"
-                                + "Temperature: " + temp + "\n"
+                                + "Temperature: " + df.format(temp) + " °F\n"
                                 + "Conditions: " + conditions + "\n"
-                                + "Cloudiness: " + cloudy;
+                                + "Cloudiness: " + cloudy +"%";
 
 
 //                        output += "Current weather of " + cityName + " (" + countryName + ")"

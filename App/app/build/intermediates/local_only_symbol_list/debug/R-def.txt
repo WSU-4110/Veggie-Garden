@@ -59,6 +59,7 @@ id etZip
 id gearButton
 id group
 id help
+id imageView
 id instructions
 id layout
 id linearLayout
@@ -166,6 +167,7 @@ string need_help
 string our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main
 string outdoors
 string plant_calendar
+string plant_name
 string plants
 string save
 string textview
