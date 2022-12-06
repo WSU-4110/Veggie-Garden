@@ -53,13 +53,14 @@ import java.text.DecimalFormat;
                 JSONObject jsonResponse = new JSONObject(response);
                 JSONArray jsonArray = jsonResponse.getJSONArray("list");
                 JSONObject jsonObject = jsonArray.getJSONObject(0);
-                String dtxt = jsonObject.getString("dt_txt");
+                String dtxt = jsonObject.getString("dt_txt");       //Date-Time
                 JSONObject main = jsonObject.getJSONObject("main");
-                String temp = main.getString("temp");
-
-
-
-                output += ;
+                String temp = main.getString("temp");           //temperature
+                JSONObject clouds = jsonObject.getJSONObject("clouds");
+                String cloudy = clouds.getString("all");            //clouds
+                JSONObject city = jsonResponse.getJSONObject("city");
+                String name = city.getString("name");          //city name
+                output += name;
 
 
 //                      JSONObject jsonResponse = new JSONObject(response);
