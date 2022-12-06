@@ -157,7 +157,28 @@ public class DataBase extends SQLiteOpenHelper {
         return cursor.moveToFirst();
     }
 
-    public List<Plant> getPlants() {        // this is unused currently in the app, only use for admin bug fixing
+    public Plant getPlant(String name) {
+        Plant plant = new Plant("ERROR", "ERROR", "ERROR");
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String query = "SELECT * FROM " + PLANT_TABLE + " WHERE " + PLANT_NAME + " = ?";
+        Cursor cursor = db.rawQuery(query, new String[]{name});
+
+        if(cursor.moveToFirst())
+        {
+            plant = new Plant(
+                    cursor.getString(1),
+                    cursor.getString(2),
+                    cursor.getString(3));
+        }
+
+        cursor.close();
+        db.close();
+
+        return plant;
+    }
+
+    public List<Plant> getPlants() {
 
         List<Plant> returnList = new ArrayList<>();
 

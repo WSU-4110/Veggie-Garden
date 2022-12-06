@@ -2914,6 +2914,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3046,6 +3047,7 @@ id plantCal
 id plantList
 id plantLogo
 id plantName
+id plant_name
 id plantsButton
 id position
 id postLayout
@@ -3624,6 +3626,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string plant_calendar
+string plant_name
 string plants
 string save
 string search_menu_title

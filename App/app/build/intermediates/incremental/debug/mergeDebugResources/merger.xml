@@ -10739,7 +10739,7 @@
         <item>Sunflower</item>
         <item>Turnip</item>
         <item>Yellow Squash</item>
-    </string-array></file><file path="C:\Users\blain\Documents\AndroidStudio\App\app\src\main\res\values\styles.xml" qualifiers=""><style name="CalenderViewCustom">
+    </string-array><string name="plant_name">Plant Name</string></file><file path="C:\Users\blain\Documents\AndroidStudio\App\app\src\main\res\values\styles.xml" qualifiers=""><style name="CalenderViewCustom">
         <item name="colorAccent">@color/purple_500</item>
         <item name="colorPrimary">@color/white</item>
     </style><style name="CalenderViewDateCustomText">
