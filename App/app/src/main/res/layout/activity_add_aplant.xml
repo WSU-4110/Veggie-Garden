@@ -71,7 +71,11 @@
         android:layout_marginTop="43dp"
         android:layout_marginEnd="1dp"
         android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:dropDownVerticalOffset="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleMessage"
         tools:ignore="SpeakableTextPresentCheck" />
