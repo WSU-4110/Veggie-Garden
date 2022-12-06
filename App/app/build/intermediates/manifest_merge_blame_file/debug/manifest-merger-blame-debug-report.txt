@@ -6,225 +6,225 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
+8-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml
+9-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:6:5-79
-12-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:6:22-76
+12-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-13-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:5-71
-13-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:7:22-68
+13-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:7:5-71
+13-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:7:22-68
 14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-14-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:8:5-76
-14-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:8:22-74
+14-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:8:5-76
+14-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:8:22-74
 15    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-15-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:5-79
-15-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:9:22-76
+15-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:9:22-76
 16    <uses-permission android:name="android.permission.INTERNET" />
-16-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:5-67
-16-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:5:22-64
+16-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:5:5-67
+16-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:5:22-64
 17
 18    <application
-18-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:12:5-104:19
+18-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:12:5-104:19
 19        android:allowBackup="true"
-19-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:13:9-35
+19-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:13:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.8.0] C:\Users\nicka\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.8.0] C:\Users\blain\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 21        android:dataExtractionRules="@xml/data_extraction_rules"
-21-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:14:9-65
+21-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:14:9-65
 22        android:debuggable="true"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:15:9-54
+23-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:15:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:16:9-43
+24-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:16:9-43
 25        android:label="@string/app_name"
-25-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:18:9-41
+25-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:18:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:19:9-54
+26-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:19:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:20:9-35
+27-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:20:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.App"
-29-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:21:9-41
+29-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:21:9-41
 30        android:usesCleartextTraffic="true" >
-30-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:17:9-44
+30-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:17:9-44
 31        <activity
-31-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:23:9-29:20
+31-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:23:9-29:20
 32            android:name="com.example.app.plantInfo"
-32-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:24:13-38
+32-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:24:13-38
 33            android:exported="false" >
-33-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:25:13-37
+33-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:25:13-37
 34            <meta-data
-34-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+34-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 35                android:name="android.app.lib_name"
-35-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+35-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 36                android:value="" />
-36-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+36-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 37        </activity>
 38        <activity
-38-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:30:9-36:20
+38-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:30:9-36:20
 39            android:name="com.example.app.DeleteAccountPage"
-39-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:31:13-46
+39-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:31:13-46
 40            android:exported="false" >
-40-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:32:13-37
+40-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:32:13-37
 41            <meta-data
-41-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+41-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 42                android:name="android.app.lib_name"
-42-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+42-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 43                android:value="" />
-43-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+43-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 44        </activity>
 45        <activity
-45-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:37:9-43:20
+45-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:37:9-43:20
 46            android:name="com.example.app.CustomizeProfile"
-46-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:38:13-45
+46-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:38:13-45
 47            android:exported="false" >
-47-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:39:13-37
+47-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:39:13-37
 48            <meta-data
-48-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+48-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 49                android:name="android.app.lib_name"
-49-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+49-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 50                android:value="" />
-50-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+50-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 51        </activity>
 52        <activity
-52-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:44:9-50:20
+52-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:44:9-50:20
 53            android:name="com.example.app.ChangePassword"
-53-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:45:13-43
+53-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:45:13-43
 54            android:exported="false" >
-54-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:46:13-37
+54-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:46:13-37
 55            <meta-data
-55-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+55-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 56                android:name="android.app.lib_name"
-56-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+56-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 57                android:value="" />
-57-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+57-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 58        </activity>
 59        <activity
-59-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:51:9-57:20
+59-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:51:9-57:20
 60            android:name="com.example.app.PlantsPage"
-60-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:52:13-39
+60-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:52:13-39
 61            android:exported="false" >
-61-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:53:13-37
+61-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:53:13-37
 62            <meta-data
-62-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+62-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 63                android:name="android.app.lib_name"
-63-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+63-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 64                android:value="" />
-64-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+64-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 65        </activity>
 66        <activity
-66-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:58:9-64:20
+66-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:58:9-64:20
 67            android:name="com.example.app.CalendarActivity"
-67-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:59:13-45
+67-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:59:13-45
 68            android:exported="false" >
-68-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:60:13-37
+68-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:60:13-37
 69            <meta-data
-69-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+69-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 70                android:name="android.app.lib_name"
-70-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+70-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 71                android:value="" />
-71-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+71-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 72        </activity>
 73        <activity
-73-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:65:9-71:20
+73-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:65:9-71:20
 74            android:name="com.example.app.AccountViewerDatabaseList"
-74-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:66:13-54
+74-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:66:13-54
 75            android:exported="false" >
-75-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:67:13-37
+75-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:67:13-37
 76            <meta-data
-76-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+76-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 77                android:name="android.app.lib_name"
-77-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+77-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 78                android:value="" />
-78-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+78-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 79        </activity>
 80        <activity
-80-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:72:9-78:20
+80-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:72:9-78:20
 81            android:name="com.example.app.Settings"
-81-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:73:13-37
+81-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:73:13-37
 82            android:exported="false" >
-82-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:74:13-37
+82-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:74:13-37
 83            <meta-data
-83-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:26:13-28:36
+83-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:26:13-28:36
 84                android:name="android.app.lib_name"
-84-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:27:17-52
+84-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:27:17-52
 85                android:value="" />
-85-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:28:17-33
+85-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:28:17-33
 86        </activity>
 87        <activity
-87-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:79:9-81:40
+87-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:79:9-81:40
 88            android:name="com.example.app.CreateAccountPage"
-88-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:80:13-46
+88-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:80:13-46
 89            android:exported="false" />
-89-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:81:13-37
+89-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:81:13-37
 90        <activity
-90-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:82:9-84:40
+90-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:82:9-84:40
 91            android:name="com.example.app.MainActivity"
-91-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:83:13-41
+91-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:83:13-41
 92            android:exported="false" />
-92-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:84:13-37
+92-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:84:13-37
 93        <activity
-93-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:85:9-87:40
+93-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:85:9-87:40
 94            android:name="com.example.app.AddAPlant"
-94-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:86:13-38
+94-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:86:13-38
 95            android:exported="false" />
-95-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:87:13-37
+95-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:87:13-37
 96        <activity
-96-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:88:9-90:40
+96-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:88:9-90:40
 97            android:name="com.example.app.NotificationDev"
-97-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:89:13-44
+97-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:89:13-44
 98            android:exported="false" />
-98-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:90:13-37
+98-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:90:13-37
 99        <activity
-99-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:91:9-99:20
+99-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:91:9-99:20
 100            android:name="com.example.app.TitlePage"
-100-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:92:13-38
+100-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:92:13-38
 101            android:exported="true" >
-101-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:93:13-36
+101-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:93:13-36
 102            <intent-filter>
-102-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:94:13-98:29
+102-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:94:13-98:29
 103                <action android:name="android.intent.action.MAIN" />
-103-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:95:17-69
-103-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:95:25-66
+103-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:95:17-69
+103-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:95:25-66
 104
 105                <category android:name="android.intent.category.LAUNCHER" />
-105-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:97:17-77
-105-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:97:27-74
+105-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:97:17-77
+105-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:97:27-74
 106            </intent-filter>
 107        </activity>
 108        <activity
-108-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:100:9-103:15
+108-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:100:9-103:15
 109            android:name="com.example.app.WeatherActivity"
-109-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:101:13-44
+109-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:101:13-44
 110            android:exported="false" />
-110-->C:\Users\nicka\Veggie-Garden\App\app\src\main\AndroidManifest.xml:102:13-37
+110-->C:\Users\blain\Documents\AndroidStudio\App\app\src\main\AndroidManifest.xml:102:13-37
 111
 112        <provider
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\blain\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 113            android:name="androidx.startup.InitializationProvider"
-113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\blain\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 114            android:authorities="com.example.app.androidx-startup"
-114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\blain\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 115            android:exported="false" >
-115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\blain\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 116            <meta-data
-116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\blain\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 117                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-117-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+117-->[androidx.emoji2:emoji2:1.2.0] C:\Users\blain\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 118                android:value="androidx.startup" />
-118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nicka\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\blain\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 119            <meta-data
-119-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+119-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\blain\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 120                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-120-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+120-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\blain\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 121                android:value="androidx.startup" />
-121-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nicka\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+121-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\blain\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 122        </provider>
 123    </application>
 124
