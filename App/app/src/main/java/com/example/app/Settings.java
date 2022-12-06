@@ -17,6 +17,7 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
 
     //declare variables
     Button backToMain;
+    Button notifTst;
     String[] options;
 
     ArrayList<RecyclerViewSettings> recyclerViewSettings = new ArrayList<>();         // array for texts in recycler view
@@ -41,6 +42,13 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
             Intent intent = new Intent(view.getContext(), MainActivity.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
             intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
+            startActivity(intent);
+        });
+
+        notifTst = findViewById(R.id.notifTst);
+        notifTst.setOnClickListener(view -> {                                     // back button actions
+            Intent intent = new Intent(this, NotificationDev.class);
+            intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
             startActivity(intent);
         });
     }

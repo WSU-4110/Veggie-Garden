@@ -26,7 +26,6 @@ public class PlantId extends View implements View.OnClickListener {
     private String plantBirthday;
     private String outOrIn;
     private Paint textPaint;
-    private Paint backgroundPaint;
 
     OnClickListener listener;
 
@@ -64,7 +63,7 @@ public class PlantId extends View implements View.OnClickListener {
             textPaint.setColor(textColor.pack());
         }
         textPaint.setTextSize(50);
-        backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        Paint backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Same deal as above; will probably upgrade build to v26
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
