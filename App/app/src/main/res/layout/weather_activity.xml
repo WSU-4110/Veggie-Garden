@@ -23,17 +23,19 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical" >
+
         <EditText
+            android:id="@+id/etZip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etZip"
             android:layout_marginBottom="10dp"
+            android:autofillHints="TODO"
             android:ems="10"
             android:hint="@string/enter_zip_code"
             android:inputType="textPersonName"
-            android:autofillHints="TODO"
+            android:minHeight="48dp"
             android:textColor="@color/dark_red"
-            />
+            android:textColorHint="#E3F2FD" />
 
         <Button
             android:layout_width="match_parent"

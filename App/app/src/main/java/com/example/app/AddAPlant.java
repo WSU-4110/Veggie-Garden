@@ -2,8 +2,6 @@ package com.example.app;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Build;
@@ -27,7 +25,6 @@ public class AddAPlant extends AppCompatActivity {
     DataBase db;
     EditText bday;
     CheckBox location;
-    public static final String plantNotifChannelID = "channel 1";
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @SuppressLint("MissingInflatedId")
@@ -57,7 +54,6 @@ public class AddAPlant extends AppCompatActivity {
         });
 
         add.setOnClickListener(view -> {
-            Intent intent = new Intent(this, PlantsPage.class);
             String name = plantList.getSelectedItem().toString();
             String date = bday.getText().toString();
             String outdoors;
@@ -78,7 +74,7 @@ public class AddAPlant extends AppCompatActivity {
             }
 
             Intent notifIntent = new Intent(AddAPlant.this,plantBroadCast.class);
-            @SuppressLint("UnspecifiedImmutableFlag") PendingIntent plantPendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0, notifIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            PendingIntent plantPendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0, notifIntent, PendingIntent.FLAG_IMMUTABLE);
 
             AlarmManager plantAlarm = (AlarmManager) getSystemService(ALARM_SERVICE);
             plantAlarm.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), AlarmManager.INTERVAL_DAY,plantPendingIntent);
@@ -86,6 +82,7 @@ public class AddAPlant extends AppCompatActivity {
                 plantAlarm.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,cal.getTimeInMillis(),plantPendingIntent);
             }
 
+            Intent intent = new Intent(this, PlantsPage.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
             intent.putExtra("NEW_USER", false);                              // makes sure popup doesn't re-appear
             Toast.makeText(this, "Plant added!", Toast.LENGTH_SHORT).show();
