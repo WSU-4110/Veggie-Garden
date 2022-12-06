@@ -1,10 +1,12 @@
 package com.example.app;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AccountViewerDatabaseList extends AppCompatActivity {
@@ -35,7 +37,7 @@ public class AccountViewerDatabaseList extends AppCompatActivity {
         });
     }
 
-   private void ShowListView(DataBase db) {
+    private void ShowListView(DataBase db) {
         arrayAdapter = new ArrayAdapter<>(AccountViewerDatabaseList.this, android.R.layout.simple_list_item_1, db.getAll());
         lv_credentials.setAdapter(arrayAdapter);
     }

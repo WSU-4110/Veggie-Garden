@@ -37,6 +37,7 @@ id addPlant
 id are_you_sure
 id backButton
 id backToMain
+id backToPlants
 id backToSettings
 id btnGet
 id calendarView
@@ -46,13 +47,12 @@ id card_text
 id confirmNewPword
 id confirmNewPwordText
 id confirmPword
+id constraint_layout
 id createAccountButton
 id createButton
 id createEmail
 id createPword
 id customizeList
-id databaseButton2
-id date
 id emailInput
 id etCity
 id etCountry
@@ -61,6 +61,7 @@ id group
 id help
 id instructions
 id layout
+id linearLayout
 id linear_layout
 id link
 id location
@@ -71,12 +72,13 @@ id nameInput
 id nevermind
 id newPlant
 id newPwordText
-id notifBtn
 id notifs
 id oldPwordText
 id plantBday
+id plantCal
 id plantList
 id plantLogo
+id plantName
 id plantsButton
 id pwordInput
 id r_layout
@@ -101,7 +103,7 @@ layout activity_create_account_page
 layout activity_customize_profile
 layout activity_delete_account_page
 layout activity_main
-layout activity_notification_dev
+layout activity_plant_info
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
@@ -150,7 +152,7 @@ string enter_name_here
 string enter_name_of_city
 string enter_name_of_country
 string enter_password_here
-string enter_plant_s_birthdate
+string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
 string exitButton
 string get
@@ -164,7 +166,6 @@ string need_help
 string our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main
 string outdoors
 string plant_calendar
-string plant_s_birthday
 string plants
 string save
 string textview
@@ -180,6 +181,9 @@ style CalenderViewCustom
 style CalenderViewDateCustomText
 style CalenderViewWeekCustomText
 style Theme.App
+style Theme.App.AppBarOverlay
+style Theme.App.NoActionBar
+style Theme.App.PopupOverlay
 styleable PlantId plantName plantBirthday backgroundColor textColor
 xml backup_rules
 xml data_extraction_rules

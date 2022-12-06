@@ -1,12 +1,11 @@
 package com.example.app;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
+
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 // FOLLOW THIS FORMAT FOR CREATING VALUES/BUTTONS/MOVING PAGES/STORING DATA
@@ -43,13 +42,10 @@ public class TitlePage extends AppCompatActivity {
                     intent.putExtra("EMAIL", email);
                     intent.putExtra("NEW_USER", false);
                     startActivity(intent);
-                    createNotifChann(); //create channel after successful login
-                }
-                else {
+                } else {
                     Toast.makeText(TitlePage.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();         // error toast
                 }
-            }
-            else {
+            } else {
                 Toast.makeText(TitlePage.this, "Invalid Entry", Toast.LENGTH_SHORT).show();        // error toast
             }
         });
@@ -59,21 +55,6 @@ public class TitlePage extends AppCompatActivity {
             Intent intent = new Intent(view.getContext(), CreateAccountPage.class);
             startActivity(intent);
         });
-
-
-    }
-
-    //create a channel
-    private void createNotifChann() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel c1 = new NotificationChannel(
-                    "channel 1", "Channel 1", NotificationManager.IMPORTANCE_HIGH);
-            c1.setDescription("Channel 1");
-            //channel 1 is a test for high importance
-
-            NotificationManager manage = getSystemService(NotificationManager.class);
-            manage.createNotificationChannel(c1);
-        }
     }
 
 }

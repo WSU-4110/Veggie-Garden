@@ -1,17 +1,21 @@
 package com.example.app;
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     // create variables
     ImageButton gearButton;
-    Button calendarButton, plantsButton, newPlant;
+    Button calendarButton;
+    Button plantsButton;
+    Button addPlant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
 
         //set variables
         gearButton = findViewById(R.id.gearButton);
-                                                                    // DataBase db = new DataBase(this); can be used later if needed
+        // DataBase db = new DataBase(this); can be used later if needed
         calendarButton = findViewById(R.id.calendarView);
         plantsButton = findViewById(R.id.plantsButton);
-        newPlant = findViewById(R.id.newPlant);
+        addPlant = findViewById(R.id.newPlant);
 
         // Retrieve account information
-                                                                                      //DataBase db = new DataBase(this);
-                                                                    // how to get values: String name = db.getName(getIntent().getStringExtra("EMAIL"));
+        //DataBase db = new DataBase(this);
+        // how to get values: String name = db.getName(getIntent().getStringExtra("EMAIL"));
 
         gearButton.setOnClickListener(view -> {
             Intent intent = new Intent(view.getContext(), Settings.class);
@@ -48,16 +52,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         plantsButton.setOnClickListener(view -> {
-            Intent intent = new Intent(this, PlantsPage.class);               // show active plants button
+            Intent intent = new Intent(this, PlantsPage.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
-            intent.putExtra("NEW_USER", false);                                // check new account
+            intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
 
-        newPlant.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AddAPlant.class);                // add a new plant
+        addPlant.setOnClickListener(view -> {
+            Intent intent = new Intent(this, AddAPlant.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
-            intent.putExtra("NEW_USER", false);                                // check new account
+            intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
     }

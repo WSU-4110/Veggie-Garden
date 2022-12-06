@@ -2759,6 +2759,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backButton
 id backToMain
+id backToPlants
 id backToSettings
 id barrier
 id baseline
@@ -2806,6 +2807,7 @@ id confirmNewPwordText
 id confirmPword
 id confirm_button
 id constraint
+id constraint_layout
 id container
 id content
 id contentPanel
@@ -2824,8 +2826,6 @@ id custom
 id customPanel
 id customizeList
 id cut
-id databaseButton2
-id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2933,6 +2933,7 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id linear_layout
 id link
 id listMode
@@ -3017,7 +3018,6 @@ id noState
 id none
 id normal
 id north
-id notifBtn
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3042,8 +3042,10 @@ id peekHeight
 id percent
 id pin
 id plantBday
+id plantCal
 id plantList
 id plantLogo
+id plantName
 id plantsButton
 id position
 id postLayout
@@ -3336,7 +3338,7 @@ layout activity_create_account_page
 layout activity_customize_profile
 layout activity_delete_account_page
 layout activity_main
-layout activity_notification_dev
+layout activity_plant_info
 layout activity_plants_page
 layout activity_settings
 layout activity_title_page
@@ -3508,7 +3510,7 @@ string enter_name_here
 string enter_name_of_city
 string enter_name_of_country
 string enter_password_here
-string enter_plant_s_birthdate
+string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
 string error_a11y_label
 string error_icon_content_description
@@ -3622,7 +3624,6 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string plant_calendar
-string plant_s_birthday
 string plants
 string save
 string search_menu_title
@@ -4130,6 +4131,9 @@ style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
 style Theme_App
+style Theme_App_AppBarOverlay
+style Theme_App_NoActionBar
+style Theme_App_PopupOverlay
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight
