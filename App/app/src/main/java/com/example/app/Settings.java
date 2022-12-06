@@ -45,9 +45,9 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
             startActivity(intent);
         });
 
-        notifTst = findViewById(R.id.backToMain);
+        notifTst = findViewById(R.id.notifTst);
         notifTst.setOnClickListener(view -> {                                     // back button actions
-            Intent intent = new Intent(view.getContext(), NotificationDev.class);
+            Intent intent = new Intent(this, NotificationDev.class);
             intent.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));   // stays logged in
             startActivity(intent);
         });
