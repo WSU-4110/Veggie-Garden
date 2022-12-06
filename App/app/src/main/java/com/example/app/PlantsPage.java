@@ -62,14 +62,14 @@ public class PlantsPage extends AppCompatActivity {
                 intent.putExtra("PLANT_NAME", plant.getName());
                 startActivity(intent);
             });
-//            cardView.addView(newPlant);
-//            cardView.setLayoutParams(layoutParams);
-//            cardView.setPadding(10, 10, 10, 10);
-//            cardView.setCardBackgroundColor(Color.WHITE);
-//            cardView.setRadius(100);
+            cardView.addView(newPlant);
+            cardView.setLayoutParams(layoutParams);
+            cardView.setPadding(10, 10, 10, 10);
+            cardView.setCardBackgroundColor(Color.WHITE);
+            cardView.setRadius(100);
 
 
-            root.addView(newPlant);
+            root.addView(cardView);
         }
     }
 }
