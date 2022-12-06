@@ -16,7 +16,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="180dp"
         android:text="@string/add_your_new_plant_s_information_below"
-        android:textColor="#795548"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -87,9 +87,10 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColorHint="#795548"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/location"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plantList" />
 
@@ -102,7 +103,26 @@
         android:text="@string/outdoors"
         app:layout_constraintBottom_toTopOf="@+id/addPlant"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plantBday" />
+
+    <TextView
+        android:id="@+id/birthdateInfo"
+        android:layout_width="352dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="258dp"
+        android:text="@string/if_you_are_not_entirely_sure_on_your_plant_s_birthdate_if_it_is_older_then_just_estimate_the_expected_harvest_bloom_date_is_an_estimation_anyways_and_we_will_get_as_close_as_we_can"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantBday"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

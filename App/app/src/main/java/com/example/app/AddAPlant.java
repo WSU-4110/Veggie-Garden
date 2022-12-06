@@ -47,7 +47,7 @@ public class AddAPlant extends AppCompatActivity {
         });
 
         add.setOnClickListener(view -> {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, PlantsPage.class);
             String name = plantList.getSelectedItem().toString();
             String date = bday.getText().toString();
             String outdoors;

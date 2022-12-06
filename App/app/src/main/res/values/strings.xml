@@ -68,6 +68,9 @@
     <string name="expected_harvest_bloom_date">Expected Harvest/Bloom Date:</string>
     <string name="water_frequency">Water Frequency</string>
     <string name="summary">Summary</string>
+    <string name="if_you_are_not_entirely_sure_on_your_plant_s_birthdate_if_it_is_older_then_just_estimate_the_expected_harvest_bloom_date_is_an_estimation_anyways_and_we_will_get_as_close_as_we_can">If you are not entirely sure on your plant\'s birthdate (if it is older), then just estimate. The expected harvest/bloom date is an estimation anyways, and we will get as close as we can!</string>
+    <string name="logo">logo</string>
+    <string name="weather_information">Weather Information</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>

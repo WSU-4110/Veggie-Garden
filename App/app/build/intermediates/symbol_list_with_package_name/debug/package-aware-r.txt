@@ -2657,6 +2657,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable plant
+drawable plant_background
 drawable popup_background
 drawable settings_gear
 drawable test_level_drawable
@@ -2767,6 +2768,7 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
+id birthdateInfo
 id blocking
 id bottom
 id bounce
@@ -3532,10 +3534,12 @@ string hide_bottom_view_on_scroll_behavior
 string home_page
 string i_am_sure
 string icon_content_description
+string if_you_are_not_entirely_sure_on_your_plant_s_birthdate_if_it_is_older_then_just_estimate_the_expected_harvest_bloom_date_is_an_estimation_anyways_and_we_will_get_as_close_as_we_can
 string if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel
 string if_you_are_unsure_just_press_cancel
 string item_view_role_description
 string login
+string logo
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3646,6 +3650,7 @@ string to_move_forward_hit_advance_here_and_then_add_a_new_plant
 string todo
 string under_construction
 string water_frequency
+string weather_information
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account
