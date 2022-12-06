@@ -3,12 +3,10 @@ package com.example.app;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
-import android.icu.lang.UCharacter;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import androidx.annotation.RequiresApi;
