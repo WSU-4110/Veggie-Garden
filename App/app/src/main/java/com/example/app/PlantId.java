@@ -26,6 +26,8 @@ public class PlantId extends View implements View.OnClickListener {
     private String plantBirthday;
     private String outOrIn;
     private Paint textPaint;
+    private Paint namePaint;
+    private Paint backgroundPaint;
 
     OnClickListener listener;
 
@@ -57,19 +59,21 @@ public class PlantId extends View implements View.OnClickListener {
     // Initializes drawable objects to increase performance
     private void init() {
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        namePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Only works in SDK v26 or above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             textPaint.setColor(textColor.pack());
         }
         textPaint.setTextSize(50);
-        Paint backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        namePaint.setTextSize(100);
+        backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Same deal as above; will probably upgrade build to v26
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             backgroundPaint.setColor(backgroundColor.pack());
         }
-        backgroundPaint.setStyle(Paint.Style.STROKE);
+        backgroundPaint.setStyle(Paint.Style.FILL);
         backgroundPaint.setTextSize(50);
     }
 
@@ -83,7 +87,7 @@ public class PlantId extends View implements View.OnClickListener {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(1400, 300);
+        setMeasuredDimension(1400, 200);
     }
 
     // Called when displaying the PlantId
@@ -95,10 +99,11 @@ public class PlantId extends View implements View.OnClickListener {
         @SuppressLint("DrawAllocation") Rect offsetView = new Rect();
         this.getDrawingRect(offsetView);
 
-//        canvas.drawRect(offsetView.left, offsetView.top, 1400, offsetView.top+300, backgroundPaint);
-        canvas.drawText(plantName, offsetView.left  + 50, offsetView.top+ 50, textPaint);
-        canvas.drawText("Birthday: ", offsetView.left + 50, offsetView.top + 100, textPaint);
-        canvas.drawText(outOrIn, offsetView.left + 50, offsetView.top + 150, textPaint);
+        canvas.drawRect(offsetView.left + 20, offsetView.top + 20, offsetView.left + 200, offsetView.top+200, backgroundPaint);
+//        canvas.drawText("Name: ", offsetView.left  + 300, offsetView.top+ 50, textPaint);
+        canvas.drawText(plantName, offsetView.left  + 300, offsetView.top+ 100, namePaint);
+        canvas.drawText("Birthday: ", offsetView.left + 1000, offsetView.top + 100, textPaint);
+        canvas.drawText(outOrIn, offsetView.left + 300, offsetView.top + 170, textPaint);
     }
 
     public Color getBackgroundColor() {

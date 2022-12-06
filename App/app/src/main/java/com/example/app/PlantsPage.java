@@ -3,6 +3,7 @@ package com.example.app;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.icu.lang.UCharacter;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.ViewGroup;
@@ -32,7 +33,7 @@ public class PlantsPage extends AppCompatActivity {
 
         // set vars
         back = findViewById(R.id.backToMain);
-        LinearLayout linearLayout = findViewById(R.id.linear_layout);
+        LinearLayout root = findViewById(R.id.linear_layout);
 
         back.setOnClickListener(view -> {                                     // back button actions
             Intent intent = new Intent(view.getContext(), MainActivity.class);
@@ -52,7 +53,7 @@ public class PlantsPage extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT
             );
 
-            layoutParams.setMargins(10, 10, 10, 10);
+            layoutParams.setMargins(10, 20, 10, 10);
 
             PlantId newPlant = new PlantId(this, plant);                       // displays plants
             newPlant.setOnClickListener(view -> {
@@ -68,8 +69,7 @@ public class PlantsPage extends AppCompatActivity {
             cardView.setRadius(100);
 
 
-
-            linearLayout.addView(cardView);
+            root.addView(cardView);
         }
     }
 }
