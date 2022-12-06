@@ -4,11 +4,15 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
@@ -41,6 +45,13 @@ public class PlantsPage extends AppCompatActivity {
 
         for (Plant plant :
                 plantList) {
+            MaterialCardView cardView = new MaterialCardView(this);
+            MaterialCardView.LayoutParams layoutParams = new MaterialCardView.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            );
+
+
             PlantId newPlant = new PlantId(this, plant);                       // displays plants
             newPlant.setOnClickListener(view -> {
                 Intent intent = new Intent(this, plantInfo.class);

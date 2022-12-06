@@ -15,7 +15,7 @@ public class plantInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         String plantName;
         TextView textView;
-        
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
 
