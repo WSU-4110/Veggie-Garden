@@ -26,6 +26,7 @@ public class PlantId extends View implements View.OnClickListener {
     private String plantBirthday;
     private String outOrIn;
     private Paint textPaint;
+    private Paint namePaint;
     private Paint backgroundPaint;
 
     OnClickListener listener;
@@ -58,12 +59,14 @@ public class PlantId extends View implements View.OnClickListener {
     // Initializes drawable objects to increase performance
     private void init() {
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        namePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Only works in SDK v26 or above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             textPaint.setColor(textColor.pack());
         }
         textPaint.setTextSize(50);
+        namePaint.setTextSize(100);
         backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         // Same deal as above; will probably upgrade build to v26

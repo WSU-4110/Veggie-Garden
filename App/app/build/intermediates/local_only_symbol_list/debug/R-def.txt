@@ -169,9 +169,11 @@ string enter_name_of_country
 string enter_password_here
 string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
+string enter_zip_code
 string exitButton
 string expected_harvest_bloom_date
 string get
+string get_conditions
 string goes_back_to_title_page
 string home_page
 string i_am_sure
@@ -198,6 +200,7 @@ string todo
 string under_construction
 string water_frequency
 string weather_information
+string weather_informationn
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account

@@ -3526,6 +3526,7 @@ string enter_name_of_country
 string enter_password_here
 string enter_plant_s_bday_mm_dd_yyyy
 string enter_pword_here
+string enter_zip_code
 string error_a11y_label
 string error_icon_content_description
 string exitButton
@@ -3534,6 +3535,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string get
+string get_conditions
 string goes_back_to_title_page
 string hide_bottom_view_on_scroll_behavior
 string home_page
@@ -3657,6 +3659,7 @@ string todo
 string under_construction
 string water_frequency
 string weather_information
+string weather_informationn
 string weather_version_1_0
 string welcome_to_plant
 string you_are_about_to_delete_your_account
