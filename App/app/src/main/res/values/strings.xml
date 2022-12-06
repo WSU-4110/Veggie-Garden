@@ -62,6 +62,7 @@
     <string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string>
     <string name="outdoors">Outdoors?</string>
     <string name="add_this_plant">Add This Plant</string>
+    <string name="plant_name">Plant Name</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>

@@ -45,7 +45,7 @@ public class CreateAccountPage extends AppCompatActivity {
                     boolean checkAccount = db.checkEmail(email);              // check if email in use
                     if (!checkAccount) {
                         Credentials credentials = new Credentials(name, email, password);        // cross ref w credentials.java
-                        boolean insert = db.addUser(credentials);                                 // add to cred.java
+                        boolean insert = db.addOne(credentials);                                 // add to cred.java
                         if (insert) {
                             Toast.makeText(CreateAccountPage.this, "Account Created", Toast.LENGTH_SHORT).show();   // toast msg, login, make new_user true, move to main
                             Intent intent = new Intent(view.getContext(), MainActivity.class);
