@@ -102,6 +102,7 @@
     <string name="plant_calendar">Plant Calendar</string>
     <string name="plant_name">Plant Name</string>
     <string name="plants">Plants</string>
+    <string name="plants_title">Plants</string>
     <string name="preferred_sunlight">Preferred Sunlight</string>
     <string name="save">Save</string>
     <string name="summary">Summary</string>
@@ -115,7 +116,6 @@
     <string name="weather_information">Weather Information</string>
     <string name="weather_informationn">Weather Information</string>
     <string name="weather_version_1_0">Weather Version 1.0</string>
-    <string name="weathericon">weatherIcon</string>
     <string name="welcome_to_plant">Welcome to Plant!</string>
     <string name="you_are_about_to_delete_your_account">You are about to delete your account!</string>
     <style name="CalenderViewCustom">
