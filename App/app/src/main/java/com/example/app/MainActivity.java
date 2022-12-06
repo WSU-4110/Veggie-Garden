@@ -3,10 +3,8 @@ package com.example.app;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -72,10 +70,6 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("NEW_USER", false);
             startActivity(intent);
         });
-
-
-
-
     }
 
     private void showPopup() {
@@ -84,6 +78,4 @@ public class MainActivity extends AppCompatActivity {
         popup.getWindow().setBackgroundDrawableResource(R.drawable.popup_background);        // popup method
         popup.show();
     }
-
-
 }

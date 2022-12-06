@@ -63,6 +63,11 @@
     <string name="outdoors">Outdoors?</string>
     <string name="add_this_plant">Add This Plant</string>
     <string name="plant_name">Plant Name</string>
+    <string name="database_accessed_image">database accessed image</string>
+    <string name="preferred_sunlight">Preferred Sunlight</string>
+    <string name="expected_harvest_bloom_date">Expected Harvest/Bloom Date:</string>
+    <string name="water_frequency">Water Frequency</string>
+    <string name="summary">Summary</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>

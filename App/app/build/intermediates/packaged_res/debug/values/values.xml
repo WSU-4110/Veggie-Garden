@@ -69,6 +69,7 @@
     <string name="create_your">Create Your</string>
     <string name="customize_profile">Customize Profile</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="database_accessed_image">database accessed image</string>
     <string name="delete_account">Delete Account</string>
     <string name="delete_this_account">Delete This Account</string>
     <string name="enable_disable">Enable/Disable</string>
@@ -83,6 +84,7 @@
     <string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string>
     <string name="enter_pword_here">Enter Password Here</string>
     <string name="exitButton">exit button</string>
+    <string name="expected_harvest_bloom_date">Expected Harvest/Bloom Date:</string>
     <string name="get">Get</string>
     <string name="goes_back_to_title_page">goes back to title page</string>
     <string name="home_page">Home Page</string>
@@ -96,13 +98,16 @@
     <string name="plant_calendar">Plant Calendar</string>
     <string name="plant_name">Plant Name</string>
     <string name="plants">Plants</string>
+    <string name="preferred_sunlight">Preferred Sunlight</string>
     <string name="save">Save</string>
+    <string name="summary">Summary</string>
     <string name="textview">TextView</string>
     <string name="this_is_a_tool_for_developers">This is a tool for developers.</string>
     <string name="to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize">To get started, exit this popup and press \'Add a new plant!\', or head over to settings and customize!</string>
     <string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string>
     <string name="todo">TODO</string>
     <string name="under_construction">Under Construction</string>
+    <string name="water_frequency">Water Frequency</string>
     <string name="weather_version_1_0">Weather Version 1.0</string>
     <string name="welcome_to_plant">Welcome to Plant!</string>
     <string name="you_are_about_to_delete_your_account">You are about to delete your account!</string>

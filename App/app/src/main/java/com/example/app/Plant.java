@@ -11,6 +11,8 @@ public class Plant {
         this.bday = bday;
     }
 
+    Plant() {}
+
     public String getName() {
         return name;
     }

@@ -9,22 +9,23 @@ import android.widget.TextView;
 
 public class plantInfo extends AppCompatActivity {
 
-    private String plantName;
 
-    private TextView textView;
-    private Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String plantName;
+        TextView textView;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
 
-        plantName = getIntent().getStringExtra("PLANT_NAME");
-        textView = findViewById(R.id.plantName);
-        back = findViewById(R.id.backToPlants);
+        DataBase db = new DataBase(this);
 
-        textView.setText(plantName);
+        Plant plant = db.getPlant(getIntent().getStringExtra("PLANT_NAME"));
+        textView = findViewById(R.id.plant_name);
+        Button back = findViewById(R.id.backToPlants);
 
+        textView.setText(String.format("Name: %s\nType: %s\nBirthday: %s", plant.getName(), plant.getType(), plant.getBday()));
 
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, PlantsPage.class);
