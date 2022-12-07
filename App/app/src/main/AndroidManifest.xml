@@ -88,6 +88,8 @@
         <activity
             android:name=".NotificationDev"
             android:exported="false" />
+        <activity android:name=".VirtualGarden"
+            android:exported="false"/>
         <activity
             android:name=".TitlePage"
             android:exported="true">

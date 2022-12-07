@@ -1,11 +1,15 @@
 package com.example.app;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     // create variables
     ImageButton gearButton, addWeather;
     Button calendarButton, plantsButton, addPlant, virtualGardenButton;
+    @SuppressLint("MissingInflatedId")
+    @RequiresApi(api = Build.VERSION_CODES.O)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         plantsButton = findViewById(R.id.plantsButton);
         addPlant = findViewById(R.id.newPlant);
         addWeather = findViewById(R.id.weatherButton);
+        virtualGardenButton = findViewById(R.id.virtualGardenButton);
         // Retrieve account information
         //DataBase db = new DataBase(this);
         // how to get values: String name = db.getName(getIntent().getStringExtra("EMAIL"));

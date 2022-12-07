@@ -30,7 +30,7 @@
 16-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:5:22-64
 17
 18    <application
-18-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:12:5-104:19
+18-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:12:5-106:19
 19        android:allowBackup="true"
 19-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:13:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -182,50 +182,56 @@
 98            android:exported="false" />
 98-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:90:13-37
 99        <activity
-99-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:91:9-99:20
-100            android:name="com.example.app.TitlePage"
-100-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:92:13-38
-101            android:exported="true" >
-101-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:93:13-36
-102            <intent-filter>
-102-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:94:13-98:29
-103                <action android:name="android.intent.action.MAIN" />
-103-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:95:17-69
-103-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:95:25-66
-104
-105                <category android:name="android.intent.category.LAUNCHER" />
-105-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:97:17-77
-105-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:97:27-74
-106            </intent-filter>
-107        </activity>
-108        <activity
-108-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:100:9-103:15
-109            android:name="com.example.app.WeatherActivity"
-109-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:101:13-44
-110            android:exported="false" />
-110-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:102:13-37
-111
-112        <provider
-112-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-113            android:name="androidx.startup.InitializationProvider"
-113-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-114            android:authorities="com.example.app.androidx-startup"
-114-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-115            android:exported="false" >
-115-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-116            <meta-data
-116-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-117                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-117-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-118                android:value="androidx.startup" />
-118-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+99-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:91:9-92:39
+100            android:name="com.example.app.VirtualGarden"
+100-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:91:19-48
+101            android:exported="false" />
+101-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:92:13-37
+102        <activity
+102-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:93:9-101:20
+103            android:name="com.example.app.TitlePage"
+103-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:94:13-38
+104            android:exported="true" >
+104-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:95:13-36
+105            <intent-filter>
+105-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:96:13-100:29
+106                <action android:name="android.intent.action.MAIN" />
+106-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:97:17-69
+106-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:97:25-66
+107
+108                <category android:name="android.intent.category.LAUNCHER" />
+108-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:99:17-77
+108-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:99:27-74
+109            </intent-filter>
+110        </activity>
+111        <activity
+111-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:102:9-105:15
+112            android:name="com.example.app.WeatherActivity"
+112-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:103:13-44
+113            android:exported="false" />
+113-->/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/AndroidManifest.xml:104:13-37
+114
+115        <provider
+115-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+116            android:name="androidx.startup.InitializationProvider"
+116-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+117            android:authorities="com.example.app.androidx-startup"
+117-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+118            android:exported="false" >
+118-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 119            <meta-data
-119-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tg/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-120                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-120-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tg/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+119-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+120-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 121                android:value="androidx.startup" />
-121-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tg/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-122        </provider>
-123    </application>
-124
-125</manifest>
+121-->[androidx.emoji2:emoji2:1.2.0] /Users/tg/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+122            <meta-data
+122-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tg/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+123                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+123-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tg/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+124                android:value="androidx.startup" />
+124-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tg/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+125        </provider>
+126    </application>
+127
+128</manifest>
