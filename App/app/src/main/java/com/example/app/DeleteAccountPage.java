@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +29,7 @@ public class DeleteAccountPage extends AppCompatActivity {
             String x = getIntent().getStringExtra("EMAIL");
             Credentials deleting = new Credentials("NAME", x, "PASSWORD");
             db.deleteOne(deleting);
+            Toast.makeText(this, "Account Deleted Successfully", Toast.LENGTH_SHORT).show();
             startActivity(intent);
         });
 

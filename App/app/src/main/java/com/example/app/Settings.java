@@ -89,7 +89,6 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
             case 5:
                 Intent intent5 = new Intent(this, DeleteAccountPage.class);               // move to delete page
                 intent5.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
-                Toast.makeText(this, "Account Deleted Successfully", Toast.LENGTH_SHORT).show();
                 startActivity(intent5);
                 break;                   // delete account popup
         }
