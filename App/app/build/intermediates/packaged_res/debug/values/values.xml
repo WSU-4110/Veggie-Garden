@@ -73,6 +73,7 @@
     <string name="delete_account">Delete Account</string>
     <string name="delete_plant">delete plant</string>
     <string name="delete_this_account">Delete This Account</string>
+    <string name="desc">desc</string>
     <string name="enable_disable">Enable/Disable</string>
     <string name="enable_disable_notifications">Enable/disable notifications?</string>
     <string name="enter_current_password">Enter Current Password</string>

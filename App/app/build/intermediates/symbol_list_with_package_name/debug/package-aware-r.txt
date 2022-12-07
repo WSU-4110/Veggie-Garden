@@ -3518,6 +3518,7 @@ string database_accessed_image
 string delete_account
 string delete_plant
 string delete_this_account
+string desc
 string enable_disable
 string enable_disable_notifications
 string enter_current_password
