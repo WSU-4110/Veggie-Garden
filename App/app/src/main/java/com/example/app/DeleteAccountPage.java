@@ -29,7 +29,6 @@ public class DeleteAccountPage extends AppCompatActivity {
             String x = getIntent().getStringExtra("EMAIL");
             Credentials deleting = new Credentials("NAME", x, "PASSWORD");
             db.deleteOne(deleting);
-            Toast.makeText(this, "Account Deleted Successfully", Toast.LENGTH_SHORT).show();
             startActivity(intent);
         });
 
