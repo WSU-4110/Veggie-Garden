@@ -86,6 +86,7 @@
             android:layout_width="327dp"
             android:layout_height="359dp"
             android:layout_marginTop="20dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
             app:cardBackgroundColor="@color/material_dynamic_neutral70"
             app:cardCornerRadius="20dp">
 
