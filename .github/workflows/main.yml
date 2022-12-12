@@ -22,7 +22,7 @@ jobs:
     - name: Get Location 
       run: echo $PWD
     - name: Get files
-      run: echo | ll
+      run: echo | ls
     - name: Grant execute permission for gradlew
       run: chmod +x /gradlew
     - name: Build with Gradle
