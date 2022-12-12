@@ -30,7 +30,7 @@ public class plantInfo extends AppCompatActivity {
         back = findViewById(R.id.backToPlants);
         delete = findViewById(R.id.delete);
 
-        textView.setText(String.format("Name: %s\nType: %s\nBirthday: %s", plant.getName(), plant.getType(), plant.getBday()));
+        textView.setText(plant.getName());
 
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, PlantsPage.class);

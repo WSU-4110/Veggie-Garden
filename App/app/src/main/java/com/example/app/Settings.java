@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -89,7 +90,6 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
             case 5:
                 Intent intent5 = new Intent(this, DeleteAccountPage.class);               // move to delete page
                 intent5.putExtra("EMAIL", getIntent().getStringExtra("EMAIL"));
-                Toast.makeText(this, "Account Deleted Successfully", Toast.LENGTH_SHORT).show();
                 startActivity(intent5);
                 break;                   // delete account popup
         }
@@ -107,5 +107,8 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
         Dialog popup = new Dialog(this);
         popup.setContentView(R.layout.help_popup);        // popup method
         popup.show();
+    }
+
+    public void notifChann1(View view) {
     }
 }

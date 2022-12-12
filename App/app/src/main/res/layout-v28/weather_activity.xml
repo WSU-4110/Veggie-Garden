@@ -53,10 +53,11 @@
             android:id="@+id/tvResult"
             android:layout_width="match_parent"
             android:layout_height="423dp"
+            android:autoSizeMaxTextSize="20dp"
+            android:textFontWeight="600"
             android:textColor="@color/white"
-            android:textSize="300sp"
-
             />
+
 
     </LinearLayout>
 
