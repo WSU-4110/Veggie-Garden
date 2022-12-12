@@ -26,9 +26,9 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x App/gradlew
     - name: Build with Gradle
-      run: cd App && gradlew build
+      run: cd App && ./gradlew build
     - name: Lint report
-      run: cd App && gradlew lintDebug
+      run: cd App && ./gradlew lintDebug
     - name: Upload HTML lint report
       uses: actions/upload-artifact@v3
       with:
