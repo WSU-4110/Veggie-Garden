@@ -64,6 +64,10 @@
         "source": "com.example.app-main-32:/drawable/exit.xml"
     },
     {
+        "merged": "com.example.app-merged_res-30:/drawable_weathericon.png.flat",
+        "source": "com.example.app-main-32:/drawable/weathericon.png"
+    },
+    {
         "merged": "com.example.app-merged_res-30:/layout_create_account_page_welcome_popup.xml.flat",
         "source": "com.example.app-main-32:/layout/create_account_page_welcome_popup.xml"
     },
@@ -178,6 +182,10 @@
     {
         "merged": "com.example.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "com.example.app-main-32:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.app-merged_res-30:/drawable_plant_background.jpg.flat",
+        "source": "com.example.app-main-32:/drawable/plant_background.jpg"
     },
     {
         "merged": "com.example.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.webp.flat",

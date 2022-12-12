@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -106,5 +107,8 @@ public class Settings extends AppCompatActivity implements RecyclerViewInterface
         Dialog popup = new Dialog(this);
         popup.setContentView(R.layout.help_popup);        // popup method
         popup.show();
+    }
+
+    public void notifChann1(View view) {
     }
 }
