@@ -42,6 +42,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Grant execute permission for gradlew
         run: chmod +x App/gradlew
+      - name: Shut down any hanging ADB server
+        run: adb kill-server
       - name: Run tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
