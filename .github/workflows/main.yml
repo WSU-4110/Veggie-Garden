@@ -41,7 +41,7 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v3
       - name: Run tests
-        uses: reactivecircus/android-emulator-runner@v3
+        uses: reactivecircus/android-emulator-runner@v2
         with:
           api-levl: 29
           script: cd App && ./gradlew cAT
