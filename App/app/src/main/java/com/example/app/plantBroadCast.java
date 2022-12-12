@@ -27,4 +27,13 @@ public class plantBroadCast extends BroadcastReceiver {
         NotificationManagerCompat notifMan = NotificationManagerCompat.from(context);
         notifMan.notify(1,build.build());
     }
+
+    public static plantBroadCast instance = new plantBroadCast();
+
+    private plantBroadCast getInstance() {
+        if (instance == null) {
+            instance = new plantBroadCast();
+        }
+        return instance;
+    }
 }
