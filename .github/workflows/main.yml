@@ -19,12 +19,14 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
+    - name: Get Location 
+      run: echo $PATH
     - name: Grant execute permission for gradlew
-      run: chmod +x gradle
+      run: chmod +x /gradlew
     - name: Build with Gradle
-      run: gradle build
+      run: ./gradlew build
     - name: Lint report
-      run: gradle lintDebug
+      run: ./gradlew lintDebug
     - name: Upload HTML lint report
       uses: actions/upload-artifact@v3
       with:
