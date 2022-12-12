@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  lint:
 
     runs-on: ubuntu-latest
 
@@ -32,5 +32,25 @@ jobs:
     - name: Upload HTML lint report
       uses: actions/upload-artifact@v3
       with:
-        name: index.html
+        name: lint-report.html
         path: App/app/build/reports/lint-results-debug.html
+  instrumentation-test:
+    needs: [lint]
+    runs-on: macos-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+      - name: Grant execute permission for gradlew
+        run: chmod +x App/gradlew
+      - name: Shut down any hanging ADB server
+        run: adb kill-server
+      - name: Run tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: cd App && ./gradlew cAT 
+      - name: Upload test report
+        uses: actions/upload-artifact@v3
+        with:
+          name: instrumentation-test-report.html
+          path: App/app/build/reports/androidTests/connected/index.html
