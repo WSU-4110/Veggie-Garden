@@ -20,7 +20,9 @@ jobs:
         distribution: 'temurin'
         cache: gradle
     - name: Get Location 
-      run: echo $PATH
+      run: echo $PWD
+    - name: Get files
+      run: echo | ll
     - name: Grant execute permission for gradlew
       run: chmod +x /gradlew
     - name: Build with Gradle
