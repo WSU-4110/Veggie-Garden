@@ -106,19 +106,19 @@ public class InstrumentationTest {
         });
     }
 
-    @Test
-    public void plantsInfoTest() {
-        Intent intent = new Intent(ApplicationProvider.getApplicationContext(), plantInfo.class);
-        intent.putExtra("PLANT_NAME","corn");
-        ActivityScenario<plantInfo> scenario = ActivityScenario.launch(intent);
-
-        scenario.onActivity(activity -> {
-            FloatingActionButton delete = activity.findViewById(R.id.delete);
-
-            assertEquals(2131361957, delete.getId());
-            assertTrue(delete.isClickable());
-        });
-    }
+//    @Test
+//    public void plantsInfoTest() {
+//        Intent intent = new Intent(ApplicationProvider.getApplicationContext(), plantInfo.class);
+//        intent.putExtra("PLANT_NAME","corn");
+//        ActivityScenario<plantInfo> scenario = ActivityScenario.launch(intent);
+//
+//        scenario.onActivity(activity -> {
+//            FloatingActionButton delete = activity.findViewById(R.id.delete);
+//
+//            assertEquals(2131361957, delete.getId());
+//            assertTrue(delete.isClickable());
+//        });
+//    }
 
     @Test
     public void plantsPageVerifyClickable() {
