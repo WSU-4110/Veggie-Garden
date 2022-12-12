@@ -24,7 +24,7 @@ jobs:
     - name: Get files
       run: echo | ls
     - name: Grant execute permission for gradlew
-      run: chmod +x /gradlew
+      run: chmod +x /App/gradlew
     - name: Build with Gradle
       run: ./gradlew build
     - name: Lint report
