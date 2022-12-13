@@ -8,9 +8,7 @@ on:
 
 jobs:
   lint:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: set up JDK 11
@@ -34,6 +32,7 @@ jobs:
       with:
         name: lint-report.html
         path: App/app/build/reports/lint-results-debug.html
+        
   instrumentation-test:
     needs: [lint]
     runs-on: macos-latest
@@ -62,7 +61,7 @@ jobs:
           path: App/app/build/reports/androidTests/connected/index.html
           
   package:
-    #needs: [instrumentation-test]
+    needs: [instrumentation-test]
     name: Generate APK
     runs-on: ubuntu-latest
     steps:
