@@ -1,250 +1,262 @@
 [
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_edit_vg.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_edit_vg.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_calendar_view.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_calendar_view.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/font_roboto_bold.ttf.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/font/roboto_bold.ttf"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable_popup_background.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable/popup_background.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_customize_profile.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_customize_profile.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_help_popup.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/help_popup.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/font_robotoslabregular.ttf.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/font/robotoslabregular.ttf"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_settings.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_settings.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_pepper.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/pepper.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-pngs-26:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_planter_clipart.jpeg.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/planter_clipart.jpeg"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_notification_dev.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_notification_dev.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_plant_info.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_plant_info.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_celery.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/celery.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout-v28_weather_activity.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout-v28/weather_activity.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/xml/data_extraction_rules.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_virtual_garden.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_virtual_garden.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_settings_view_layout.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/settings_view_layout.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable_background.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable/background.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_delete_account_page.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_delete_account_page.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_title_page.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_title_page.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_potato.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/potato.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/xml_network_security_config.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/xml/network_security_config.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable_forward.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable/forward.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_delete_account_page.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_delete_account_page.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_broccoli.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/broccoli.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable_exit.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable/exit.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_change_password.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_change_password.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_corn.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/corn.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xxhdpi_weathericon.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xxhdpi/weathericon.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable_settings_gear.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable/settings_gear.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_weather_activity.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/weather_activity.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_settings.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_settings.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_plants_page.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_plants_page.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_add_aplant.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_add_aplant.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/font_roboto_condensed_regular.ttf.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/font/roboto_condensed_regular.ttf"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable_exit.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable/exit.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_help_popup.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/help_popup.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/font_robotoslabregular.ttf.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/font/robotoslabregular.ttf"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/xml_backup_rules.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/xml/backup_rules.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable_background.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable/background.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_broccoli.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/broccoli.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_plants_page.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_plants_page.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-v24_plant.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable-v24/plant.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_corn.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/corn.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_planter_clipart.jpeg.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/planter_clipart.jpeg"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_zucchini.jpeg.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/zucchini.jpeg"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-pngs-25:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_notifications_popup.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/notifications_popup.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_create_account_page_welcome_popup.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/create_account_page_welcome_popup.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/font_roboto.ttf.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/font/roboto.ttf"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_weather_activity.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/weather_activity.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable_back_arrow.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable/back_arrow.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_settings_view_layout.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/settings_view_layout.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_tomato.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/tomato.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/xml_network_security_config.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/xml/network_security_config.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_plant_background.jpg.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/plant_background.jpg"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/font_roboto_condensed_regular.ttf.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/font/roboto_condensed_regular.ttf"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_notification_dev.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_notification_dev.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_create_account_page.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_create_account_page.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-anydpi-v24_foreground.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-pngs-25:/drawable-anydpi-v24/foreground.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable_settings_gear.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable/settings_gear.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout-v28_weather_activity.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout-v28/weather_activity.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_calendar_view.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_calendar_view.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-anydpi-v24_foreground.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-pngs-26:/drawable-anydpi-v24/foreground.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable_back_arrow.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable/back_arrow.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_account_viewer_database_list.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_account_viewer_database_list.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_plant_info.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_plant_info.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable_popup_background.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable/popup_background.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xxhdpi_weathericon.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xxhdpi/weathericon.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/font_roboto.ttf.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/font/roboto.ttf"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_title_page.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_title_page.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_cabbage.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/cabbage.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_account_viewer_database_list.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_account_viewer_database_list.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_virtual_garden_item.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/virtual_garden_item.xml"
     },
     {
-        "merged": "com.example.app-merged_res-30:/layout_activity_virtual_garden.xml.flat",
-        "source": "com.example.app-main-32:/layout/activity_virtual_garden.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-v24_plant.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/drawable-v24/plant.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_add_aplant.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_add_aplant.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_main.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_main.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_potato.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/potato.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/xml_backup_rules.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_zucchini.jpeg.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/zucchini.jpeg"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_create_account_page.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_create_account_page.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_change_password.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_change_password.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_celery.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/celery.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_notifications_popup.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/notifications_popup.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_pepper.png.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/pepper.png"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_tomato.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/tomato.png"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_activity_customize_profile.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/activity_customize_profile.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/layout_activity_virtual_garden.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/layout/activity_virtual_garden.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable-xhdpi_cabbage.png.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-31:/drawable-xhdpi/cabbage.png"
+        "merged": "com.example.app-merged_res-31:/layout_activity_add_aplant.xml.flat",
+        "source": "com.example.app-main-33:/layout/activity_add_aplant.xml"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/drawable_forward.xml.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/drawable/forward.xml"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/font_roboto_bold.ttf.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/font/roboto_bold.ttf"
     },
     {
-        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-30:/font_sirukota.ttf.flat",
-        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-32:/font/sirukota.ttf"
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/font_sirukota.ttf.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/font/sirukota.ttf"
+    },
+    {
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/layout_create_account_page_welcome_popup.xml.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-main-33:/layout/create_account_page_welcome_popup.xml"
+    },
+    {
+        "merged": "com.example.app-merged_res-31:/layout_activity_edit_vg.xml.flat",
+        "source": "com.example.app-main-33:/layout/activity_edit_vg.xml"
+    },
+    {
+        "merged": "/Users/tg/.gradle/daemon/7.4/com.example.app-merged_res-31:/drawable-xhdpi_plant_background.jpg.flat",
+        "source": "/Users/tg/.gradle/daemon/7.4/com.example.app-debug-32:/drawable-xhdpi/plant_background.jpg"
     }
 ]

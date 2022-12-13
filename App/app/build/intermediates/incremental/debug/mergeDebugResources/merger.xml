@@ -269,7 +269,104 @@
         <attr name="android:tag"/>
     </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.viewpager2:viewpager2:1.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/b975d4bc4d6d45f491a86fff0fa3caaf/transformed/viewpager2-1.0.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.viewpager2:viewpager2:1.0.0" from-dependency="true" generated-set="androidx.viewpager2:viewpager2:1.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/b975d4bc4d6d45f491a86fff0fa3caaf/transformed/viewpager2-1.0.0/res"><file path="/Users/tg/.gradle/caches/transforms-3/b975d4bc4d6d45f491a86fff0fa3caaf/transformed/viewpager2-1.0.0/res/values/values.xml" qualifiers=""><declare-styleable name="ViewPager2">
         <attr name="android:orientation"/>
-    </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat:1.5.1$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat:1.5.1" from-dependency="true" generated-set="androidx.appcompat:appcompat:1.5.1$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res"><file path="/Users/tg/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res/values-v17/values-v17.xml" qualifiers="v17"><style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
+    </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.gridlayout:gridlayout:1.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/7a0810fbacfcc57b104c604e45ce2161/transformed/gridlayout-1.0.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.gridlayout:gridlayout:1.0.0" from-dependency="true" generated-set="androidx.gridlayout:gridlayout:1.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/7a0810fbacfcc57b104c604e45ce2161/transformed/gridlayout-1.0.0/res"><file path="/Users/tg/.gradle/caches/transforms-3/7a0810fbacfcc57b104c604e45ce2161/transformed/gridlayout-1.0.0/res/values/values.xml" qualifiers=""><declare-styleable name="GridLayout">
+
+        
+
+
+        
+        <attr name="orientation">
+
+            
+            <enum name="horizontal" value="0"/>
+            
+            <enum name="vertical" value="1"/>
+        </attr>
+        
+        <attr format="integer" name="rowCount"/>
+        
+        <attr format="integer" name="columnCount"/>
+        
+        <attr format="boolean" name="useDefaultMargins"/>
+        
+        <attr name="alignmentMode">
+
+            
+            <enum name="alignBounds" value="0"/>
+            
+            <enum name="alignMargins" value="1"/>
+        </attr>
+        
+        <attr format="boolean" name="rowOrderPreserved"/>
+        
+        <attr format="boolean" name="columnOrderPreserved"/>
+    </declare-styleable><declare-styleable name="GridLayout_Layout">
+
+        
+
+
+        
+
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        
+        <attr name="android:layout_margin"/>
+        
+        <attr name="android:layout_marginLeft"/>
+        
+        <attr name="android:layout_marginTop"/>
+        
+        <attr name="android:layout_marginRight"/>
+        
+        <attr name="android:layout_marginBottom"/>
+
+        
+
+        
+        <attr format="integer" name="layout_row"/>
+        
+        <attr format="integer" min="1" name="layout_rowSpan"/>
+        
+        <attr format="float" name="layout_rowWeight"/>
+        
+        <attr format="integer" name="layout_column"/>
+        
+        <attr format="integer" min="1" name="layout_columnSpan"/>
+        
+        <attr format="float" name="layout_columnWeight"/>
+        
+        <attr name="layout_gravity">
+
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="center_vertical" value="0x10"/>
+            
+            <flag name="fill_vertical" value="0x70"/>
+            
+            <flag name="center_horizontal" value="0x01"/>
+            
+            <flag name="fill_horizontal" value="0x07"/>
+            
+            <flag name="center" value="0x11"/>
+            
+            <flag name="fill" value="0x77"/>
+            
+            <flag name="clip_vertical" value="0x80"/>
+            
+            <flag name="clip_horizontal" value="0x08"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+        </attr>
+    </declare-styleable><dimen name="default_gap">8dip</dimen></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat:1.5.1$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat:1.5.1" from-dependency="true" generated-set="androidx.appcompat:appcompat:1.5.1$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res"><file path="/Users/tg/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res/values-v17/values-v17.xml" qualifiers="v17"><style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
         <item name="android:textAlignment">viewStart</item>
     </style><style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
         <item name="android:layout_gravity">center_vertical|start</item>
@@ -10738,7 +10835,7 @@
         <item name="android:weekNumberColor">@color/purple_500</item>
     </style><style name="CalenderViewWeekCustomText">
         <item name="android:textColor">@color/white</item>
-    </style></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">App</string><string name="login">Login</string><string name="create_an_account">Create an Account</string><string name="todo">TODO</string><string name="enter_password_here">Enter Password Here</string><string name="enter_email_here">Enter Email Here</string><string name="enter_email">Enter Email Here</string><string name="enter_pword_here">Enter Password Here</string><string name="create_email_here">Enter Email Here</string><string name="create_your">Create Your</string><string name="account">Account!</string><string name="enter_name_here">Enter Name Here</string><string name="confirm_password">Confirm Password</string><string name="create">Create</string><string name="create_password_here">Enter Password Here</string><string name="home_page">Home Page</string><string name="account_list">Account List</string><string name="button">Button</string><string name="this_is_a_tool_for_developers">This is a tool for developers.</string><string name="back">BACK</string><string name="back2">BACK</string><string name="dark_mode">Dark Mode</string><string name="delete_this_account">Delete This Account</string><string name="clear_data">Clear Data</string><string name="delete_account">Delete Account</string><string name="textview">TextView</string><string name="add_a_new_plant">Add a New Plant!</string><string name="although_this_is_a_demo_project_and_this_project_is_all_about_the_customization_of_a_dialog_box_we_can_design_whatever_we_want">Although this is a demo project, And this project is all about the customization of a Dialog Box. We can design whatever we want!</string><string name="exitButton">exit button</string><string name="welcome_to_plant">Welcome to Plant!</string><string name="to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize">To get started, exit this popup and press \'Add a new plant!\', or head over to settings and customize!</string><string name="add_a_new_plant_">Add a New Plant!</string><string name="advance"><![CDATA[Advance>>]]></string><string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string><string name="goes_back_to_title_page">goes back to title page</string><string name="backButton">Back</string><string name="arrow">arrow</string><string name="customize_profile">Customize Profile</string><string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string><string name="calendar">Calendar</string><string name="plants">Plants</string><string name="plant_calendar">Plant Calendar</string><string name="weather_version_1_0">Weather Version 1.0</string><string name="enter_name_of_city">Enter Name of City</string><string name="enter_name_of_country">Enter Name of Country</string><string name="get">Get</string><string name="change_your_password">Change Your Password</string><string name="enter_current_password">Enter Current Password</string><string name="save">Save</string><string name="you_are_about_to_delete_your_account">You are about to delete your account!</string><string name="if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel">If you are sure, press the button below. If not, click off this popup message to cancel.</string><string name="i_am_sure">I am sure!</string><string name="need_help">Need Help?</string><string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string><string name="enable_disable_notifications">Enable/disable notifications?</string><string name="enable_disable">Enable/Disable</string><string name="under_construction">Under Construction</string><string name="if_you_are_unsure_just_press_cancel">If you are unsure, just press Cancel.</string><string name="cancel">Cancel</string><string name="add_your_new_plant_s_information_below">Add your new plant\'s information below!</string><string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string><string name="outdoors">Outdoors?</string><string name="add_this_plant">Add This Plant</string><string name="plant_name">Plant Name</string><string name="database_accessed_image">database accessed image</string><string name="preferred_sunlight">Preferred Sunlight</string><string name="expected_harvest_bloom_date">Expected Harvest/Bloom Date:</string><string name="water_frequency">Water Frequency</string><string name="summary">Summary</string><string name="if_you_are_not_entirely_sure_on_your_plant_s_birthdate_if_it_is_older_then_just_estimate_the_expected_harvest_bloom_date_is_an_estimation_anyways_and_we_will_get_as_close_as_we_can">If you are not entirely sure on your plant\'s birthdate (if it is older), then just estimate. The expected harvest/bloom date is an estimation anyways, and we will get as close as we can!</string><string name="logo">logo</string><string name="weather_information">Weather Information</string><string name="weather_informationn">Weather Information</string><string name="enter_zip_code">Enter Zip Code</string><string name="get_conditions">Get Conditions</string><string name="plants_title">Plants</string><string name="delete_plant">delete plant</string><string-array name="card_text_titles">
+    </style></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">App</string><string name="login">Login</string><string name="create_an_account">Create an Account</string><string name="todo">TODO</string><string name="enter_password_here">Enter Password Here</string><string name="enter_email_here">Enter Email Here</string><string name="enter_email">Enter Email Here</string><string name="enter_pword_here">Enter Password Here</string><string name="create_email_here">Enter Email Here</string><string name="create_your">Create Your</string><string name="account">Account!</string><string name="enter_name_here">Enter Name Here</string><string name="confirm_password">Confirm Password</string><string name="create">Create</string><string name="create_password_here">Enter Password Here</string><string name="home_page">Home Page</string><string name="account_list">Account List</string><string name="button">Button</string><string name="this_is_a_tool_for_developers">This is a tool for developers.</string><string name="back">BACK</string><string name="back2">BACK</string><string name="dark_mode">Dark Mode</string><string name="delete_this_account">Delete This Account</string><string name="clear_data">Clear Data</string><string name="delete_account">Delete Account</string><string name="textview">TextView</string><string name="add_a_new_plant">Add a New Plant!</string><string name="although_this_is_a_demo_project_and_this_project_is_all_about_the_customization_of_a_dialog_box_we_can_design_whatever_we_want">Although this is a demo project, And this project is all about the customization of a Dialog Box. We can design whatever we want!</string><string name="exitButton">exit button</string><string name="welcome_to_plant">Welcome to Plant!</string><string name="to_get_started_exit_this_popup_and_press_add_a_new_plant_or_head_over_to_settings_and_customize">To get started, exit this popup and press \'Add a new plant!\', or head over to settings and customize!</string><string name="add_a_new_plant_">Add a New Plant!</string><string name="advance"><![CDATA[Advance>>]]></string><string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string><string name="goes_back_to_title_page">goes back to title page</string><string name="backButton">Back</string><string name="arrow">arrow</string><string name="customize_profile">Customize Profile</string><string name="click_off_this_popup_and_go_to_add_a_new_plant_to_get_started">Click off this popup and go to \'Add a new plant!\' to get started!</string><string name="calendar">Calendar</string><string name="plants">Plants</string><string name="plant_calendar">Plant Calendar</string><string name="weather_version_1_0">Weather Version 1.0</string><string name="enter_name_of_city">Enter Name of City</string><string name="enter_name_of_country">Enter Name of Country</string><string name="get">Get</string><string name="change_your_password">Change Your Password</string><string name="enter_current_password">Enter Current Password</string><string name="save">Save</string><string name="you_are_about_to_delete_your_account">You are about to delete your account!</string><string name="if_you_are_sure_press_the_button_below_if_not_click_off_this_popup_message_to_cancel">If you are sure, press the button below. If not, click off this popup message to cancel.</string><string name="i_am_sure">I am sure!</string><string name="need_help">Need Help?</string><string name="our_github_page_has_all_necessary_info_check_it_out_here_at_https_github_com_wsu_4110_veggie_garden_tree_main">Our GitHub page has all necessary info. Check it out here at: https://github.com/WSU-4110/Veggie-Garden/tree/main.</string><string name="enable_disable_notifications">Enable/disable notifications?</string><string name="enable_disable">Enable/Disable</string><string name="under_construction">Under Construction</string><string name="if_you_are_unsure_just_press_cancel">If you are unsure, just press Cancel.</string><string name="cancel">Cancel</string><string name="add_your_new_plant_s_information_below">Add your new plant\'s information below!</string><string name="enter_plant_s_bday_mm_dd_yyyy">Enter Plant\'s Bday! MM/DD/YYYY</string><string name="outdoors">Outdoors?</string><string name="add_this_plant">Add This Plant</string><string name="plant_name">Plant Name</string><string name="database_accessed_image">database accessed image</string><string name="preferred_sunlight">Preferred Sunlight</string><string name="expected_harvest_bloom_date">Expected Harvest/Bloom Date:</string><string name="water_frequency">Water Frequency</string><string name="summary">Summary</string><string name="if_you_are_not_entirely_sure_on_your_plant_s_birthdate_if_it_is_older_then_just_estimate_the_expected_harvest_bloom_date_is_an_estimation_anyways_and_we_will_get_as_close_as_we_can">If you are not entirely sure on your plant\'s birthdate (if it is older), then just estimate. The expected harvest/bloom date is an estimation anyways, and we will get as close as we can!</string><string name="logo">logo</string><string name="weather_information">Weather Information</string><string name="weather_informationn">Weather Information</string><string name="enter_zip_code">Enter Zip Code</string><string name="get_conditions">Get Conditions</string><string name="plants_title">Plants</string><string name="virtual_garden">Virtual Garden</string><string name="delete_plant">delete plant</string><string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
         <item>Help</item>
@@ -10765,12 +10862,22 @@
         <item>Sunflower</item>
         <item>Turnip</item>
         <item>Yellow Squash</item>
-    </string-array><string name="virtual_garden">Virtual Garden</string></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="PlantId">
+    </string-array><string name="edit_vg_done">Done</string><string name="vg_heading">Your Virtual Garden</string><string name="edit_vg_heading">Edit your layout!</string><string name="edit">Edit</string><string name="go_to_your_plants">Go To Your Plants</string><string-array name="virtualGardenPlantList">
+        <item>Empty</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Celery</item>
+        <item>Corn</item>
+        <item>Pepper</item>
+        <item>Potato</item>
+        <item>Tomato</item>
+        <item>Zucchini</item>
+    </string-array><string name="edit_vg_instructions">Note: The layout of the dropdown boxes on this page reflect the layout of your virtual garden layout.</string></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="PlantId">
         <attr format="string" name="plantName"/>
         <attr format="string" name="plantBirthday"/>
         <attr format="color" name="backgroundColor"/>
         <attr format="color" name="textColor"/>
-    </declare-styleable></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/ids.xml" qualifiers=""><item name="linear_layout" type="id"/></file><file name="backup_rules" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/xml/backup_rules.xml" qualifiers="" type="xml"/><file name="network_security_config" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/xml/network_security_config.xml" qualifiers="" type="xml"/><file name="data_extraction_rules" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/xml/data_extraction_rules.xml" qualifiers="" type="xml"/><file name="weather_activity" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/layout-v28/weather_activity.xml" qualifiers="v28" type="layout"/><file name="ic_launcher" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="roboto_bold" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/roboto_bold.ttf" qualifiers="" type="font"/><file name="robotoslabregular" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/robotoslabregular.ttf" qualifiers="" type="font"/><file name="roboto_condensed_regular" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/roboto_condensed_regular.ttf" qualifiers="" type="font"/><file name="roboto" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/roboto.ttf" qualifiers="" type="font"/><file name="sirukota" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/sirukota.ttf" qualifiers="" type="font"/><file name="ic_launcher" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/></source><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/build/generated/res/rs/debug"/><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res"><file name="plant_background" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/plant_background.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="weathericon" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xxhdpi/weathericon.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="broccoli" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/broccoli.png" qualifiers="xhdpi-v4" type="drawable"/><file name="cabbage" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/cabbage.png" qualifiers="xhdpi-v4" type="drawable"/><file name="celery" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/celery.png" qualifiers="xhdpi-v4" type="drawable"/><file name="corn" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/corn.png" qualifiers="xhdpi-v4" type="drawable"/><file name="pepper" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/pepper.png" qualifiers="xhdpi-v4" type="drawable"/><file name="planter_clipart" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/planter_clipart.jpeg" qualifiers="xhdpi-v4" type="drawable"/><file name="potato" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/potato.png" qualifiers="xhdpi-v4" type="drawable"/><file name="tomato" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/tomato.png" qualifiers="xhdpi-v4" type="drawable"/><file name="zucchini" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/zucchini.jpeg" qualifiers="xhdpi-v4" type="drawable"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </declare-styleable></file><file path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/values/ids.xml" qualifiers=""><item name="linear_layout" type="id"/></file><file name="backup_rules" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/xml/backup_rules.xml" qualifiers="" type="xml"/><file name="network_security_config" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/xml/network_security_config.xml" qualifiers="" type="xml"/><file name="data_extraction_rules" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/xml/data_extraction_rules.xml" qualifiers="" type="xml"/><file name="weather_activity" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/layout-v28/weather_activity.xml" qualifiers="v28" type="layout"/><file name="ic_launcher" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="roboto_bold" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/roboto_bold.ttf" qualifiers="" type="font"/><file name="robotoslabregular" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/robotoslabregular.ttf" qualifiers="" type="font"/><file name="roboto_condensed_regular" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/roboto_condensed_regular.ttf" qualifiers="" type="font"/><file name="roboto" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/roboto.ttf" qualifiers="" type="font"/><file name="sirukota" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/font/sirukota.ttf" qualifiers="" type="font"/><file name="ic_launcher" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="activity_edit_vg" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/layout/activity_edit_vg.xml" qualifiers="" type="layout"/><file name="virtual_garden_item" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/main/res/layout/virtual_garden_item.xml" qualifiers="" type="layout"/></source><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/build/generated/res/rs/debug"/><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res"><file name="zucchini" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/zucchini.jpeg" qualifiers="xhdpi-v4" type="drawable"/><file name="potato" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/potato.png" qualifiers="xhdpi-v4" type="drawable"/><file name="corn" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/corn.png" qualifiers="xhdpi-v4" type="drawable"/><file name="plant_background" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/plant_background.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="celery" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/celery.png" qualifiers="xhdpi-v4" type="drawable"/><file name="tomato" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/tomato.png" qualifiers="xhdpi-v4" type="drawable"/><file name="pepper" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/pepper.png" qualifiers="xhdpi-v4" type="drawable"/><file name="planter_clipart" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/planter_clipart.jpeg" qualifiers="xhdpi-v4" type="drawable"/><file name="cabbage" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/cabbage.png" qualifiers="xhdpi-v4" type="drawable"/><file name="broccoli" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xhdpi/broccoli.png" qualifiers="xhdpi-v4" type="drawable"/><file name="weathericon" path="/Users/tg/Documents/GitHub/Veggie-Garden/App/app/src/debug/res/drawable-xxhdpi/weathericon.png" qualifiers="xxhdpi-v4" type="drawable"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>
@@ -12067,6 +12174,37 @@
         
         <attr name="android:inflatedId"/>
         <attr name="android:id"/>
+    </declare-styleable><declare-styleable name="GridLayout">
+
+        
+
+
+        
+        <attr name="orientation">
+
+            
+            <enum name="horizontal" value="0"/>
+            
+            <enum name="vertical" value="1"/>
+        </attr>
+        
+        <attr format="integer" name="rowCount"/>
+        
+        <attr format="integer" name="columnCount"/>
+        
+        <attr format="boolean" name="useDefaultMargins"/>
+        
+        <attr name="alignmentMode">
+
+            
+            <enum name="alignBounds" value="0"/>
+            
+            <enum name="alignMargins" value="1"/>
+        </attr>
+        
+        <attr format="boolean" name="rowOrderPreserved"/>
+        
+        <attr format="boolean" name="columnOrderPreserved"/>
     </declare-styleable><declare-styleable name="MotionLabel">
         <attr name="android:text"/>
         <attr name="android:textColor"/>
@@ -14548,6 +14686,72 @@
         <attr format="reference" name="theme"/>
         
         <attr name="android:theme"/>
+    </declare-styleable><declare-styleable name="GridLayout_Layout">
+
+        
+
+
+        
+
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        
+        <attr name="android:layout_margin"/>
+        
+        <attr name="android:layout_marginLeft"/>
+        
+        <attr name="android:layout_marginTop"/>
+        
+        <attr name="android:layout_marginRight"/>
+        
+        <attr name="android:layout_marginBottom"/>
+
+        
+
+        
+        <attr format="integer" name="layout_row"/>
+        
+        <attr format="integer" min="1" name="layout_rowSpan"/>
+        
+        <attr format="float" name="layout_rowWeight"/>
+        
+        <attr format="integer" name="layout_column"/>
+        
+        <attr format="integer" min="1" name="layout_columnSpan"/>
+        
+        <attr format="float" name="layout_columnWeight"/>
+        
+        <attr name="layout_gravity">
+
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="center_vertical" value="0x10"/>
+            
+            <flag name="fill_vertical" value="0x70"/>
+            
+            <flag name="center_horizontal" value="0x01"/>
+            
+            <flag name="fill_horizontal" value="0x07"/>
+            
+            <flag name="center" value="0x11"/>
+            
+            <flag name="fill" value="0x77"/>
+            
+            <flag name="clip_vertical" value="0x80"/>
+            
+            <flag name="clip_horizontal" value="0x08"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+        </attr>
     </declare-styleable><declare-styleable name="RangeSlider">
     <attr format="reference" name="values"/>
 

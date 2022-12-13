@@ -76,7 +76,13 @@
     <string name="get_conditions">Get Conditions</string>
     <string name="plants_title">Plants</string>
     <string name="virtual_garden">Virtual Garden</string>
+    <string name="vg_heading">Your Virtual Garden</string>
     <string name="delete_plant">delete plant</string>
+    <string name="edit_vg_heading">Edit your layout!</string>
+    <string name="edit_vg_instructions">Note: The layout of the dropdown boxes on this page reflect the layout of your virtual garden layout.</string>
+    <string name="edit_vg_done">Done</string>
+    <string name="go_to_your_plants">Go To Your Plants</string>
+    <string name="edit">Edit</string>
     <string-array name="card_text_titles">
         <item>Customize Profile</item>
         <item>Notifications</item>
@@ -105,5 +111,16 @@
         <item>Sunflower</item>
         <item>Turnip</item>
         <item>Yellow Squash</item>
+    </string-array>
+    <string-array name = "virtualGardenPlantList">
+        <item>Empty</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Celery</item>
+        <item>Corn</item>
+        <item>Pepper</item>
+        <item>Potato</item>
+        <item>Tomato</item>
+        <item>Zucchini</item>
     </string-array>
 </resources>

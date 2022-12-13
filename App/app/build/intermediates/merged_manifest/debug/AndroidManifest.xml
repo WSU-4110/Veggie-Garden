@@ -97,6 +97,15 @@
             android:name="com.example.app.NotificationDev"
             android:exported="false" />
         <activity
+            android:name="com.example.app.VirtualGarden"
+            android:exported="false" />
+        <activity
+            android:name="com.example.app.EditVirtualGarden"
+            android:exported="true" />
+        <activity
+            android:name="com.example.app.VirtualGardenItem"
+            android:exported="false" />
+        <activity
             android:name="com.example.app.TitlePage"
             android:exported="true" >
             <intent-filter>

@@ -29,6 +29,17 @@
         <item>Turnip</item>
         <item>Yellow Squash</item>
     </string-array>
+    <string-array name="virtualGardenPlantList">
+        <item>Empty</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Celery</item>
+        <item>Corn</item>
+        <item>Pepper</item>
+        <item>Potato</item>
+        <item>Tomato</item>
+        <item>Zucchini</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="dark_green">#064B1b</color>
     <color name="dark_purple">#080875</color>
@@ -73,6 +84,10 @@
     <string name="delete_account">Delete Account</string>
     <string name="delete_plant">delete plant</string>
     <string name="delete_this_account">Delete This Account</string>
+    <string name="edit">Edit</string>
+    <string name="edit_vg_done">Done</string>
+    <string name="edit_vg_heading">Edit your layout!</string>
+    <string name="edit_vg_instructions">Note: The layout of the dropdown boxes on this page reflect the layout of your virtual garden layout.</string>
     <string name="enable_disable">Enable/Disable</string>
     <string name="enable_disable_notifications">Enable/disable notifications?</string>
     <string name="enter_current_password">Enter Current Password</string>
@@ -89,6 +104,7 @@
     <string name="expected_harvest_bloom_date">Expected Harvest/Bloom Date:</string>
     <string name="get">Get</string>
     <string name="get_conditions">Get Conditions</string>
+    <string name="go_to_your_plants">Go To Your Plants</string>
     <string name="goes_back_to_title_page">goes back to title page</string>
     <string name="home_page">Home Page</string>
     <string name="i_am_sure">I am sure!</string>
@@ -113,6 +129,7 @@
     <string name="to_move_forward_hit_advance_here_and_then_add_a_new_plant">To move forward, hit advance here and then \'Add a new plant!\'</string>
     <string name="todo">TODO</string>
     <string name="under_construction">Under Construction</string>
+    <string name="vg_heading">Your Virtual Garden</string>
     <string name="virtual_garden">Virtual Garden</string>
     <string name="water_frequency">Water Frequency</string>
     <string name="weather_information">Weather Information</string>
