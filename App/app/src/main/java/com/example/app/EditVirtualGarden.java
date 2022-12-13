@@ -52,7 +52,7 @@ public class EditVirtualGarden extends AppCompatActivity {
         selector8.setAdapter(adapter);
 
         //Convert selected veggies to string
-        /**
+
         TextView textView1 = (TextView)selector1.getSelectedView();
         String result1 = textView1.getText().toString();
         TextView textView2 = (TextView)selector1.getSelectedView();
@@ -79,7 +79,6 @@ public class EditVirtualGarden extends AppCompatActivity {
         vgEditorSelectionResults[5] = result6;
         vgEditorSelectionResults[6] = result7;
         vgEditorSelectionResults[7] = result8;
-*/
 
         //done button goes back to the Virtual Garden and saves your changes made to it
         doneButton = findViewById(R.id.done_editing_vg_button);
