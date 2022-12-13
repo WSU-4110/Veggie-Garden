@@ -1,17 +1,22 @@
 package com.example.app;
 
-import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
 
 class CalendarActivityTest {
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
     }
 
-    @org.junit.jupiter.api.AfterEach
+    @AfterEach
     void tearDown() {
     }
 
-    @org.junit.jupiter.api.Test
-    void CalendarActivity() { CalendarActivity cal = new CalendarActivity(); }
+    @Test
+    void onCreate() {
+
+    }
 }

@@ -1,19 +1,26 @@
 package com.example.app;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
 
 class NotificationDevTest {
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
     }
 
-    @org.junit.jupiter.api.AfterEach
+    @AfterEach
     void tearDown() {
     }
 
-    @org.junit.jupiter.api.Test
-    void NotificationDev() { NotificationDev nDev = new NotificationDev(); }
+    @Test
+    void onCreate() {
+
+    }
+
+    @Test
+    void createNotifChann() {
+
+    }
 }

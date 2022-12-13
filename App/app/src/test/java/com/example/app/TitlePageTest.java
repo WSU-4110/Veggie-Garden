@@ -1,12 +1,12 @@
 package com.example.app;
 
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.AfterEach;
 
-class plantBroadCastTest {
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class TitlePageTest {
 
     @BeforeEach
     void setUp() {
@@ -17,12 +17,7 @@ class plantBroadCastTest {
     }
 
     @Test
-    void onCreate() {
-
-    }
-
-    @Test
-    void onRecieve() {
+    void createPlantNotifChann() {
 
     }
 }
