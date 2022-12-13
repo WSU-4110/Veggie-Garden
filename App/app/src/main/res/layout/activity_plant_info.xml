@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_beige"
+    tools:context=".CustomizeProfile"
+    tools:layout_editor_absoluteX="-80dp"
+    tools:layout_editor_absoluteY="-54dp">
+
+    <Button
+        android:id="@+id/backToPlants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="6dp"
+        android:color="@color/dark_purple"
+        android:text="@string/back2"
+        android:textColor="#FFE082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="425dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="#788306"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="223dp"
+                android:layout_height="148dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/database_accessed_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plant_name"
+            android:textColor="#795548"
+            android:textSize="24sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="327dp"
+            android:layout_height="359dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardBackgroundColor="@color/material_dynamic_neutral70"
+            app:cardCornerRadius="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/delete"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_delete"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/delete_plant"
+                    android:focusable="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:text="@string/summary"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:drawableLeftCompat="@drawable/forward"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                    <TextView
+                        android:id="@+id/waterFrequency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:text="@string/water_frequency"
+                        android:textColor="#4E342E"
+                        android:textSize="16sp"
+                        app:drawableLeftCompat="@drawable/forward"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                    <TextView
+                        android:id="@+id/expectedDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:text="@string/expected_harvest_bloom_date"
+                        android:textColor="#4E342E"
+                        android:textSize="16sp"
+                        app:drawableLeftCompat="@drawable/forward"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                    <TextView
+                        android:id="@+id/sunPreference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:alpha="1"
+                        android:text="@string/preferred_sunlight"
+                        android:textColor="#4E342E"
+                        android:textSize="16sp"
+                        app:drawableLeftCompat="@drawable/forward"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,10 @@ public class Credentials extends AppCompatActivity {
         this.password = password;
     }
 
+    public Credentials() {
+
+    }
+
     // toString
     @NonNull
     @Override

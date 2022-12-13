@@ -6,11 +6,14 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="32" />
+        android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,7 +25,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App" >
+        android:theme="@style/Theme.App"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.app.plantInfo"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.app.DeleteAccountPage"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.app.CustomizeProfile"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name="com.example.app.ChangePassword"
             android:exported="false" >
@@ -65,6 +90,12 @@
             android:name="com.example.app.MainActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.app.AddAPlant"
+            android:exported="false" />
+        <activity
+            android:name="com.example.app.NotificationDev"
+            android:exported="false" />
+        <activity
             android:name="com.example.app.TitlePage"
             android:exported="true" >
             <intent-filter>
@@ -73,6 +104,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.app.WeatherActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

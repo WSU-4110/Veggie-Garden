@@ -7,14 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class ChangePassword extends AppCompatActivity {
+public class ChangePassword extends Credentials {
 
     // set variables
     Button backToSettings, saveBtn;
     EditText oldPword, newPword, confirmNewPword;
     DataBase db;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -35,7 +34,7 @@ public class ChangePassword extends AppCompatActivity {
             startActivity(intent);
         });
 
-        saveBtn.setOnClickListener(view ->{
+        saveBtn.setOnClickListener(view -> {
             String old = oldPword.getText().toString();
             String newP = newPword.getText().toString();
             String confirmP = confirmNewPword.getText().toString();
@@ -44,19 +43,17 @@ public class ChangePassword extends AppCompatActivity {
             if (sameOldPw) {
                 if (!old.equals(newP)) {
                     if (newP.equals(confirmP) && newP.length() >= 3) {
+                        db.updatePassword(getIntent().getStringExtra("EMAIL"), newP);
                         Toast.makeText(this, "New Password Saved!", Toast.LENGTH_SHORT).show();       // success!
                         Intent intent = new Intent(this, Settings.class);
                         startActivity(intent);
-                    }
-                    else {
+                    } else {
                         Toast.makeText(this, "Passwords must match", Toast.LENGTH_SHORT).show();       // error
                     }
-                }
-                else {
+                } else {
                     Toast.makeText(this, "New password cannot be the same as current", Toast.LENGTH_SHORT).show();       // error
                 }
-            }
-            else {
+            } else {
                 Toast.makeText(this, "Incorrect entry for current password", Toast.LENGTH_SHORT).show();       // error
             }
         });

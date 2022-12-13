@@ -1,10 +1,17 @@
 package com.example.app;
+
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Calendar;
 
 // FOLLOW THIS FORMAT FOR CREATING VALUES/BUTTONS/MOVING PAGES/STORING DATA
 public class TitlePage extends AppCompatActivity {
@@ -13,6 +20,7 @@ public class TitlePage extends AppCompatActivity {
     EditText loginEmail, loginPassword;
     Button loginButton, createAccountButton;
     DataBase db;
+    public static final String plantNotifChannelID= "plant channel";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +48,11 @@ public class TitlePage extends AppCompatActivity {
                     intent.putExtra("EMAIL", email);
                     intent.putExtra("NEW_USER", false);
                     startActivity(intent);
-                }
-                else {
+                    createPlantNotifChann();
+                } else {
                     Toast.makeText(TitlePage.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();         // error toast
                 }
-            }
-            else {
+            } else {
                 Toast.makeText(TitlePage.this, "Invalid Entry", Toast.LENGTH_SHORT).show();        // error toast
             }
         });
@@ -57,4 +64,15 @@ public class TitlePage extends AppCompatActivity {
         });
     }
 
+    private void createPlantNotifChann() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel chann = new NotificationChannel(
+                    plantNotifChannelID, "Plant notifs", NotificationManager.IMPORTANCE_HIGH);
+            chann.setDescription("Daily Plant Notifications");
+            //channel for high importance
+
+            NotificationManager manage = getSystemService(NotificationManager.class);
+            manage.createNotificationChannel(chann);
+        }
+    }
 }
