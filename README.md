@@ -1,4 +1,6 @@
 # Veggie-Garden
+[![Android CI](https://github.com/WSU-4110/Veggie-Garden/actions/workflows/main.yml/badge.svg)](https://github.com/WSU-4110/Veggie-Garden/actions/workflows/main.yml)
+
 Android App designed to help users track their planting progress.
 The app will have a calendar, provide reminders for watering and information about certain plants' expected harvest times. 
 All added plants will have a 'PlantID' that stores their information. 

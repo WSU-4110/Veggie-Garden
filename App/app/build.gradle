@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'jvm-test-suite'
 }
 
 android {
@@ -26,6 +27,29 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.example.app'
+
+    testOptions {
+        unitTests.includeAndroidResources = true
+        unitTests.all {
+            reports {
+                junitXml.enabled = true
+                html.enabled = false
+            }
+        }
+    }
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    testLogging {
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
+    }
+}
+
+afterEvaluate {
+    assembleDebug.dependsOn test
 }
 
 dependencies {
@@ -36,6 +60,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
     androidTestImplementation 'com.android.support:support-annotations:28.0.0'
